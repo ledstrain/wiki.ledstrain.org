@@ -1,7 +1,9 @@
 ---
-title: "Hardware"
-weight: 5
+title: "Guide"
+weight: 2
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
 ---
+
+empty content
