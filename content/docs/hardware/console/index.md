@@ -1,6 +1,6 @@
 ---
 title: "Console"
-weight: 5
+weight: 8
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

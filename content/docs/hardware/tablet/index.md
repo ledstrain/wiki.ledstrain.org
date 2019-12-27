@@ -1,6 +1,6 @@
 ---
 title: "Tablet"
-weight: 5
+weight: 6
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

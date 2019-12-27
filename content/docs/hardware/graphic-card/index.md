@@ -1,6 +1,6 @@
 ---
 title: "Graphic Card"
-weight: 5
+weight: 7
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

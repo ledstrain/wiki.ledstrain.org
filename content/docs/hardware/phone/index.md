@@ -1,6 +1,6 @@
 ---
 title: "Phone"
-weight: 5
+weight: 2
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
