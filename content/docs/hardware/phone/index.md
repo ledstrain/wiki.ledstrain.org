@@ -48,6 +48,7 @@ Posts:
 ### OnePlus 3
 * https://www.notebookcheck.com/Test-OnePlus-3-Smartphone-Erster-Eindruck.167713.0.html (German)
 * https://www.notebookcheck.net/OnePlus-3-Smartphone-Review.169223.0.html
+* New link
 
 Posts  
 * https://ledstrain.org/d/21-usable-smartphones/98
