@@ -6,7 +6,7 @@ The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io
 ## Contributing
 
 Contributing is easy!  
-Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) Edit this page
+Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
 
 
 ## How to format content
