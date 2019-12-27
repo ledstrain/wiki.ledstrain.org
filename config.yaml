@@ -12,7 +12,7 @@ enableGitInfo: true
 markup:
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: false
   tableOfContents:
     startLevel: 1
 
