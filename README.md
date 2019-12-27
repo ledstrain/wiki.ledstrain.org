@@ -8,6 +8,14 @@ The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io
 Contributing is easy!  
 Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
 
+Advanced:  
+Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is used.  
+
+```
+git clone https://github.com/ledstrain/wiki.ledstrain.org
+cd wiki.ledstrain.org
+hugo -wD
+```
 
 ## How to format content
 
