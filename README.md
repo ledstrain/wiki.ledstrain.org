@@ -1,23 +1,23 @@
 Netlify Build Status  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a106316a-79b7-4e17-b5cb-afd4a92c112f/deploy-status)](https://app.netlify.com/sites/peaceful-hawking-b271df/deploys)
 
-The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io/) with the [Book](https://themes.gohugo.io/hugo-book/) theme
+The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io/) with the [Book](https://themes.gohugo.io/hugo-book/) theme. It is deployed with netlify.
 
 ## Contributing
 
 Contributing is easy!  
-Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) Edit this page
+Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
 
 
 ## How to format content
 
-Goldmark Markdown is used so for advanced formatting, see [here](https://spec.commonmark.org/0.29/).  
 For a introductory guide, see here  
-https://www.markdownguide.org
+https://www.markdownguide.org  
+For advanced formatting, the CommonMark Spec 0.29 is used. See [here](https://spec.commonmark.org/0.29/).  
 
 
-Additionally, this site supports these shortcodes [source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes)
-
+Additionally, this site supports these shortcodes  
+<sub>([source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes))</sub>
 ## Shortcodes
 
 ### Hint
