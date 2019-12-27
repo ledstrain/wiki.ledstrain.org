@@ -1,8 +1,9 @@
 ---
 title: "Phone"
+description: "LED Strain Wiki | Phone"
 weight: 2
 # bookFlatSection: false
-# bookToc: 6
+bookToc: 2
 # bookHidden: false
 ---
 
@@ -34,6 +35,7 @@ Posts
 
 ### HTC 10
 * https://www.notebookcheck.net/HTC-10-Smartphone-Review.165871.0.html
+* https://forum.xda-developers.com/htc-10/how-to/poll-panel-htc-10-main-s820-variant-t3370972
 
 Posts  
 * https://ledstrain.org/d/21-usable-smartphones/126
@@ -134,8 +136,11 @@ Posts:
 * https://ledstrain.org/d/21-usable-smartphones/771
 
 ### iPhone XS
+* https://youtu.be/lUCB3WMWdeY
+
 * https://www.notebookcheck.com/Test-Apple-iPhone-XS-Smartphone.331488.0.html
 * https://www.cultofmac.com/581646/iphone-xs-max-display-is-scientifically-healthier-for-your-eyes/
+* https://ledstrain.org/d/21-usable-smartphones/911
 
 # Microsoft
 ## Lumia 
