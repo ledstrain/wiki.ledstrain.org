@@ -3,3 +3,89 @@ title: Home
 type: docs
 ---
 
+## Contributing
+
+Contributing is easy!  
+Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
+
+Advanced:  
+Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is used.  
+
+```
+git clone https://github.com/ledstrain/wiki.ledstrain.org
+cd wiki.ledstrain.org
+hugo -wD
+```
+
+## How to format content
+
+For a introductory guide, see here  
+https://www.markdownguide.org  
+For advanced formatting, the CommonMark Spec 0.29 is used. See [here](https://spec.commonmark.org/0.29/).  
+
+
+Additionally, this site supports these shortcodes  
+<sub>([source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes))</sub>
+## Shortcodes
+
+### Hint
+
+Hint shortcode can be used as hint/alerts/notification block. There are 3 colors to choose: `info`, `warning` and `danger`.
+
+```tpl
+{{</* hint [info|warning|danger] */>}}
+**Markdown content**  
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+{{</* /hint */>}}
+```
+
+### Buttons
+
+Buttons are styled links to internal of external pages
+
+```
+{{</* button relref="/" */>}}Get Home{{</* /button */>}}
+{{</* button href="https://github.com/alex-shpak/hugo-book" */>}}Contribute{{</* /button */>}}
+```
+
+### Tabs
+
+Useful if you want to show alternative information per platform or setting.
+
+```
+{{</* tabs "uniqueid" */>}}
+{{</* tab "MacOS" */>}} # MacOS Content {{</* /tab */>}}
+{{</* tab "Linux" */>}} # Linux Content {{</* /tab */>}}
+{{</* tab "Windows" */>}} # Windows Content {{</* /tab */>}}
+{{</* /tabs */>}}
+```
+
+### Multi column text
+
+Organize text in 2 or more columns to use space efficiently.
+
+```html
+{{</* columns */>}} <!-- begin columns block -->
+# Left Content Lorem markdownum insigne...
+
+<---> <!-- magic sparator, between columns -->
+
+# Mid Content Lorem markdownum insigne...
+
+<---> <!-- magic sparator, between columns -->
+
+# Right Content Lorem markdownum insigne...
+{{</* /columns */>}}
+```
+
+### Expand
+
+Provides clickable panel that show extra hidden content.
+
+```
+{{</* expand */>}}
+## Markdown content
+{{</* /expand */>}}
+```
+
