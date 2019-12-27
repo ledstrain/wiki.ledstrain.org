@@ -16,8 +16,8 @@ For a introductory guide, see here
 https://www.markdownguide.org
 
 
-Additionally, this site supports these shortcodes [source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes)
-
+Additionally, this site supports these shortcodes  
+<sub>([source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes))</sub>
 ## Shortcodes
 
 ### Hint
