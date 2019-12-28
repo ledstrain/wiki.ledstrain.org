@@ -46,6 +46,13 @@ Posts:
 
 ## OnePlus
 ### OnePlus 3
+{{< bootstrap-table "table-striped table-bordered" >}}
+|Spec|Link||
+|:---:|:--:|:--:|
+|PWM|[+](https://ledstrain.org/d/21-usable-smartphones/1301)|No PWM at brightness 27% and above. Exact value is 68/255 and above.|
+{{< /bootstrap-table >}}
+
+
 * https://www.notebookcheck.com/Test-OnePlus-3-Smartphone-Erster-Eindruck.167713.0.html (German)
 * https://www.notebookcheck.net/OnePlus-3-Smartphone-Review.169223.0.html
 
@@ -63,6 +70,9 @@ Posts:
 Posts:
 * https://ledstrain.org/d/21-usable-smartphones/402
 * https://ledstrain.org/d/21-usable-smartphones/477
+### OnePlus 7
+![](https://www.xda-developers.com/files/2019/05/OnePlus-7-Pro-OxygenOS-9-Display-Settings-11.jpg)
+
 
 ## Nokia
 ### Nokia 6
