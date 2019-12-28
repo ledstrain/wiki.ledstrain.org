@@ -16,7 +16,7 @@ Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is us
 ```
 git clone https://github.com/ledstrain/wiki.ledstrain.org
 cd wiki.ledstrain.org
-hugo -wD
+hugo serve -wD
 ```
 
 ## How to format content

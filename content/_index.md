@@ -6,7 +6,27 @@ type: docs
 ## Contributing
 
 Contributing is easy!  
-Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
+Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
+The *first* time you change a page, there are a couple extra steps
+{{< expand First-Contribution >}}
+###  Edit Page
+---
+![](https://i.imgur.com/7utAKxT.png)  
+The first time you edit a page, you will be asked to fork the repo. This allows you to make changes
+---
+![](https://i.imgur.com/I57TcIU.png)  
+---
+Change the file as you wish
+![](https://i.imgur.com/v47Npur.png)  
+---
+When you are happy with the changes and wish to submit it, propose the file change
+![](https://i.imgur.com/Yw0WWHE.png)  
+---
+If it's a green checkmark, create the pull request
+![](https://i.imgur.com/uxFvPOm.png)  
+
+If it looks good - it'll be accepted
+{{< /expand >}}
 
 Advanced:  
 Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is used.  
@@ -14,7 +34,7 @@ Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is us
 ```
 git clone https://github.com/ledstrain/wiki.ledstrain.org
 cd wiki.ledstrain.org
-hugo -wD
+hugo serve -wD
 ```
 
 ## How to format content
