@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  name: github
+  repo: ledstrain/wiki.ledstrain.org
+  open_authoring: true
 
 publish_mode: editorial_workflow
 
