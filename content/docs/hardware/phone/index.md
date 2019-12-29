@@ -62,15 +62,19 @@ Posts
 
 
 #### OnePlus 3T
+
 Posts:
 * https://ledstrain.org/d/21-usable-smartphones/242
 * https://ledstrain.org/d/21-usable-smartphones/443
 
 ### OnePlus X
+
 Posts:
 * https://ledstrain.org/d/21-usable-smartphones/402
 * https://ledstrain.org/d/21-usable-smartphones/477
+
 ### OnePlus 7
+
 ![](https://www.xda-developers.com/files/2019/05/OnePlus-7-Pro-OxygenOS-9-Display-Settings-11.jpg)
 
 
