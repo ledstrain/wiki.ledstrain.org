@@ -6,7 +6,7 @@ weight: 1
 
 ### Posting
 
-Write a clear title. Try make a summary of your discussion so others know what they will be reading and discussing. No post signatures
+Write a clear title. Try make a summary of your dicussion so others know what they will be reading and discussing. No post signatures
 
 ### Conduct
 
@@ -28,8 +28,8 @@ Each commercial interest may have one discussion for their product
 
 ### Medical
 
-Due to the nature of the forum advice may be given related to improving or managing your health
-Discretion is upon the user to critically evaluate all information posted on the forum
+Due to the nature of the forum advice may be given related to improving or managing your health\
+Discretion is upon the user to critically evaluate all information posted on the forum\
 For your safety, consult with your doctor before taking any supplements or medication.  
 
 ## Logging in / Troubleshooting
