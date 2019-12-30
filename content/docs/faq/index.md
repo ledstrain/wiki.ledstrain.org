@@ -6,7 +6,7 @@ weight: 1
 
 ### Posting
 
-Write a clear title. Try make a summary of your dicussion so others know what they will be reading and discussing. No post signatures
+Write a clear title. Try make a summary of your discussion so others know what they will be reading and discussing. No post signatures
 
 ### Conduct
 
