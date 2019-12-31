@@ -2,6 +2,18 @@
 
 // @import "plugins/numbered";
 
+:root {
+  --primary-site-color   : #00bb09;
+  --secondary-site-color : #00b0ca;
+  --external-link-color  : #4e41ff;
+}
+
+
+// Title text "LEDStrain Wiki"
+.book-brand {
+    color: var(--primary-site-color);
+}
+
 .book-toc {
     font-size: 1rem;
 }
@@ -16,6 +28,33 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
     visibility: visible;
 }
 
+// Prevent images from getting too large
 img {
     max-height: 50vh;
 }
+
+
+/* Tables */
+/*        */
+.markdown table tr th, .markdown table tr td {
+    border: 1px solid black;
+    width: auto;
+}
+.markdown th {
+  background-color       : var(--primary-site-color);
+  border                 : 1px solid black;
+  color                  : black;
+  padding                : 0.5em;
+  font-size              : 110%;
+
+}
+.markdown td {
+  padding: 0.4em;
+}
+.markdown tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.markdown tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+/* / Tables */
