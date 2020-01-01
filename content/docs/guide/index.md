@@ -39,6 +39,9 @@ A better one recommended to me was this one, I will use it in my next probe - ht
 A more portable option, although maybe not so accurate, is to use your smartphone and connect the diode to its headphone jack. You can then get an oscope application from either android store or apple store. 
 More info here: http://www.retropcmania.com/2017/02/measurements-flicker-of-light-with.html
 
+### Additional Links
+* http://budgetlightforum.com/node/61254
+
 ## Forum Tutorial
 
 LED Strain takes on a minimalist approach to posting. 
@@ -140,5 +143,3 @@ Internal private messaging was removed in favor of Zulip Chat, [more info here](
 
 
 
-### Additional Links
-* http://budgetlightforum.com/node/61254
