@@ -59,6 +59,11 @@ img {
 }
 /* / Tables */
 
+/* Book menu color */
+.book-menu a.active {
+    color: var(--primary-site-color);
+}
+
 /* Identify non ledstrain.org urls */
 /*                                 */
 .markdown a {
