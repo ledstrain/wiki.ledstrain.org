@@ -5,6 +5,7 @@
 :root {
   --primary-site-color   : #00bb09;
   --secondary-site-color : #00b0ca;
+  --accent-site-color    : #E4F4F6;
   --external-link-color  : #4e41ff;
 }
 
@@ -81,3 +82,17 @@ img {
   }
 }
 /* / Identify non ledstrain.org urls */
+
+/* Permalink forum posts */
+.forum-post {
+    border: 1px solid black;
+    padding: 1em;
+}
+.forum-post-content {
+    font-size: 75%;
+}
+.PostMention {
+    background-color: var(--accent-site-color);
+    padding: 2px 5px;
+    border-radius: 4px;
+}

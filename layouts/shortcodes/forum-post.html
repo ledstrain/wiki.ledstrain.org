@@ -1,0 +1,43 @@
+{{/* Get first argument of shortcode */}}
+{{ $permalink := .Get 0 }}
+
+{{/* Set scratch pad. Acts like global variable */}}
+{{ $scratch := newScratch }}
+
+{{ $requesturl := replaceRE `/d/(\d+)[-a-zA-Z]*/?(\d*)` `/api/discussions/$1?page[near]=$2` $permalink }}
+
+
+{{/* Default to 1 if no value found */}}
+{{ $scratch.Set "postID" "1" }}
+{{/* Iterate over find of one value to get the postID, if it has a valid value, set the variable */}}
+{{ $requestPostID := findRE `(\d*)$` $permalink 1 }}
+{{ range $requestPostID }}
+{{ if . }}
+    {{ $scratch.Set "postID" . }}
+{{ end }}
+{{ end }}
+
+{{/* Request json from url */}}
+{{ $discussionRequest := getJSON $requesturl }}
+
+
+{{ range $discussionRequest.included }}
+{{ if eq (string .attributes.number) ($scratch.Get "postID") }}
+<div class="forum-post">
+    <div class="forum-post-title">
+        <a href={{ $permalink }}>{{ $discussionRequest.data.attributes.title }}</a>
+    </div>
+    <div class="forum-post-author">
+        {{ $scratch.Set "authorID" .relationships.user.data.id }}
+        {{ range $discussionRequest.included }}
+        {{ if eq (string .id) ($scratch.Get "authorID") }}
+        {{ .attributes.displayName }}
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="forum-post-content">
+    {{ .attributes.contentHtml | safeHTML | truncate 1000 }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
