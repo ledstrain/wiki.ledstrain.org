@@ -68,9 +68,9 @@ For advanced formatting, the CommonMark Spec 0.29 is used. See [here](https://sp
 
 Additionally, this site supports these shortcodes  
 <sub>([source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes))</sub>
-## Shortcodes
+### Shortcodes
 
-### Hint
+#### Hint
 
 Hint shortcode can be used as hint/alerts/notification block. There are 3 colors to choose: `info`, `warning` and `danger`.
 
@@ -82,7 +82,7 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{</* /hint */>}}
 ```
 
-### Buttons
+#### Buttons
 
 Buttons are styled links to internal of external pages
 
@@ -91,7 +91,7 @@ Buttons are styled links to internal of external pages
 {{</* button href="https://github.com/alex-shpak/hugo-book" */>}}Contribute{{</* /button */>}}
 ```
 
-### Tabs
+#### Tabs
 
 Useful if you want to show alternative information per platform or setting.
 
@@ -103,7 +103,7 @@ Useful if you want to show alternative information per platform or setting.
 {{</* /tabs */>}}
 ```
 
-### Multi column text
+#### Multi column text
 
 Organize text in 2 or more columns to use space efficiently.
 
@@ -121,7 +121,7 @@ Organize text in 2 or more columns to use space efficiently.
 {{</* /columns */>}}
 ```
 
-### Expand
+#### Expand
 
 Provides clickable panel that show extra hidden content.
 
