@@ -58,3 +58,21 @@ img {
   background-color: #e6e6e6;
 }
 /* / Tables */
+
+/* Identify non ledstrain.org urls */
+/*                                 */
+.markdown a {
+    color: var(--primary-site-color);
+}
+.markdown {
+  a[href*="//"]:not([href*="ledstrain.org"]),
+  a[href*="mailto:"]:not([href*="ledstrain.org"]) {
+    color: var(--external-link-color);
+    font-style: oblique;
+    font-weight: bold;
+  }
+  a[href*="//"]:not([href*="ledstrain.org"]):hover {
+    border-color: var(--external-link-color);
+  }
+}
+/* / Identify non ledstrain.org urls */
