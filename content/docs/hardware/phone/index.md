@@ -1,6 +1,5 @@
 ---
 title: "Phone"
-description: "LED Strain Wiki | Phone"
 weight: 2
 # bookFlatSection: false
 bookToc: 2
@@ -8,6 +7,8 @@ bookToc: 2
 ---
 
 # Reference Links
+* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * https://www.ixbt.com (Russian)
 * https://laptopmedia.com/tag/pwm
 * http://www.notebookcheck.net
