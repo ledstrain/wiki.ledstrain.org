@@ -3,6 +3,8 @@ title: Home
 type: docs
 ---
 
+{{< forum-post "11090" >}}
+
 # Wiki
 
 ## Contributing
