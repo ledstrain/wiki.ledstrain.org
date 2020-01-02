@@ -67,3 +67,10 @@ params:
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
   BookSearch: true
+
+caches:
+  getjson: 
+    # Reset json cache every month
+    # This will refresh permalinked comments with forum-post shortcode
+    maxAge: "720h"
+

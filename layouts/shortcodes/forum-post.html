@@ -1,3 +1,6 @@
+{{/* Usage: {{< forum-post "555" >}} */}}
+{{/* Usage: {{< forum-post postid="555" domain="https://domain.tld" length="300" >}} */}}
+
 {{/* Take first argument, or if using named, postid */}}
 {{ $postID := default (.Get 0) (.Get "postid") }}
 
@@ -11,7 +14,7 @@
 {{/* Post Discussion Name */}}
 {{ range $postRequest.included }}
     {{ if eq .type "discussions" }}
-    {{ $scratch.Set "discussionName" .attributes.title }}
+        {{ $scratch.Set "discussionName" .attributes.title }}
     {{ end }}
 {{ end }}
 {{ $discussionName := $scratch.Get "discussionName" }}
@@ -25,13 +28,16 @@
 {{/* Post Author */}}
 {{ range first 1 $postRequest.included }}
     {{ if eq .type "users" }}
-    {{ $scratch.Set "authorID" .attributes.displayName }}
+        {{ $scratch.Set "authorID" .attributes.displayName }}
     {{ end }}
 {{ end }}
 {{ $forumPostAuthor := $scratch.Get "authorID" }}
 
-{{/* Post Content */}}
-{{ $forumPostContent := $postRequest.data.attributes.contentHtml | safeHTML | truncate 1000 }}
+{{/* Post Content; truncate if length is set */}}
+{{ $forumPostContent := $postRequest.data.attributes.contentHtml | safeHTML }}
+{{ if .Get "length" }}
+    {{ $forumPostContent | truncate (.Get "length") }}
+{{ end }}
 
 <div class="forum-post">
     <div class="forum-post-title">
