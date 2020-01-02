@@ -1,52 +1,52 @@
-{{/* Usage: {{< forum-post "555" >}} */}}
-{{/* Usage: {{< forum-post postid="555" domain="https://domain.tld" length="300" >}} */}}
+{{/* Usage: {{-< forum-post "555" >-}} */}}
+{{/* Usage: {{-< forum-post postid="555" domain="https://domain.tld" length="300" >-}} */}}
 
 {{/* Take first argument, or if using named, postid */}}
-{{ $postID := default (.Get 0) (.Get "postid") }}
+{{- $postID := default (.Get 0) (.Get "postid") -}}
 
 {{/* Use scratch for dealing with scope */}}
-{{ $scratch := newScratch }}
+{{- $scratch := newScratch -}}
 
-{{ $urlPre := default "https://ledstrain.org" (.Get "domain") }}
-{{ $urlApi := "/api/posts/" }}
-{{ $postRequest := getJSON $urlPre $urlApi $postID }}
+{{- $urlPre := default "https://ledstrain.org" (.Get "domain") -}}
+{{- $urlApi := "/api/posts/" -}}
+{{- $postRequest := getJSON $urlPre $urlApi $postID -}}
 
 {{/* Post Discussion Name */}}
-{{ range $postRequest.included }}
-    {{ if eq .type "discussions" }}
-        {{ $scratch.Set "discussionName" .attributes.title }}
-    {{ end }}
-{{ end }}
-{{ $discussionName := $scratch.Get "discussionName" }}
+{{- range $postRequest.included -}}
+    {{- if eq .type "discussions" -}}
+        {{- $scratch.Set "discussionName" .attributes.title -}}
+    {{- end -}}
+{{- end -}}
+{{- $discussionName := $scratch.Get "discussionName" -}}
 
 {{/* Discussion Number of Post */}}
-{{ $discussionID := $postRequest.data.relationships.discussion.data.id }}
+{{- $discussionID := $postRequest.data.relationships.discussion.data.id -}}
 
 {{/* Post Number of Discussion */}}
-{{ $discussionPostID := $postRequest.data.attributes.number }}
+{{- $discussionPostID := $postRequest.data.attributes.number -}}
 
 {{/* Post Author */}}
-{{ range first 1 $postRequest.included }}
-    {{ if eq .type "users" }}
-        {{ $scratch.Set "authorID" .attributes.displayName }}
-    {{ end }}
-{{ end }}
-{{ $forumPostAuthor := $scratch.Get "authorID" }}
+{{- range first 1 $postRequest.included -}}
+    {{- if eq .type "users" -}}
+        {{- $scratch.Set "authorID" .attributes.displayName -}}
+    {{- end -}}
+{{- end -}}
+{{- $forumPostAuthor := $scratch.Get "authorID" -}}
 
 {{/* Post Content; truncate if length is set */}}
-{{ $forumPostContent := $postRequest.data.attributes.contentHtml | safeHTML }}
-{{ if .Get "length" }}
-    {{ $forumPostContent | truncate (.Get "length") }}
-{{ end }}
+{{- $forumPostContent := $postRequest.data.attributes.contentHtml | safeHTML -}}
+{{- if .Get "length" -}}
+    {{- $forumPostContent | truncate (.Get "length") -}}
+{{- end -}}
 
 <div class="forum-post">
     <div class="forum-post-title">
-        <a href={{ printf "%s/d/%s/%s" $urlPre (string $discussionID) (string $discussionPostID) }}>{{ $discussionName }}</a>
+        <a href={{- printf "%s/d/%s/%s" $urlPre (string $discussionID) (string $discussionPostID) -}}>{{- $discussionName -}}</a>
     </div>
     <div class="forum-post-author">
-        {{ $forumPostAuthor }}
+        {{- $forumPostAuthor -}}
     </div>
     <div class="forum-post-content">
-        {{ $forumPostContent }}
+        {{- $forumPostContent -}}
     </div>
 </div>
