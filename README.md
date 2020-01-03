@@ -8,10 +8,26 @@ The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io
 ## Contributing
 
 Contributing is easy!  
-Go to the page you would like to edit, and click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`
 
-Advanced:  
-Hugo Extended v0.62.0 [release](https://github.com/gohugoio/hugo/releases) is used.  
+There are three ways,
+* Using a front-end editor (similar to WordPress)
+* Directly editing on GitHub
+* Cloning the repo and making pull requests
+
+
+**Front End**:
+Go to https://wiki.ledstrain.org/contribute and login with GitHub. After you save your changes, a change request will be made to the website.
+
+**Direct GitHub Edit**:
+On every page you can click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
+This will bring you to the source file on GitHub and you can make your changes there.
+
+**Clone Repo**:  
+You will need:
+* Hugo Extended Latest Version - [link](https://github.com/gohugoio/hugo/releases/)
+* Git
+
+Clone the repo, and start the hugo server.
 
 ```
 git clone https://github.com/ledstrain/wiki.ledstrain.org
@@ -26,7 +42,24 @@ https://www.markdownguide.org
 For advanced formatting, the CommonMark Spec 0.29 is used. See [here](https://spec.commonmark.org/0.29/).  
 
 
-Additionally, this site supports these shortcodes  
+Additionally, this site supports shortcodes.  
+
+### Shortcodes
+
+#### Forum Post Embed
+
+Posts for LEDStrain Forum can be embedded  
+`length="-1"` will show the entire post, regardless of length  
+Posts are cached, so changes to the original comment will be updated over time  
+```
+{{</* forum-post 11714  */>}}
+{{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}
+{{</* forum-post id=11714 length="-1"  */>}}
+```
+
+Extra shortcodes
+___
+
 <sub>([source](https://github.com/alex-shpak/hugo-book/blob/master/README.md#shortcodes))</sub>
 ## Shortcodes
 
