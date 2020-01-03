@@ -8,7 +8,7 @@ weight: 2
 
 ## DIY Oscilloscope - PWM
 
-{{< forum-post "3658" >}}
+{{< forum-post id="3658" length="-1" >}}
 
 ### Additional Links
 * http://budgetlightforum.com/node/61254
