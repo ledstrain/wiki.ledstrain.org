@@ -97,3 +97,14 @@ img {
 .PostMention, .forum-post-author {
     border-radius: 4px;
 }
+.forum-post-author {
+    border-bottom: 2px solid white;
+    padding: 3px 6px 3px 6px;
+    background: white;
+    display: inline-block;
+}
+.forum-post-author a {
+    color: black;
+}
+
+
