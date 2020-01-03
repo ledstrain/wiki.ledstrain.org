@@ -1,13 +1,16 @@
 {{/* Usage: {{-< forum-post "555" >-}} */}}
 {{/* Usage: {{-< forum-post id="555" domain="https://domain.tld" length="300" >-}} */}}
 
+{{- $defaultDomain := "https://ledstrain.org" -}}
+
+
 {{/* Take first argument, or if using named, postid */}}
 {{- $postID := default (.Get 0) (.Get "id") -}}
 
 {{/* Use scratch for dealing with scope */}}
 {{- $scratch := newScratch -}}
 
-{{- $urlPre := default "https://ledstrain.org" (.Get "domain") -}}
+{{- $urlPre := default $defaultDomain (.Get "domain") -}}
 {{- $urlApi := "/api/posts/" -}}
 {{- $postRequest := getJSON $urlPre $urlApi $postID -}}
 
@@ -36,6 +39,8 @@
 {{/* Post Content; truncate if length is set */}}
 {{- if (.Get "length") -}}
     {{- $scratch.Set "forumPostContent" (truncate (.Get "length") ($postRequest.data.attributes.contentHtml | safeHTML)) -}}
+{{- else if .Site.Params.postLength -}}
+    {{- $scratch.Set "forumPostContent" (truncate .Site.Params.postLength ($postRequest.data.attributes.contentHtml | safeHTML)) -}}
 {{- else -}}
     {{- $scratch.Set "forumPostContent" ($postRequest.data.attributes.contentHtml | safeHTML) -}}
 {{- end -}}
