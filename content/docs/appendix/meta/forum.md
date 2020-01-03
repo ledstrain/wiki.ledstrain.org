@@ -1,6 +1,5 @@
 ---
 title: "LEDStrain Forum"
-type: meta
 weight: 1
 # bookFlatSection: false
 # bookToc: 6
@@ -12,6 +11,12 @@ weight: 1
 
 ## Issues
 
+### HTTP Redirects
+{{< forum-post 11584 >}}
+{{< forum-post 11381 >}}
+
+#### Resolution
+{{< forum-post 11604 >}}
 
 ### You do not have permission to do that
 {{< forum-post 10967 >}}
