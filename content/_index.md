@@ -14,7 +14,12 @@ There are three ways,
 
 
 **Front End**:
-Go to https://wiki.ledstrain.org/contribute and login with GitHub. After you save your changes, a change request will be made to the website.
+Go to https://wiki.ledstrain.org/contribute and login with GitHub.   
+Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
+
+{{< expand "Set Status" >}}
+![Set Status to In Review](https://i.imgur.com/gDsHYS0.png)
+{{< /expand >}}
 
 **Direct GitHub Edit**:
 On every page you can click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
