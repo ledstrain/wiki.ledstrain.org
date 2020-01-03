@@ -3,8 +3,6 @@ title: Wiki
 type: docs
 ---
 
-# Wiki
-
 ## Contributing
 
 Contributing is easy!  

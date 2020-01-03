@@ -21,7 +21,7 @@
 
 // Permalink next to each header visible on hover only
 .hanchor { 
-    font-size: 75%; 
+    font-size: calc(6px + 0.5em); 
     visibility: hidden; 
     color: silver;
 }
