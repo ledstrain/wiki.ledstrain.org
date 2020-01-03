@@ -1,6 +1,6 @@
 ---
-title: "Hardware"
-weight: 5
+title: "Appendix"
+weight: 10
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false

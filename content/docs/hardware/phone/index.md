@@ -22,6 +22,7 @@ bookToc: 2
 * https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/
 
 Posts:
+{{< forum-post "5418" >}}
 * https://ledstrain.org/d/21-usable-smartphones/675
 * https://ledstrain.org/d/21-usable-smartphones/683
 * https://ledstrain.org/d/21-usable-smartphones/738
