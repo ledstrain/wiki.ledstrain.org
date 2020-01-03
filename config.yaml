@@ -68,6 +68,10 @@ params:
   # Index is built on fly, therefore it might slowdown your website.
   BookSearch: true
 
+  # Shortcode
+  # forum-post
+  postLength: "300"
+
 caches:
   getjson: 
     # Reset json cache every month
