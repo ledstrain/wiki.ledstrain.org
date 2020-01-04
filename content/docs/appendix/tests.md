@@ -6,4 +6,6 @@ weight: 1
 # bookHidden: false
 ---
 
+## Dithering
+
 {{< forum-post id=10433 length=-1 >}}
