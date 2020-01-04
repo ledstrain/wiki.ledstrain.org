@@ -3,6 +3,10 @@ title: Wiki
 type: docs
 ---
 
+Welcome to the LEDStrain Wiki!  
+If we have a green badge, everything is running ok!  
+[![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org/actions)
+
 ## Contributing
 
 Contributing is easy!  
