@@ -5,7 +5,7 @@ type: docs
 
 Welcome to the LEDStrain Wiki!  
 If we have a green badge, everything is running ok!  
-![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)]
+[![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://ledstrain.zulipchat.com/#narrow/stream/218874-wiki-github)
 
 ## Contributing
 
