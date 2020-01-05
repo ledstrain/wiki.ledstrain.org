@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 description: "LEDStrain Wiki | Glossary"
-weight: 3
+weight: 2
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
