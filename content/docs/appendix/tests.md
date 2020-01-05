@@ -1,6 +1,6 @@
 ---
 title: "Tests"
-weight: 1
+weight: 3
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
