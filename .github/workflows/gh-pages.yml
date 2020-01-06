@@ -17,7 +17,7 @@ jobs:
       id: cache-assets
       uses: actions/cache@v1
       with:
-        path: /tmp/hugo_cache
+        path: ${{ runner.temp }}/hugo_cache
         key: ${{ runner.os }}-hugo-
 
     - name: Setup Hugo                                                          
