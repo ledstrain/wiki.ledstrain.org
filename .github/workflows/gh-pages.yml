@@ -8,10 +8,13 @@ on:
 jobs:                                                                           
   build-deploy:                                                                 
     runs-on: ubuntu-18.04                                                     
-    steps:                                                                      
+    steps:
     - uses: actions/checkout@v1                                                 
-      with:                                                                     
-        submodules: true                                                        
+      with:
+        submodules: true    
+                                                    
+    - name: check date
+      run: date
 
 # Disabled pending https://github.com/actions/cache/issues/106
 #    - name: Cache Hugo Assets
