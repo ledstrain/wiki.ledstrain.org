@@ -4,7 +4,7 @@ on:
   push:                                                                         
     branches:                                                                   
     - master                                                                    
-                                                                                
+
 jobs:                                                                           
   build-deploy:                                                                 
     runs-on: ubuntu-18.04                                                     
@@ -13,6 +13,8 @@ jobs:
       with:                                                                     
         submodules: true                                                        
 
+    - name: echo cache
+      run: echo '${{ runner.temp }}/hugo_cache/**/filecache/**'
     - name: Cache Hugo Assets
       id: cache-assets
       uses: actions/cache@v1
