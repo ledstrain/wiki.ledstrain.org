@@ -13,13 +13,14 @@ jobs:
       with:                                                                     
         submodules: true                                                        
 
-    - name: Cache Hugo Assets
-      id: cache-assets
-      uses: actions/cache@v1
-      with:
-        path: ${{ runner.temp }}/hugo_cache
-        key: hugo-${{ hashfiles('**/filecache/**') }}
-        restore-keys: hugo-
+# Disabled pending https://github.com/actions/cache/issues/106
+#    - name: Cache Hugo Assets
+#      id: cache-assets
+#      uses: actions/cache@v1
+#      with:
+#        path: ${{ runner.temp }}/hugo_cache
+#        key: hugo-${{ hashfiles('**/filecache/**') }}
+#        restore-keys: hugo-
 
     - name: Setup Hugo                                                          
       uses: peaceiris/actions-hugo@v2                                           
