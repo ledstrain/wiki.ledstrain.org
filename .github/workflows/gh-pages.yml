@@ -18,7 +18,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ${{ runner.temp }}/hugo_cache
-        key: ${{ runner.os }}-hugo-${{ hashfiles('**/filecache/**') }}
+        key: ${{ runner.os }}-hugo-${{ hashfiles(format('{0}{1}, runner.temp, '/filecache/**')) }}
         restore-keys: ${{ runner.os }}-hugo-
 
     - name: Setup Hugo                                                          
