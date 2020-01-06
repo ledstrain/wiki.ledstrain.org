@@ -1,0 +1,110 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+
+:root {
+  --primary-site-color   : #00bb09;
+  --secondary-site-color : #00b0ca;
+  --accent-site-color    : #E4F4F6;
+  --external-link-color  : #4e41ff;
+}
+
+
+// Title text "LEDStrain Wiki"
+.book-brand {
+    color: var(--primary-site-color);
+}
+
+.book-toc {
+    font-size: 1rem;
+}
+
+// Permalink next to each header visible on hover only
+.hanchor { 
+    font-size: calc(6px + 0.5em); 
+    visibility: hidden; 
+    color: silver;
+}
+h1:hover a, h2:hover a, h3:hover a, h4:hover a { 
+    visibility: visible;
+}
+
+// Prevent images from getting too large
+img {
+    max-height: 50vh;
+}
+
+
+/* Tables */
+/*        */
+.markdown table tr th, .markdown table tr td {
+    border: 1px solid black;
+    width: auto;
+}
+.markdown th {
+  background-color       : var(--primary-site-color);
+  border                 : 1px solid black;
+  color                  : black;
+  padding                : 0.5em;
+  font-size              : 110%;
+
+}
+.markdown td {
+  padding: 0.4em;
+}
+.markdown tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.markdown tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+/* / Tables */
+
+/* Book menu color */
+.book-menu a.active {
+    color: var(--primary-site-color);
+}
+
+/* Identify non ledstrain.org urls */
+/*                                 */
+.markdown a {
+    color: var(--primary-site-color);
+}
+.markdown {
+  a[href*="//"]:not([href*="ledstrain.org"]),
+  a[href*="mailto:"]:not([href*="ledstrain.org"]) {
+    color: var(--external-link-color);
+    font-style: oblique;
+    font-weight: bold;
+  }
+  a[href*="//"]:not([href*="ledstrain.org"]):hover {
+    border-color: var(--external-link-color);
+  }
+}
+/* / Identify non ledstrain.org urls */
+
+/* Permalink forum posts */
+.forum-post {
+    background: var(--accent-site-color);
+    border-radius: 4px;
+    padding: 8px 15px;
+    border-top: 2px dotted white;
+    border-bottom: 2px dotted white;
+}
+.forum-post-content {
+    font-size: 90%;
+}
+.PostMention, .forum-post-author {
+    border-radius: 4px;
+}
+.forum-post-author {
+    border-bottom: 2px solid white;
+    padding: 3px 6px 3px 6px;
+    background: white;
+    display: inline-block;
+}
+.forum-post-author a {
+    color: black;
+}
+
+
