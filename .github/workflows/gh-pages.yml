@@ -18,8 +18,8 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ${{ runner.temp }}/hugo_cache
-        key: ${{ runner.os }}-hugo-${{ hashfiles(format('{0}{1}', runner.temp, '/filecache/**')) }}
-        restore-keys: ${{ runner.os }}-hugo-
+        key: hugo-${{ hashfiles(format('{0}{1}', runner.temp, '/filecache/**')) }}
+        restore-keys: hugo-
 
     - name: Setup Hugo                                                          
       uses: peaceiris/actions-hugo@v2                                           
