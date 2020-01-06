@@ -23,7 +23,7 @@ jobs:
         path: /tmp/hugo_cache
         key: hugo-${{ steps.current-month.outputs.month }}
         restore-keys: |
-          hugo-${{ steps.current-month.outputs.month-
+          hugo-${{ steps.current-month.outputs.month }}
           hugo-
 
 # Disabled pending https://github.com/actions/cache/issues/106
