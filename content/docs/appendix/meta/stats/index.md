@@ -1,8 +1,6 @@
 ---
 title: Stats
-layout: stats
-type: meta
 weight: 1
 ---
-a
-{{ .Resources.ByType "image" }}
+
+{{< resource-image "img/visits_summary*" "Visits Summary 30 days" >}}
