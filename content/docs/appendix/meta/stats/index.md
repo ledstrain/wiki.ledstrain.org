@@ -1,5 +1,7 @@
 ---
 title: Stats
+type: custom
+layout: stats
 weight: 1
 ---
 
