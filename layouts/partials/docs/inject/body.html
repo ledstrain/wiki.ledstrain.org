@@ -1,3 +1,4 @@
+{{ if not .Site.IsServer }}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -9,3 +10,4 @@
     });
   }
 </script>
+{{ end }}
