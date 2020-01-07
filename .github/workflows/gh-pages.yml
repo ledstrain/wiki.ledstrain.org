@@ -44,8 +44,8 @@ jobs:
 
     - name: Stats
       run: |
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=500&height=250' -O content/docs/appendix/meta/stats/img/visits_country.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=500&height=250' -O content/docs/appendix/meta/stats/img/visits_summary.png
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=$MATOMO_API&graphType=horizontalBar&period=month&date=today&width=500&height=250' -O content/docs/appendix/meta/stats/img/visits_country.png
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=$MATOMO_API&graphType=evolution&period=day&date=previous30&width=500&height=250' -O content/docs/appendix/meta/stats/img/visits_summary.png
       env:
         MATOMO_API: ${{ secrets.MATOMO_API }}
 
