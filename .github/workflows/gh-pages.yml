@@ -36,7 +36,7 @@ jobs:
 #        key: hugo-${{ hashfiles('**/filecache/**') }}
 #        restore-keys: hugo-
 
-    - run: wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=500&height=250' -O ${{ runner.os }}/content/docs/appendix/meta/stats/img/visits_summary.png
+    - run: wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=500&height=250' -O content/docs/appendix/meta/stats/img/visits_summary.png
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
