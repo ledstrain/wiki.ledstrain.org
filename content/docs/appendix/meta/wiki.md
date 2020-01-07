@@ -1,6 +1,6 @@
 ---
 title: "LEDStrain Wiki"
-weight: 2
+weight: 6
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
