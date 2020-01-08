@@ -1,5 +1,5 @@
 ---
-title: "Mac"
+title: "iOS"
 weight: 2
 # bookFlatSection: false
 # bookToc: 6
