@@ -1,18 +1,15 @@
 #!/bin/bash
 
-if [ -n "${MATOMO_API}" ]
-then
+if [ -n "${MATOMO_API}" ] then
   apikey="${MATOMO_API}"
 else
   echo No API Key Set
   exit 1
 fi
 
-if [ "${BUILD}" == "SOURCE" ]
-then
+if [ "${BUILD}" == "SOURCE" ] then
   basedir="content"
-elif [ "${BUILD}" == "COMPILED" ]
-then
+elif [ "${BUILD}" == "COMPILED" ] then
   basedir="public"
 fi
 
