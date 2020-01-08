@@ -17,11 +17,6 @@ jobs:
         submodules: true
         fetch-depth: 1
 
-    - name: Stats
-      run: |
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_country.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_summary.png
-
     - name: Get Current Month
       id: current-month
       run: echo "::set-output name=month::$(date '+%m')"
@@ -69,12 +64,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Stats
+      env:
+        MATOMO_API: ${{ secrets.MATOMO_API }}
       run: |
-        mkdir -p public/docs/appendix/meta/stats/img
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O public/docs/appendix/meta/stats/img/visits_country.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O public/docs/appendix/meta/stats/img/visits_summary.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=DevicesDetection&apiAction=getModel&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O public/docs/appendix/meta/stats/img/visits_device.png
-                                                                                
+        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-images.sh'
+        bash './download-images.sh'
+                                                                                        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
