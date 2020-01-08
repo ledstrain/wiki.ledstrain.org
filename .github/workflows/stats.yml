@@ -12,9 +12,9 @@ jobs:
     steps:
     - name: Stats
       run: |
-        mkdir -p public/content/docs/appendix/meta/stats/img
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_country.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_summary.png
+        mkdir -p public/docs/appendix/meta/stats/img
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O public/docs/appendix/meta/stats/img/visits_country.png
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O public/docs/appendix/meta/stats/img/visits_summary.png
                                                                                 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
