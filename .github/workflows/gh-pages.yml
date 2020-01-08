@@ -9,7 +9,6 @@ on:
 
 jobs:
   build-deploy:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -44,7 +43,7 @@ jobs:
       env:
         MATOMO_API: ${{ secrets.MATOMO_API }}
       run: |
-        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-images.sh'
+        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
         bash './download-images.sh'
     
     - name: Setup Hugo
@@ -64,24 +63,3 @@ jobs:
         PUBLISH_DIR: ./public
       with:
         forceOrphan: true
-
-
-  download-images:
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-latest
-    steps:
-    - name: Stats
-      env:
-        MATOMO_API: ${{ secrets.MATOMO_API }}
-      run: |
-        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-images.sh'
-        bash './download-images.sh'
-                                                                                        
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./public
-      with:
-        keepFiles: true
