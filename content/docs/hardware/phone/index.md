@@ -6,7 +6,7 @@ bookToc: 2
 # bookHidden: false
 ---
 
-# Reference Links
+## Reference Links
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * https://www.ixbt.com (Russian)

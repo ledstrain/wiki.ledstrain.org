@@ -7,5 +7,5 @@ weight: 9
 ---
 
 empty content
-# Reference Links
+## Reference Links
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
