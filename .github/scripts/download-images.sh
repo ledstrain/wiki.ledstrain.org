@@ -1,6 +1,12 @@
 #!/bin/bash
 
-apikey=$MATOMO_API
+if [ -n "${MATOMO_API}" ]
+then
+  apikey="${MATOMO_API}"
+else
+  echo No API Key Set
+  exit 1
+fi
 
 baseurl="https://track.xyzz.work/index.php?"
 
