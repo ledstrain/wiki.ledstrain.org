@@ -4,6 +4,8 @@ on:
   push:
     branches:
     - master
+    tags:
+      - v0.1
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '25 2 * * 0'
@@ -15,6 +17,11 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: true
+
+    - name: Stats
+      run: |
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_country.png
+        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_summary.png
 
     - name: Get Current Month
       id: current-month
@@ -44,11 +51,6 @@ jobs:
       with:
         hugo-version: 'latest'
         extended: true
-
-    - name: Stats
-      run: |
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${{ secrets.MATOMO_API }}&graphType=horizontalBar&period=month&date=today&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_country.png
-        wget 'https://track.xyzz.work/index.php?module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${{ secrets.MATOMO_API }}&graphType=evolution&period=day&date=previous30&width=800&height=400' -O content/docs/appendix/meta/stats/img/visits_summary.png
 
     - name: Build
       run: hugo
