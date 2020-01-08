@@ -44,7 +44,7 @@ jobs:
         MATOMO_API: ${{ secrets.MATOMO_API }}
       run: |
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
-        bash './download-images.sh'
+        bash './download-assets.sh'
     
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
