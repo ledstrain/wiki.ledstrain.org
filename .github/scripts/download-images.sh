@@ -3,7 +3,6 @@
 if [ -n "${MATOMO_API}" ]
 then
   apikey="${MATOMO_API}"
-  echo $apikey
 else
   echo No API Key Set
   exit 1
