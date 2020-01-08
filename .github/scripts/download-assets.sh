@@ -8,10 +8,10 @@ else
   exit 1
 fi
 
-if [ -n "${BUILD}" == "SOURCE" ]
+if [ "${BUILD}" == "SOURCE" ]
 then
   basedir="content"
-elif [ -n "${BUILD}" == "COMPILED" ]
+elif [ "${BUILD}" == "COMPILED" ]
 then
   basedir="public"
 fi
