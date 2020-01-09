@@ -27,9 +27,9 @@
 {{- $postID := $scratch.Get "postID" -}}
 {{- $postDomain := $scratch.Get "postDomain" -}}
 
-
 {{/* request the json file based on postType */}}
 {{- $urlPre := default $defaultDomain $postDomain -}}
+{{- $urlPre := default $postDomain (.Get "domain") -}}
 {{- $urlApi := "/api/posts" -}}
 {{- $postRequest := getJSON $urlPre $urlApi $postID -}}
 
