@@ -5,35 +5,7 @@ Github Pages Build Status
 
 The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io/) with the [Book](https://themes.gohugo.io/hugo-book/) theme.
 
-## Contributing
-
-Contributing is easy!  
-
-There are three ways,
-* Using a front-end editor (similar to WordPress)
-* Directly editing on GitHub
-* Cloning the repo and making pull requests
-
-
-**Front End**:
-Go to https://wiki.ledstrain.org/contribute and login with GitHub. After you save your changes, a change request will be made to the website.
-
-**Direct GitHub Edit**:
-On every page you can click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
-This will bring you to the source file on GitHub and you can make your changes there.
-
-**Clone Repo**:  
-You will need:
-* Hugo Extended Latest Version - [link](https://github.com/gohugoio/hugo/releases/)
-* Git
-
-Clone the repo, and start the hugo server.
-
-```
-git clone https://github.com/ledstrain/wiki.ledstrain.org
-cd wiki.ledstrain.org
-hugo serve -wD
-```
+[How to contribute?](https://wiki.ledstrain.org/#contributing)
 
 ## How to format content
 
