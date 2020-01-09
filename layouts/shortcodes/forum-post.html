@@ -19,6 +19,7 @@
     {{- $scratch.Set "postID" (printf `/%s` $postID ) -}}
 {{- else -}}
     {{- $scratch.Set "postType" "filtered" -}}
+    {{/* https://regex101.com/r/8Q88Qe/1 */}}
     {{- $scratch.Set "postDomain" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$1` $entry ) -}}
     {{- $scratch.Set "postDiscussionID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$2` $entry ) -}}
     {{- $scratch.Set "postID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$3` $entry ) -}}
