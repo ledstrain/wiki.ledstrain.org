@@ -42,6 +42,7 @@ jobs:
     - name: Stats
       env:
         MATOMO_API: ${{ secrets.MATOMO_API }}
+        MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
         BUILD: SOURCE
       run: |
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
