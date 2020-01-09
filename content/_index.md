@@ -19,7 +19,7 @@ There are three ways,
 
 #### Front End
 
-{{< hint warning >}}
+{{< hint danger >}}
 Currently not functioning - [Issue](https://github.com/ledstrain/wiki.ledstrain.org/issues/11)
 {{< /hint >}}
 
