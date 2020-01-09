@@ -13,7 +13,7 @@ elif [ "${BUILD}" == "COMPILED" ]; then
   basedir="public"
 fi
 
-baseurl="https://track.xyzz.work/index.php?"
+baseurl="$MATOMO_BASEURL"
 
 mkdir -p "${basedir}"/docs/appendix/meta/stats/img
 wget "${baseurl}""module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${apikey}&graphType=horizontalBar&period=month&date=today&width=800&height=400" -O "${basedir}"/docs/appendix/meta/stats/img/visits_country.png
