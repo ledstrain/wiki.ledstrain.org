@@ -4,7 +4,7 @@ type: docs
 ---
 
 Welcome to the LEDStrain Wiki!  
-If we have a green badge, everything is running ok!  
+If we have a green badge, the site should be ok!  
 [![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://ledstrain.zulipchat.com/#narrow/stream/218874-wiki-github)
 
 ## Contributing
@@ -64,10 +64,15 @@ Additionally, this site supports shortcodes.
 Posts for LEDStrain Forum can be embedded  
 `length="-1"` will show the entire post, regardless of length  
 Posts are cached, so changes to the original comment will be updated over time  
+
+Either format can be used
+* Post ID: `11714`
+* Permalink: `https://ledstrain.org/d/795-community-wiki/1`
 ```
 {{</* forum-post 11714  */>}}
 {{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}
 {{</* forum-post id=11714 length="-1"  */>}}
+{{</* forum-post "https://ledstrain.org/d/795-community-wiki"  */>}}
 ```
 {{< forum-post 11714  >}}
 
