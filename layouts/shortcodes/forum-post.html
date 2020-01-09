@@ -1,5 +1,5 @@
 {{/* Usage: {{- < forum-post "555" > -}} */}}
-{{/* Usage: {{- < forum-post "555" > -}} */}}
+{{/* Usage: {{- < forum-post "555" domain="https://domain.tld/" > -}} */}}
 {{/* Usage: {{- < forum-post id="https://domain.tld/d/802-discussion-title/2" length="300"> -}} */}}
 
 {{- $defaultDomain := "https://ledstrain.org" -}}
@@ -29,7 +29,7 @@
 
 {{/* request the json file based on postType */}}
 {{- $urlPre := default $defaultDomain $postDomain -}}
-{{- $urlPre := default $postDomain (.Get "domain") -}}
+{{- $urlPre := default $urlPre (.Get "domain") -}}
 {{- $urlApi := "/api/posts" -}}
 {{- $postRequest := getJSON $urlPre $urlApi $postID -}}
 
