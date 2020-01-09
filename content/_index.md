@@ -20,7 +20,7 @@ There are three ways,
 #### Front End
 
 {{< hint warning >}}
-The Front End Editor is currently not working - [Issue](https://github.com/ledstrain/wiki.ledstrain.org/issues/11)
+Currently not functioning - [Issue](https://github.com/ledstrain/wiki.ledstrain.org/issues/11)
 {{< /hint >}}
 
 Go to https://wiki.ledstrain.org/contribute and login with GitHub.   
