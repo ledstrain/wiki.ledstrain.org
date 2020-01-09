@@ -1,33 +1,48 @@
-{{/* Usage: {{-< forum-post "555" >-}} */}}
-{{/* Usage: {{-< forum-post id="555" domain="https://domain.tld" length="300" >-}} */}}
+{{/* Usage: {{- < forum-post "555" > -}} */}}
+{{/* Usage: {{- < forum-post "555" domain="https://domain.tld/" > -}} */}}
+{{/* Usage: {{- < forum-post id="https://domain.tld/d/802-discussion-title/2" length="300"> -}} */}}
 
 {{- $defaultDomain := "https://ledstrain.org" -}}
 
 {{/* Use scratch for dealing with scope */}}
 {{- $scratch := newScratch -}}
 
-{{- $entry := (.Get 0) -}}
-{{- $postID := findRE `^\d+$` $entry 1 -}}
+{{/* Take single entry for post ID or permalink */}}
+{{- $entry := default (.Get 0) (.Get "id") -}}
+
+{{/* Identify if postID or permalink. If either, format for /api correctly */}}
+{{/* If permalink used, take the domain as well */}}
+{{- $postID := findRE `^(\d+)$` $entry -}}
 {{- if $postID -}}
-
+    {{- $scratch.Set "postType" "id" -}}
+    {{- $postID := index $postID 0 -}}
+    {{- $scratch.Set "postID" (printf `/%s` $postID ) -}}
 {{- else -}}
-    {{- $scratch.Set "postPermaLink" (findRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` (.Get 0) 1) -}}
+    {{- $scratch.Set "postType" "filtered" -}}
+    {{/* https://regex101.com/r/8Q88Qe/1 */}}
+    {{- $scratch.Set "postDomain" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$1` $entry ) -}}
+    {{- $scratch.Set "postDiscussionID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$2` $entry ) -}}
+    {{- $scratch.Set "postID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$3` $entry ) -}}
+    {{- $scratch.Set "postID" (printf `?filter[discussion]=%s&filter[number]=%s` ($scratch.Get "postDiscussionID") ($scratch.Get "postID")) -}}
 {{- end -}}
+{{- $postID := $scratch.Get "postID" -}}
+{{- $postDomain := $scratch.Get "postDomain" -}}
 
-{{- if $scratch.Get "postPermaLink" -}}
-{{- $postPermaLink := $scratch.Get "postPermaLink" -}}
-{{- end -}}
-
-
-
-
-{{/* Take first argument, or if using named, postid */}}
-{{- $postID := default (.Get 0) (.Get "id") -}}
-
-
-{{- $urlPre := default $defaultDomain (.Get "domain") -}}
-{{- $urlApi := "/api/posts/" -}}
+{{/* request the json file based on postType */}}
+{{- $urlPre := default $defaultDomain $postDomain -}}
+{{- $urlPre := default $urlPre (.Get "domain") -}}
+{{- $urlApi := "/api/posts" -}}
 {{- $postRequest := getJSON $urlPre $urlApi $postID -}}
+
+{{/* Each post type is slightly different. If permalink, range over the data and grab the first one to simulate a postID */}}
+{{- if eq ($scratch.Get "postType") "id" -}}
+    {{- $scratch.Set "postRequestData" $postRequest.data -}}
+{{- else -}}
+    {{- range first 1 $postRequest.data -}}
+        {{- $scratch.Set "postRequestData" . -}}
+    {{- end -}}
+{{- end -}}
+{{- $postRequestData := $scratch.Get "postRequestData" -}}
 
 {{/* Post Discussion Name */}}
 {{- range $postRequest.included -}}
@@ -38,10 +53,10 @@
 {{- $discussionName := $scratch.Get "discussionName" -}}
 
 {{/* Discussion Number of Post */}}
-{{- $discussionID := $postRequest.data.relationships.discussion.data.id -}}
+{{- $discussionID := $postRequestData.relationships.discussion.data.id -}}
 
 {{/* Post Number of Discussion */}}
-{{- $discussionPostID := $postRequest.data.attributes.number -}}
+{{- $discussionPostID := $postRequestData.attributes.number -}}
 
 {{/* Post Author */}}
 {{- range first 1 $postRequest.included -}}
@@ -56,13 +71,13 @@
 {{/* Post Content; truncate if length is set */}}
 {{/* if >= 0, truncate to specified value. If less (-1) do not truncate */}}
 {{- if and (.Get "length") (ge (.Get "length") 0) -}}
-    {{- $scratch.Set "forumPostContent" (truncate (.Get "length") ($postRequest.data.attributes.contentHtml | safeHTML)) -}}
+    {{- $scratch.Set "forumPostContent" (truncate (.Get "length") ($postRequestData.attributes.contentHtml | safeHTML)) -}}
 {{- else if and (.Get "length") (lt (.Get "length") 0) -}}
-    {{- $scratch.Set "forumPostContent" ($postRequest.data.attributes.contentHtml | safeHTML) -}}
+    {{- $scratch.Set "forumPostContent" ($postRequestData.attributes.contentHtml | safeHTML) -}}
 {{- else if .Site.Params.postLength -}}
-    {{- $scratch.Set "forumPostContent" (truncate .Site.Params.postLength ($postRequest.data.attributes.contentHtml | safeHTML)) -}}
+    {{- $scratch.Set "forumPostContent" (truncate .Site.Params.postLength ($postRequestData.attributes.contentHtml | safeHTML)) -}}
 {{- else -}}
-    {{- $scratch.Set "forumPostContent" ($postRequest.data.attributes.contentHtml | safeHTML) -}}
+    {{- $scratch.Set "forumPostContent" ($postRequestData.attributes.contentHtml | safeHTML) -}}
 {{- end -}}
 {{- $forumPostContent := $scratch.Get "forumPostContent" -}}
 
