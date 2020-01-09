@@ -17,7 +17,12 @@ There are three ways,
 * Cloning the repo and making pull requests
 
 
-**Front End**:
+#### Front End
+
+{{< hint warning >}}
+The Front End Editor is currently not working - [Issue](https://github.com/ledstrain/wiki.ledstrain.org/issues/11)
+{{< /hint >}}
+
 Go to https://wiki.ledstrain.org/contribute and login with GitHub.   
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
 
@@ -25,11 +30,11 @@ Note: be sure to set the status to `In Review` after saving. This causes a chang
 ![Set Status to In Review](https://i.imgur.com/gDsHYS0.png)
 {{< /expand >}}
 
-**Direct GitHub Edit**:
+#### Direct GitHub Edit
 On every page you can click on ![](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
 This will bring you to the source file on GitHub and you can make your changes there.
 
-**Clone Repo**:  
+#### Clone Repo
 You will need:
 * Hugo Extended {{< hugo-version >}} - [link](https://github.com/gohugoio/hugo/releases/tag/v{{< hugo-version >}})
 * Git
