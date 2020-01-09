@@ -3,12 +3,27 @@
 
 {{- $defaultDomain := "https://ledstrain.org" -}}
 
+{{/* Use scratch for dealing with scope */}}
+{{- $scratch := newScratch -}}
+
+{{- $entry := (.Get 0) -}}
+{{- $postID := findRE `^\d+$` $entry 1 -}}
+{{- if $postID -}}
+
+{{- else -}}
+    {{- $scratch.Set "postPermaLink" (findRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` (.Get 0) 1) -}}
+{{- end -}}
+
+{{- if $scratch.Get "postPermaLink" -}}
+{{- $postPermaLink := $scratch.Get "postPermaLink" -}}
+{{- end -}}
+
+
+
 
 {{/* Take first argument, or if using named, postid */}}
 {{- $postID := default (.Get 0) (.Get "id") -}}
 
-{{/* Use scratch for dealing with scope */}}
-{{- $scratch := newScratch -}}
 
 {{- $urlPre := default $defaultDomain (.Get "domain") -}}
 {{- $urlApi := "/api/posts/" -}}
