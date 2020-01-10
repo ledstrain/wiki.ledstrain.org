@@ -8,4 +8,4 @@ weight: 5
 
 ## Reference Links
 * http://www.notebookcheck.net
-
+* https://www.ixbt.com (Russian)

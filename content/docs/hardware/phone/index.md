@@ -9,7 +9,6 @@ bookToc: 2
 ## Reference Links
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
-* https://www.ixbt.com (Russian)
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
 
 
@@ -155,7 +154,12 @@ bookToc: 2
 {{< forum-post 2732 >}}
 {{< forum-post 6829 >}}
 
-### iPhone XS
+### iPhone X
+
+* [Reddit - iPhone X Uses Pulse Width Modulation, Which Is a Serious Issue for a Sensitive Few
+  ](https://www.reddit.com/r/apple/comments/7uv6m3/iphone_x_uses_pulse_width_modulation_which_is_a/)
+
+#### iPhone XS
 
 {{< youtube lUCB3WMWdeY >}}  
 
