@@ -8,3 +8,30 @@ weight: 1
 
 ## Reference Links
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+
+## Dell
+
+### Pro Dell Inspiron 15 3000
+{{< forum-post 4333 >}}
+
+### Dell Inspiron 7000
+{{< forum-post 11255 >}}
+
+### Dell Series Latitude
+
+___
+{{< forum-post 10844 >}}
+{{< forum-post 10860 >}}
+___
+
+
+### Dell Workstation 
+{{< forum-post 5101 >}}
+
+### XPS 13
+{{< forum-post 10921 >}}
+
+## Ryzen
+
+### Ryzen 2500
+{{< forum-post 10865 >}}

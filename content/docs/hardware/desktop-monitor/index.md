@@ -6,6 +6,14 @@ weight: 4
 # bookHidden: false
 ---
 
-empty content
 ## Reference Links
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+
+
+## Dell
+
+### Dell U2410
+
+{{< forum-post 3879 >}}
+
+{{< forum-post 8308 >}}

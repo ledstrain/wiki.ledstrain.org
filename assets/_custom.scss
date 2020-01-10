@@ -103,6 +103,10 @@ img {
 .PostMention, .forum-post-author {
     border-radius: 4px;
 }
+.PostMention {
+    background-color: white;
+    padding: 2px;
+}
 .forum-post-author {
     border-bottom: 2px solid white;
     padding: 3px 6px 3px 6px;

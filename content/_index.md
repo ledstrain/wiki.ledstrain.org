@@ -5,7 +5,7 @@ type: docs
 
 Welcome to the LEDStrain Wiki!  
 If we have a green badge, the site should be ok!  
-[![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://ledstrain.zulipchat.com/#narrow/stream/218874-wiki-github)
+[![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org)
 
 ## Contributing
 
@@ -52,7 +52,7 @@ hugo serve -wD
 
 For a introductory guide, see here  
 https://www.markdownguide.org  
-For advanced formatting, the CommonMark Spec 0.29 is used. See [here](https://spec.commonmark.org/0.29/).  
+[Advanced formatting](https://spec.commonmark.org/0.29/).
 
 
 Additionally, this site supports shortcodes.  
@@ -72,7 +72,7 @@ Either format can be used
 {{</* forum-post 11714  */>}}
 {{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}
 {{</* forum-post id=11714 length="-1"  */>}}
-{{</* forum-post "https://ledstrain.org/d/795-community-wiki"  */>}}
+{{</* forum-post "https://ledstrain.org/d/795-community-wiki/1"  */>}}
 ```
 {{< forum-post 11714  >}}
 

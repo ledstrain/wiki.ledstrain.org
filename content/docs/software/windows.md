@@ -8,3 +8,6 @@ weight: 3
 
 ### Reference Links                                                              
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+
+## Windows 10
+{{< forum-post "11638" >}}

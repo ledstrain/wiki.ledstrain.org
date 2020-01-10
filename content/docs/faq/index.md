@@ -17,7 +17,11 @@ The following forms of behavior will not be tolerated:
 * Non-Constructive feedback and support
 * Spam, phishing posts, and any actions intended to deface this site  
 * Attempts to abuse or expose the private information of others  
-* Posts intended to harass, impersonate, or defame others  {{< hint info >}}Your discussion may be moved to a more appropriate tag at a moderator's discretion.{{< /hint >}}
+* Posts intended to harass, impersonate, or defame others  
+
+{{< hint info >}}
+Your discussion may be moved to a more appropriate tag at a moderator's discretion.
+{{< /hint >}}
 
 ### Commercial
 
@@ -38,5 +42,7 @@ If you're having difficulty logging in, unable to post or other issues, reach ou
 [https://ledstrain.zulipchat.com](https://ledstrain.zulipchat.com/#narrow/stream/205604-meta)
 
 Alternatively, support can be reached here: {{< cloakemail address="support@ledstrain.org" >}}\
-{{< hint warning >}} This is a non-reply email\
-We may reach out to you with a different email {{< /hint >}}
+{{< hint warning >}} 
+This is a non-reply email\
+We may reach out to you with a different email 
+{{< /hint >}}

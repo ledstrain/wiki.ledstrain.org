@@ -10,8 +10,6 @@ bookToc: 2
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * https://www.ixbt.com (Russian)
-* https://laptopmedia.com/tag/pwm
-* http://www.notebookcheck.net
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
 
 
