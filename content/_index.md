@@ -1,5 +1,5 @@
 ---
-title: Wiki
+title: LEDStrain Wiki
 description: Wiki for LEDStrain
 type: docs
 ---
