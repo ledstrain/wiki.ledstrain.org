@@ -23,6 +23,10 @@ Dithering technique used by Nvidia and Ati to create more million colours to sho
 
 * [Tests]({{< relref "tests#dithering" >}})
 
+### Temporal Dithering
+
+{{< forum-post 1444 >}}
+
 
 One of the major causes of eyestrain. This is a strategy which uses ultrafast colour changing pixels to cheat the eye obtaining a colour that was not supposed to be possible of being displayed by the screen. The translation of pixels happens at a speed the eye can notice it, but some people get his/her neurological system stressed.
 
