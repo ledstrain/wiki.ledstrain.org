@@ -1,5 +1,6 @@
 ---
 title: "LEDStrain Forum"
+description: meta information of LEDStrain Forum
 weight: 5
 # bookFlatSection: false
 # bookToc: 6

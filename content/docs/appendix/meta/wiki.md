@@ -1,5 +1,6 @@
 ---
 title: "LEDStrain Wiki"
+description: meta information of LEDStrain Wiki
 weight: 6
 # bookFlatSection: false
 # bookToc: 6

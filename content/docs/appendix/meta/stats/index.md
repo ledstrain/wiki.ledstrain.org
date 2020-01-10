@@ -1,5 +1,6 @@
 ---
 title: Stats
+description: Stats for LEDStrain
 weight: 1
 ---
 

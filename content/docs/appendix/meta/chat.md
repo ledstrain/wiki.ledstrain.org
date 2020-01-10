@@ -1,5 +1,6 @@
 ---
 title: "LEDStrain Chat"
+description: meta information of LEDStrain Chat
 weight: 7
 # bookFlatSection: false
 # bookToc: 6
