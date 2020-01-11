@@ -80,7 +80,6 @@ img {
   a[href*="//"]:not([href*="ledstrain.org"]),
   a[href*="mailto:"]:not([href*="ledstrain.org"]) {
     color: var(--external-link-color);
-    font-style: oblique;
     font-weight: bold;
   }
   a[href*="//"]:not([href*="ledstrain.org"]):hover {
