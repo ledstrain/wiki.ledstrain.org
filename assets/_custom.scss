@@ -31,7 +31,7 @@
         visibility: visible; 
     }
 }
-h1:hover a, h2:hover a, h3:hover a, h4:hover h5:hover h6:hover a { 
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a { 
     visibility: visible;
 }
 
@@ -80,6 +80,7 @@ img {
   a[href*="//"]:not([href*="ledstrain.org"]),
   a[href*="mailto:"]:not([href*="ledstrain.org"]) {
     color: var(--external-link-color);
+    font-style: oblique;
     font-weight: bold;
   }
   a[href*="//"]:not([href*="ledstrain.org"]):hover {
