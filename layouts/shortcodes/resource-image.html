@@ -1,4 +1,4 @@
-{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $img := resources.GetMatch (.Get 0)}}
 {{ if $img }}
 <figure>
     <img src="{{ $img.RelPermalink }}" alt="{{ .Get 1 }}" />
