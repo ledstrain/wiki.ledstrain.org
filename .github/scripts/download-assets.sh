@@ -7,12 +7,6 @@ else
   exit 1
 fi
 
-#if [ "${BUILD}" == "SOURCE" ]; then
-#  basedir="content"
-#elif [ "${BUILD}" == "COMPILED" ]; then
-#  basedir="public"
-#fi
-
 assets_dir="assets/files/stats"
 # LEDStrain Forum
 wget "${MATOMO_BASEURL}""module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${apikey}&graphType=evolution&period=day&date=previous30&width=800&height=400" -O "${assets_dir}/img/03_visits_summary.png"
