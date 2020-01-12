@@ -33,6 +33,8 @@ There are three ways,
 * Directly editing on GitHub
 * Cloning the repo and making pull requests
 
+### Editing
+
 #### Front End
 
 {{< hint danger >}}
@@ -62,6 +64,16 @@ git clone {{< param BookRepo >}}
 cd wiki.ledstrain.org
 hugo serve -wD
 ```
+
+### Linking
+
+This site has smart internal linking.  
+For example, `tests#dithering` will link to `/docs/appendix/tests#dithering`  
+
+Sometimes, the directory structure will change to better reflect the content it holds.  
+As long as linking uses the format of `pagename#section` internal urls will always work!
+
+Additionally, internal linking is tested, to prevent urls from becoming broken if structure is changed.
 
 
 ## How to format content
