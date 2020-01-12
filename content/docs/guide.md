@@ -34,12 +34,12 @@ However, there are some tools available to creating your posts, available in a t
 |Header |Inputs header|`H`|
 |Bold      |Sets selected text to bold|`B` |
 |Italic     |Sets selected text to italic|*I* |
-|Quote  |Quote the selected text|![](https://i.imgur.com/BzpSSWN.png))
-|Code    |Sets the selected text in code format for easier reading / copying|![](https://i.imgur.com/0CqPOS1.png)|
+|Quote  |Quote the selected text|![Quote selected text](https://i.imgur.com/BzpSSWN.png))
+|Code    |Sets the selected text in code format for easier reading / copying|![Sets code format](https://i.imgur.com/0CqPOS1.png)|
 |Link      |Set a clickable link. Works on images as well|🔗 |
-| List|Adds a unordered list with bullet points |![](https://i.imgur.com/hzBVWTi.png)|
-|List | Adds a ordered list with numbers|![](https://i.imgur.com/E5Xr5jI.png)|
-|Emoji| Insert Twemoji based emoji |![](https://i.imgur.com/uc1rQXD.png)|
+| List|Adds a unordered list with bullet points |![Create a unordered list](https://i.imgur.com/hzBVWTi.png)|
+|List | Adds a ordered list with numbers|![Create a ordered list](https://i.imgur.com/E5Xr5jI.png)|
+|Emoji| Insert Twemoji based emoji |![Insert Twemoji emoji](https://i.imgur.com/uc1rQXD.png)|
 |Mention|Mention a user or post. If set, will notify the user|`@`|
 {{< /bootstrap-table >}}
 
@@ -85,10 +85,10 @@ Inline links `[can be created](https://ledstrain.org)` to look cleaner
 Inline links [can be created](https://ledstrain.org) to look cleaner  
 Images as well  
 
-`[![](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)`  
-[![](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)  
-`[![](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)`  
-[![](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)  
+`[![Image inline link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)`  
+[![Image inline link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)  
+`[![Internal Link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![External link](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)`  
+[![Internal Link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![External Link](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)  
 
 ___
 Links are colored either green or purple.  
@@ -98,7 +98,7 @@ Links are colored either green or purple.
 * Purple indicate the link is *external* and points out to the web  
 
 Touchscreen users will have a boundary around linked images to indicate this as well  
-![](https://i.imgur.com/Rr1mvRN.png)  
+![Image Boundary](https://i.imgur.com/Rr1mvRN.png)  
 
 ___
 
@@ -108,9 +108,9 @@ We're here to help
 If there's spam, or if you wish to split a discussion to a new thread let us know by flagging the post.  
 We can also help with adjusting tags or renaming discussions   
 
-![](https://i.imgur.com/MN2mqZv.png)
+![Flag Icon](https://i.imgur.com/MN2mqZv.png)
 
-![](https://i.imgur.com/8ohnLnY.gif)
+![Demo Creating Report](https://i.imgur.com/8ohnLnY.gif)
 
 ___ 
 
