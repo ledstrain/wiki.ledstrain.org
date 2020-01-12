@@ -41,7 +41,7 @@ One of the two ways to add illumination to a screen. In this case, this illumina
 
 ## PWM
 
-* [Guide](guide#pwm)
+* [Guide](guides#pwm)
 * https://laptopmedia.com/tag/pwm
 * https://www.tftcentral.co.uk/articles/pulse_width_modulation.htm
 
