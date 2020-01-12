@@ -18,3 +18,13 @@
 <noscript><p><img src="https://track.xyzz.work/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 {{ end }}
+
+<script async type="text/javascript">
+  function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for (var i=0; i<imgDefer.length; i++) {
+    if(imgDefer[i].getAttribute('data-src')) {
+    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+    } } }
+    window.onload = init;
+</script>
