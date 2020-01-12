@@ -37,6 +37,7 @@ jobs:
       env:
         RUNNER_TMPDIR: ${{ runner.temp }}
         HUGO_RELATIVEURLS: true
+        HUGO_ENVIRONMENT: "testing"
       run: |
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
         bash 'htmltest.sh'
