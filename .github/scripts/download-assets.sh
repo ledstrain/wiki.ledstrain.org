@@ -2,7 +2,13 @@
 
 # Matomo Api key == ${MATOMO_API}
 
-assets_dir="assets/files/stats"
+if [ "${BUILD}" == "SOURCE" ]; then
+  basedir="assets"
+elif [ "${BUILD}" == "COMPILED" ]; then
+    basedir="$(pwd)"
+fi
+
+assets_dir="${basedir}/files/stats"
 
 mkdir -p "${assets_dir}"/img
 # LEDStrain Forum
