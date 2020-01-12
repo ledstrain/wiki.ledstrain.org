@@ -16,7 +16,7 @@ jobs:
         BUILD: "COMPILED"
       run: |
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
-        bash './download-assets.sh'
+        bash './download-assets.sh' 'public'
                                                                                         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
