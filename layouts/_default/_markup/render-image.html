@@ -1,3 +1,7 @@
 <p class="md__image">
-  <img src="{{ .Destination | safeURL }}" alt="lala{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+  <img 
+    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+    data-src="{{ .Destination | safeURL }}" 
+    alt="{{ .Text }}" {{ with .Title}} 
+    title="{{ . }}"{{ end }} />
 </p>
