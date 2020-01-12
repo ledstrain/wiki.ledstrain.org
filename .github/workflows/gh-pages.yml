@@ -27,15 +27,15 @@ jobs:
         restore-keys: |
           hugo-${{ steps.current-month.outputs.month }}
           hugo-
-    - name: Cache htmltest 
-      id: cache-html-assets
-      uses: actions/cache@v1
-      with:
-        path: "tmp/.htmltest"
-        key: ${{ runner.os }}-htmltest-${{ hashfiles('**/refcache.json') }}
-        restore-keys: |
-          ${{ runner.os }}-htmltest-
-          -htmltest-
+#    - name: Cache htmltest 
+#      id: cache-html-assets
+#      uses: actions/cache@v1
+#      with:
+#        path: "tmp/.htmltest"
+#        key: ${{ runner.os }}-htmltest-${{ hashfiles('**/refcache.json') }}
+#        restore-keys: |
+#          ${{ runner.os }}-htmltest-
+#          -htmltest-
 
 # Disabled pending https://github.com/actions/cache/issues/106
 #    - name: Cache Hugo Assets
