@@ -3,6 +3,8 @@
 # Matomo Api key == ${MATOMO_API}
 
 assets_dir="assets/files/stats"
+
+mkdir -p "${assets_dir}"/img
 # LEDStrain Forum
 wget "${MATOMO_BASEURL}""module=API&method=ImageGraph.get&idSite=3&apiModule=VisitsSummary&apiAction=get&token_auth=${MATOMO_API}&graphType=evolution&period=day&date=previous30&width=800&height=400" -O "${assets_dir}/img/03_visits_summary.png"
 wget "${MATOMO_BASEURL}""module=API&method=ImageGraph.get&idSite=3&apiModule=UserCountry&apiAction=getCountry&token_auth=${MATOMO_API}&graphType=horizontalBar&period=month&date=today&width=800&height=400" -O "${assets_dir}/img/03_visits_country.png"
