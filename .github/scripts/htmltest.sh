@@ -1,7 +1,7 @@
 #!/bin/bash
 
-testDir="${TMPDIR}"/hugo-htmltest
-configFile="${TMPDIR}"/.htmltest.yml
+testDir="${RUNNER_TMPDIR}"/hugo-htmltest
+configFile="${RUNNER_TMPDIR}"/.htmltest.yml
 
 hugo -d "${testDir}"
 
