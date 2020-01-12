@@ -1,0 +1,32 @@
+name: pull-request
+
+on: 
+  pull_request:
+    branches:
+      master
+
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+        fetch-depth: 1
+        
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Test Broken Links
+      env:
+        HUGO_RELATIVEURLS: true
+      run: |
+        hugo -d 'linkcheck'
+        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
+        bash 'htmltest.sh'
