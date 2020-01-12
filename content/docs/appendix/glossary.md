@@ -21,7 +21,7 @@ Dithering technique used by Nvidia and Ati to create more million colours to sho
 
 ## Dithering
 
-* [Tests](/docs/appendix/tests.md#dithering)
+* [Tests](tests#dithering)
 
 ### Temporal Dithering
 
@@ -41,7 +41,7 @@ One of the two ways to add illumination to a screen. In this case, this illumina
 
 ## PWM
 
-* [Guide](/docs/guide.md#pwm)
+* [Guide](guide#pwm)
 * https://laptopmedia.com/tag/pwm
 * https://www.tftcentral.co.uk/articles/pulse_width_modulation.htm
 
