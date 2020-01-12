@@ -52,9 +52,17 @@ jobs:
         hugo-version: 'latest'
         extended: true
 
+    - name: Test Broken Links
+      env:
+        HUGO_RELATIVEURLS: true
+      run: |
+        hugo -d 'linkcheck'
+        curl https://htmltest.wjdp.uk | bash
+        bash './bin/htmltest --skip-external ./linkcheck'
+      
     - name: Build
       run: hugo
-                                                                                
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
