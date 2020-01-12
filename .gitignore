@@ -23,5 +23,6 @@ dist
 vendor/
 _gen/
 public/
+tmp/
 
 _temp/wiki.ledstrain.org/filecache/getjson/
