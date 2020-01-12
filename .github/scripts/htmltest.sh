@@ -1,6 +1,6 @@
 #!/bin/bash
 
-testDir="${TMPDIR}"/htmltest
+testDir="${TMPDIR}"/hugo-htmltest
 configFile="${TMPDIR}"/.htmltest.yml
 
 hugo -d "${testDir}"
