@@ -35,8 +35,8 @@ jobs:
 
     - name: Test Broken Links
       env:
+        TMPDIR: ${{ runner.temp }}
         HUGO_RELATIVEURLS: true
       run: |
-        hugo -d 'linkcheck'
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
         bash 'htmltest.sh'
