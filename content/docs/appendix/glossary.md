@@ -8,7 +8,7 @@ weight: 2
 ---
 
 ## Backlight 
-One of the two ways to illuminate a screen. This kind of illumination is the one present on 100% of screens (excluding eInk screens). See [Frontlight]({{< relref "#frontlight" >}}) to know about the alternative illumination.
+One of the two ways to illuminate a screen. This kind of illumination is the one present on 100% of screens (excluding eInk screens). See [Frontlight](#frontlight) to know about the alternative illumination.
 
 ## Blue light
 One of the colours protected off from a screen with backlight, which has a spectrum of light that affects us in a different way than the other colours. In the last years it started to become a concern for people who work all day with a computer and appeared special glasses to block it, as it stimulates some brain activity after a few hours of use, provoking difficulty to sleep, plus other effects.
@@ -21,7 +21,7 @@ Dithering technique used by Nvidia and Ati to create more million colours to sho
 
 ## Dithering
 
-* [Tests]({{< relref "tests#dithering" >}})
+* [Tests](tests#dithering)
 
 ### Temporal Dithering
 
@@ -41,7 +41,7 @@ One of the two ways to add illumination to a screen. In this case, this illumina
 
 ## PWM
 
-* [Guide]({{< relref "guide#pwm" >}})
+* [Guide](guide#pwm)
 * https://laptopmedia.com/tag/pwm
 * https://www.tftcentral.co.uk/articles/pulse_width_modulation.htm
 
