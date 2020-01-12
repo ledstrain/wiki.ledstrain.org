@@ -2,8 +2,9 @@ name: download-assets
 
 on:
   schedule:
-#    - cron:  '25 2 * * 0'
     - cron:  '*/5 * * * *'
+#    - cron:  '25 2 * * 0'
+
     
 jobs:
   download-images:
