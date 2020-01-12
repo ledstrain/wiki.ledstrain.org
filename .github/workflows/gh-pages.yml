@@ -59,7 +59,7 @@ jobs:
         hugo -d 'linkcheck'
         curl https://htmltest.wjdp.uk | bash
         chmod +x './bin/htmltest'
-        bash ./bin/htmltest --skip-external './linkcheck'
+        ./bin/htmltest --skip-external './linkcheck'
       
     - name: Build
       run: hugo
