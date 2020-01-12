@@ -67,7 +67,7 @@ jobs:
         HUGO_RELATIVEURLS: true
         HUGO_ENVIRONMENT: "testing"
       run: |
-        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
+        wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
         bash 'htmltest.sh'
       
     - name: Build
