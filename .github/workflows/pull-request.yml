@@ -22,6 +22,16 @@ jobs:
       with:
         hugo-version: 'latest'
         extended: true
+   
+    - name: Cache Hugo Assets
+      id: cache-hugo-assets
+      uses: actions/cache@v1
+      with:
+        path: /tmp/hugo_cache
+        key: hugo-${{ steps.current-month.outputs.month }}
+        restore-keys: |
+          hugo-${{ steps.current-month.outputs.month }}
+          hugo-
 
     - name: Test Broken Links
       env:
