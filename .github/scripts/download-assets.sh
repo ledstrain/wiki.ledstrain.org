@@ -2,11 +2,7 @@
 
 # Matomo Api key == ${MATOMO_API}
 
-if [ "${BUILD}" == "SOURCE" ]; then
-  basedir="assets"
-elif [ "${BUILD}" == "COMPILED" ]; then
-    basedir="public"
-fi
+basedir="$1"
 
 stats_assets_dir="${basedir}/files/stats"
 
