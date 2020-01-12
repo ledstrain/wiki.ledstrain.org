@@ -12,7 +12,7 @@ Interested in contributing? [See below](#contributing)
 
 #### What is LEDStrain?
 
-The [Forum](https://ledstrain.org/), [Wiki](#) and [Chat](https://ledstrain.zulipchat.com/) are all here to help with the impact electrical devices have on our health.  
+The [Forum](https://ledstrain.org/), Wiki and [Chat](https://ledstrain.zulipchat.com/) are all here to help with the impact electrical devices have on our health.  
 All are free to use and are community based!  
 
 
