@@ -57,6 +57,7 @@ jobs:
         HUGO_RELATIVEURLS: true
       run: |
         hugo -d 'linkcheck'
+        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/config/htmltest.yml' -O .htmltest.yml
         curl https://htmltest.wjdp.uk | bash
         chmod +x './bin/htmltest'
         ./bin/htmltest --skip-external './linkcheck'
