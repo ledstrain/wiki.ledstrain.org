@@ -1,7 +1,11 @@
 {{ $img := resources.GetMatch (.Get 0)}}
 {{ if $img }}
 <figure>
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Get 1 }}" />
+    <img 
+        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+        data-src="{{ $img.RelPermalink }}" 
+        alt="{{ .Get 1 }}" 
+        />
     <figcaption>{{ .Get 1 }}</figcaption>
 </figure>
 {{ else }}

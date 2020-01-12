@@ -73,7 +73,7 @@ bookToc: 2
 
 ### OnePlus 7
 
-![](https://www.xda-developers.com/files/2019/05/OnePlus-7-Pro-OxygenOS-9-Display-Settings-11.jpg)
+![OnePlus7](https://www.xda-developers.com/files/2019/05/OnePlus-7-Pro-OxygenOS-9-Display-Settings-11.jpg)
 
 
 ## Nokia

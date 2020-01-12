@@ -25,7 +25,7 @@ ___
 LED Strain takes on a minimalist approach to posting. 
 However, there are some tools available to creating your posts, available in a toolbar.
 
-![](https://i.imgur.com/dlwc0rb.png)
+![Text Editor GUI](https://i.imgur.com/dlwc0rb.png)
 {{< bootstrap-table >}}
 |Function|Action|Key|
 |:-|:-|:-:|

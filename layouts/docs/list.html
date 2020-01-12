@@ -15,7 +15,7 @@
 <article class="markdown">
   {{/* Create permalink for each header */}}
   {{- with .Content -}}
-      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
+      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> 🔗</a> ${3}` | safeHTML }}
   {{- end -}}
 </article>
 {{ end }}

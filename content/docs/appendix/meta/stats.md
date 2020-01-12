@@ -42,7 +42,7 @@ For example, visitor logs.
 {{< /hint >}}
 
 
-### Resources:
+### Resources
 
 * [Matomo API](https://developer.matomo.org/api-reference/reporting-api-metadata#static-image-graphs)
 * [Google Search Console API](https://developers.google.com/webmaster-tools/search-console-api-original/v3/how-tos/search_analytics.html)

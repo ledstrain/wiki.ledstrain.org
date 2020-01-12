@@ -19,7 +19,7 @@ jobs:
       run: echo "::set-output name=month::$(date '+%m')"
 
     - name: Cache Hugo Assets
-      id: cache-assets
+      id: cache-hugo-assets
       uses: actions/cache@v1
       with:
         path: /tmp/hugo_cache
@@ -27,6 +27,15 @@ jobs:
         restore-keys: |
           hugo-${{ steps.current-month.outputs.month }}
           hugo-
+#    - name: Cache htmltest 
+#      id: cache-html-assets
+#      uses: actions/cache@v1
+#      with:
+#        path: "tmp/.htmltest"
+#        key: ${{ runner.os }}-htmltest-${{ hashfiles('**/refcache.json') }}
+#        restore-keys: |
+#          ${{ runner.os }}-htmltest-
+#          -htmltest-
 
 # Disabled pending https://github.com/actions/cache/issues/106
 #    - name: Cache Hugo Assets
@@ -41,9 +50,10 @@ jobs:
       env:
         MATOMO_API: ${{ secrets.MATOMO_API }}
         MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
+        BUILD: "SOURCE"
       run: |
         wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
-        bash './download-assets.sh'
+        bash './download-assets.sh' 'assets'
     
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -51,9 +61,17 @@ jobs:
         hugo-version: 'latest'
         extended: true
 
+    - name: Test Broken Links
+      env:
+        HUGO_RELATIVEURLS: true
+      run: |
+        hugo -d 'linkcheck'
+        wget 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
+        bash 'htmltest.sh'
+      
     - name: Build
-      run: hugo
-                                                                                
+      run: hugo --minify
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
