@@ -5,7 +5,7 @@
 if [ "${BUILD}" == "SOURCE" ]; then
   basedir="assets"
 elif [ "${BUILD}" == "COMPILED" ]; then
-    basedir="$(pwd)"
+    basedir="public"
 fi
 
 assets_dir="${basedir}/files/stats"
