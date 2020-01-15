@@ -51,9 +51,7 @@ jobs:
         MATOMO_API: ${{ secrets.MATOMO_API }}
         MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
         BUILD: "SOURCE"
-      run: |
-        wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
-        bash './download-assets.sh' 'assets'
+      run: bash '.github/scripts/download-assets.sh' 'assets'
     
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -75,9 +73,7 @@ jobs:
       env:
         RUNNER_TMPDIR: ${{ runner.temp }}
         TESTDIR: ${{ runner.temp }}/publicTesting
-      run: |
-        wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
-        bash 'htmltest.sh'
+      run: bash '.github/scripts/htmltest.sh'
         
 #    - name: Spellcheck Action
 #      uses: rojopolis/spellcheck-github-actions@0.2.0
