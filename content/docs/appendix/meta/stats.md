@@ -40,7 +40,7 @@ or as a [wiki issue](https://github.com/ledstrain/wiki.ledstrain.org/issues).
 {{< hint info >}}
 User privacy is important!
 API requests that provides too much information about specific visitors will not be added.  
-For example, visitor logs.
+For example, visitor logs, .
 {{< /hint >}}
 
 
@@ -50,3 +50,22 @@ For example, visitor logs.
 * [Google Search Console API](https://developers.google.com/webmaster-tools/search-console-api-original/v3/how-tos/search_analytics.html)
 * [Query to JSON](https://tools.knowledgewalls.com/querystringtojson)
 * [Json to Query](https://tools.knowledgewalls.com/jsontoquerystring)
+
+
+## User Privacy
+
+LEDStrain respects user privacy and data is anonymized on collection. 
+Data is collected to help pursue the mission of LEDStrain, as well as identifying
+its impact. 
+
+#### What is collected?
+
+Information [revealed to every website](https://panopticlick.eff.org/) is collected.  
+Additionally, [see here](https://matomo.org/faq/general/faq_18254/) for additional
+information matomo collects.  
+Personally identifying information such as a ip address or username is either 
+anonymized or not collected.
+
+#### Do Not Track
+
+LEDStrain respects Do Not Track
