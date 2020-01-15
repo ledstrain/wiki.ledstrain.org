@@ -1,0 +1,7 @@
+matrix:
+- name: Testing output | html
+  pipeline:
+  - pyspelling.filters.html:
+  sources:
+  - 'publicTesting/*.html'
+  default_encoding: utf-8
