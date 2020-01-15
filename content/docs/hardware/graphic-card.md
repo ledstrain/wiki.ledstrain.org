@@ -7,4 +7,4 @@ weight: 7
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/graphic-card?sort=top)
