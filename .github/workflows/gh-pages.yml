@@ -46,29 +46,37 @@ jobs:
 #        key: hugo-${{ hashfiles('**/filecache/**') }}
 #        restore-keys: hugo-
     
-    - name: Stats
-      env:
-        MATOMO_API: ${{ secrets.MATOMO_API }}
-        MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
-        BUILD: "SOURCE"
-      run: |
-        wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/download-assets.sh'
-        bash './download-assets.sh' 'assets'
-    
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
         extended: true
+        
+        
+    - name: Build Hugo Testing
+      env:
+        RUNNER_TMPDIR: ${{ runner.temp }}
+        TESTDIR: ${{ runner.temp }}/publicTesting
+        HUGO_ENVIRONMENT: "testing"
+        HUGO_RELATIVEURLS: true
+      run: |
+        hugo -d $TESTDIR
 
     - name: Test Broken Links
       env:
         RUNNER_TMPDIR: ${{ runner.temp }}
-        HUGO_RELATIVEURLS: true
-        HUGO_ENVIRONMENT: "testing"
-      run: |
-        wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
-        bash 'htmltest.sh'
+        TESTDIR: ${{ runner.temp }}/publicTesting
+      run: bash '.github/scripts/htmltest.sh'
+        
+#    - name: Spellcheck Action
+#      uses: rojopolis/spellcheck-github-actions@0.2.0
+
+    - name: Stats
+      env:
+        MATOMO_API: ${{ secrets.MATOMO_API }}
+        MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
+        BUILD: "SOURCE"
+      run: bash '.github/scripts/download-assets.sh' 'assets'
       
     - name: Build
       run: hugo --minify

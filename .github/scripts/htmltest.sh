@@ -1,9 +1,7 @@
 #!/bin/bash
 
-testDir="${RUNNER_TMPDIR}"/hugo-htmltest
+testDir="${TESTDIR}"
 configFile="${RUNNER_TMPDIR}"/.htmltest.yml
-
-hugo -d "${testDir}"
 
 wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/config/htmltest.yml' -O "${configFile}"
 curl https://htmltest.wjdp.uk | bash
