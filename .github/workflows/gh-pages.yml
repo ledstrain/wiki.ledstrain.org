@@ -55,16 +55,13 @@ jobs:
         
     - name: Build Hugo Testing
       env:
-        RUNNER_TMPDIR: ${{ runner.temp }}
         TESTDIR: ${{ runner.temp }}/publicTesting
         HUGO_ENVIRONMENT: "testing"
         HUGO_RELATIVEURLS: true
-      run: |
-        hugo -d $TESTDIR
+      run: hugo -d $TESTDIR
 
     - name: Test Broken Links
       env:
-        RUNNER_TMPDIR: ${{ runner.temp }}
         TESTDIR: ${{ runner.temp }}/publicTesting
       run: bash '.github/scripts/htmltest.sh'
         
