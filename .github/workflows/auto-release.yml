@@ -1,0 +1,36 @@
+name: Create Release
+on:
+  schedule:
+    - cron:  '0 0 1 * *'
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Get current date
+        id: current-date
+        run: |
+          echo "::set-output name=date-slug::$(date '+%m-%d-%Y')"
+          echo "::set-output name=date-long::$(date '+%B %d, %Y')"
+          echo "::set-output name=date-slug-last-month::$(date -d "today -1 month" "+%m-%d-%Y")"
+          echo "::set-output name=date-long-last-month::$(date -d "today -1 month" "+%B %d, %Y")"
+          
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: V-${{ steps.current-date.outputs.date-slug }}
+          release_name: ${{ steps.current-date.outputs.date-long }} Release
+          body: |
+            What changed?
+            See the changes from the last month here
+            [${{ steps.current-date.outputs.date-long-last-month }} updated to ${{ steps.current-date.outputs.date-long }}](https://github.com/ledstrain/wiki.ledstrain.org/compare/V-${{ steps.current-date.outputs.date-slug }}...V-${{ steps.current-date.outputs.date-slug-last-month }})
+          draft: false
+          prerelease: false
