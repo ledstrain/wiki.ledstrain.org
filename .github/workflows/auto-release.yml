@@ -1,5 +1,7 @@
 name: Create Release
 on:
+  push:
+    branches: master
   schedule:
     - cron:  '0 0 1 * *'
 
@@ -32,5 +34,38 @@ jobs:
             What changed?
             See the changes from the last month here
             [${{ steps.current-date.outputs.date-long-last-month }} updated to ${{ steps.current-date.outputs.date-long }}](https://github.com/ledstrain/wiki.ledstrain.org/compare/V-${{ steps.current-date.outputs.date-slug }}...V-${{ steps.current-date.outputs.date-slug-last-month }})
-          draft: false
+          draft: true
           prerelease: false
+
+      - name: Archive source of site
+        run: |
+          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}-source.zip ./
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+        
+      - name: Archive compiled site
+        run: |
+          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip ./
+          
+      - name: Upload Source Asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}-source.zip
+          asset_name: V-${{ steps.current-date.outputs.date-slug }}-source.zip
+          asset_content_type: application/zip
+
+      - name: Upload Compiled Asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip
+          asset_name: V-${{ steps.current-date.outputs.date-slug }}.zip
+          asset_content_type: application/zip
