@@ -1,1 +1,3 @@
 IgnoreAltMissing: false
+EnforceHTML5: true
+EnforceHTTPS: true
