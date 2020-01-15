@@ -60,12 +60,21 @@ jobs:
       with:
         hugo-version: 'latest'
         extended: true
+        
+        
+    - name: Setup Hugo Testing
+      env:
+        RUNNER_TMPDIR: ${{ runner.temp }}
+        TESTDIR: ${{ runner.temp }}/publicTesting
+        HUGO_ENVIRONMENT: "testing"
+        HUGO_RELATIVEURLS: true
+      run: |
+        hugo -d $TESTDIR
 
     - name: Test Broken Links
       env:
         RUNNER_TMPDIR: ${{ runner.temp }}
-        HUGO_RELATIVEURLS: true
-        HUGO_ENVIRONMENT: "testing"
+        TESTDIR: ${{ runner.temp }}/publicTesting
       run: |
         wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
         bash 'htmltest.sh'
