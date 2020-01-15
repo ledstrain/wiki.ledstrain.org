@@ -1,7 +1,5 @@
 name: Create Release
 on:
-  push:
-    branches: master
   schedule:
     - cron:  '0 0 1 * *'
 
@@ -34,7 +32,7 @@ jobs:
             What changed?
             See the changes from the last month here
             [${{ steps.current-date.outputs.date-long-last-month }} updated to ${{ steps.current-date.outputs.date-long }}](https://github.com/ledstrain/wiki.ledstrain.org/compare/V-${{ steps.current-date.outputs.date-slug }}...V-${{ steps.current-date.outputs.date-slug-last-month }})
-          draft: true
+          draft: false
           prerelease: false
 
       - name: Archive source of site
