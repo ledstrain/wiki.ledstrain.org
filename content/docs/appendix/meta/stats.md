@@ -34,6 +34,8 @@ Post the link formatted per the API (here's a [demo one](https://demo.matomo.org
 * The data must be accessible through a `wget` or `curl` command. 
 * If a api-key is used, `anonymous` or a similar value can be used indicate it should be replaced by the api-key (eg `$apikey`)
 * The result should be a image, json or csv file. Ideally a PNG image format or a JSON file.
+* Post the link and what it does on the [forum](https://ledstrain.org/d/803-statistics-metrics) 
+or as a [wiki issue](https://github.com/ledstrain/wiki.ledstrain.org/issues).
 
 {{< hint info >}}
 User privacy is important!
