@@ -46,13 +46,6 @@ jobs:
 #        key: hugo-${{ hashfiles('**/filecache/**') }}
 #        restore-keys: hugo-
     
-    - name: Stats
-      env:
-        MATOMO_API: ${{ secrets.MATOMO_API }}
-        MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
-        BUILD: "SOURCE"
-      run: bash '.github/scripts/download-assets.sh' 'assets'
-    
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
@@ -78,6 +71,12 @@ jobs:
 #    - name: Spellcheck Action
 #      uses: rojopolis/spellcheck-github-actions@0.2.0
 
+    - name: Stats
+      env:
+        MATOMO_API: ${{ secrets.MATOMO_API }}
+        MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
+        BUILD: "SOURCE"
+      run: bash '.github/scripts/download-assets.sh' 'assets'
       
     - name: Build
       run: hugo --minify
