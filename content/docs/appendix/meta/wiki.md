@@ -88,13 +88,26 @@ Additionally, this site supports shortcodes.
 
 #### Forum Post Embed
 
-Posts for LEDStrain Forum can be embedded  
-`length="-1"` will show the entire post, regardless of length  
-Posts are cached, so changes to the original comment will be updated over time  
-
-Either format can be used
+Posts on LEDStrain Forum can be embedded. Posts are cached, so changes to the 
+original will be updated over time.  
+Either format can be used to identify which post:
 * Post ID: `11714`
 * Permalink: `https://ledstrain.org/d/795-community-wiki/1`
+
+Length can be specififed to truncate content. {{< param "postlength" >}} is the default.  
+length of `-1` will show the entire post, regardless of length.  
+
+A domain can be specified, which can allow embedding content from other flarum
+based forums. This is primarily useful with using Post ID.
+
+{{< hint warning >}}
+Positional arguments can be used, but cannot be combined with labeled arguments  
+For example, this will work:
+`{{</* forum-post 11714 */>}}`  
+This will not:
+`{{</* forum-post 11714 length=300 */>}}`
+{{< /hint >}}
+
 ```
 {{</* forum-post 11714  */>}}
 {{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}
