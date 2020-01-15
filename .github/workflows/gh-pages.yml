@@ -79,8 +79,8 @@ jobs:
         wget --no-verbose 'https://raw.githubusercontent.com/ledstrain/wiki.ledstrain.org/master/.github/scripts/htmltest.sh'
         bash 'htmltest.sh'
         
-    - name: Spellcheck Action
-      uses: rojopolis/spellcheck-github-actions@0.2.0
+#    - name: Spellcheck Action
+#      uses: rojopolis/spellcheck-github-actions@0.2.0
 
       
     - name: Build
