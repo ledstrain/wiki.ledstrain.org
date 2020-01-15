@@ -16,16 +16,14 @@ jobs:
       with:
         submodules: true
         fetch-depth: 1
-        
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+
+    - name: Build Hugo Testing
+      env:
+        HUGO_ENVIRONMENT: "testing"
+        HUGO_RELATIVEURLS: true
+      run: hugo -d "${{ runner.temp }}/publicTesting"
 
     - name: Test Broken Links
       env:
-        RUNNER_TMPDIR: ${{ runner.temp }}
-        HUGO_RELATIVEURLS: true
-        HUGO_ENVIRONMENT: "testing"
+        TESTDIR: "${{ runner.temp }}/publicTesting"
       run: bash '.github/scripts/htmltest.sh'
