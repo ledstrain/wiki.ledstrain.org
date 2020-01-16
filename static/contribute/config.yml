@@ -12,6 +12,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Pages" # Used in the UI, ie.: "New Post"
     folder: "content/docs" # The path to the folder where the documents are stored
+    path: "dir1/dir2"
     extension: "md"
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
