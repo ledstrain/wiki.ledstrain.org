@@ -6,5 +6,5 @@ weight: 2
 # bookHidden: false
 ---
 
-### Reference Links                                                              
+## Reference Links                                                              
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)

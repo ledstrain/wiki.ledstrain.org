@@ -1,5 +1,6 @@
 ---
 title: "Phone"
+slug: phone
 weight: 2
 # bookFlatSection: false
 bookToc: 2
@@ -7,7 +8,7 @@ bookToc: 2
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
 

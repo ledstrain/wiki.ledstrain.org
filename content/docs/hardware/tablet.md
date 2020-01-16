@@ -1,5 +1,6 @@
 ---
 title: "Tablet"
+slug: tablet
 weight: 6
 # bookFlatSection: false
 # bookToc: 6
@@ -7,4 +8,4 @@ weight: 6
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)

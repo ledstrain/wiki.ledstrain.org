@@ -1,5 +1,6 @@
 ---
 title: "E-Reader"
+slug: e-reader
 weight: 3
 # bookFlatSection: false
 # bookToc: 6
@@ -7,4 +8,4 @@ weight: 3
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)

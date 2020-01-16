@@ -1,5 +1,6 @@
 ---
 title: "Misc"
+slug: misc
 weight: 10
 # bookFlatSection: false
 # bookToc: 6

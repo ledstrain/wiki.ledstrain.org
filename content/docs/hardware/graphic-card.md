@@ -1,5 +1,6 @@
 ---
 title: "Graphic Card"
+slug: graphic-card
 weight: 7
 # bookFlatSection: false
 # bookToc: 6
@@ -7,4 +8,4 @@ weight: 7
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/graphic-card?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)

@@ -1,5 +1,6 @@
 ---
 title: "Television"
+slug: tv
 weight: 5
 # bookFlatSection: false
 # bookToc: 6
@@ -7,4 +8,4 @@ weight: 5
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)

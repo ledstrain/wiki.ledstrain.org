@@ -1,9 +1,8 @@
-## [LED Strain Wiki](https://wiki.ledstrain.org)
+## [LEDStrain Wiki](https://wiki.ledstrain.org)
 
 Github Pages Build Status  
 [![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org/actions)
 
 The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io/) with the [Book](https://themes.gohugo.io/hugo-book/) theme.
 
-[How to contribute?](https://wiki.ledstrain.org/docs/appendix/meta/wiki/#contributing)
-
+[How can I contribute?](https://wiki.ledstrain.org/docs/appendix/meta/wiki/#contributing)

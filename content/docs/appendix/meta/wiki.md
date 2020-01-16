@@ -46,7 +46,8 @@ Note: be sure to set the status to `In Review` after saving. This causes a chang
 {{< /expand >}}
 
 #### Direct GitHub Edit
-On every page you can click on ![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg) `Edit this page`  
+![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg)
+At the top and bottom of every page you can click on the edit icon to edit that page
 This will bring you to the source file on GitHub and you can make your changes there.
 
 #### Clone Repo

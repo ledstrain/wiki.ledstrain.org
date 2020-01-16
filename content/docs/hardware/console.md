@@ -1,5 +1,6 @@
 ---
 title: "Console"
+slug: console
 weight: 8
 # bookFlatSection: false
 # bookToc: 6
@@ -7,7 +8,7 @@ weight: 8
 ---
 
 ## Reference Links
-* [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
 
 ## Xbox
 
