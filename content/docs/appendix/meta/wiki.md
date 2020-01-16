@@ -26,19 +26,17 @@ weight: 6
 ## Contributing
 
 Contributing is easy!  
+Menu's and Table of Content's are generated automatically
 
 There are three ways,
 * Using a front-end editor (similar to WordPress)
 * Directly editing on GitHub
 * Cloning the repo and making pull requests
 
+
 ### Editing
 
 #### Front End
-
-{{< hint danger >}}
-Currently not functioning - [Issue](https://github.com/ledstrain/wiki.ledstrain.org/issues/11)
-{{< /hint >}}
 
 Go to https://wiki.ledstrain.org/contribute and login with GitHub.   
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
