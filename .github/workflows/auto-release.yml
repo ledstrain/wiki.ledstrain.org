@@ -44,9 +44,9 @@ jobs:
         with:
           ref: gh-pages
         
-      - name: Archive compiled site
+      - name: Archive docs of compiled site
         run: |
-          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip ./
+          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip docs/
           
       - name: Upload Source Asset
         uses: actions/upload-release-asset@v1.0.1
