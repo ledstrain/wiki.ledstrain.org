@@ -28,14 +28,14 @@ weight: 5
 
 ## Issues
 
-### HTTP Redirects
+#### HTTP Redirects
 {{< forum-post 11584 >}}
 {{< forum-post 11381 >}}
 
 #### Resolution
 {{< forum-post 11604 >}}
 
-### You do not have permission to do that
+#### You do not have permission to do that
 {{< forum-post 10967 >}}
 
 #### Resolution
