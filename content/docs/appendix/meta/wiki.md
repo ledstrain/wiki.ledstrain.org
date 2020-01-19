@@ -55,11 +55,11 @@ You will need:
 * Hugo Extended {{< hugo-version >}} - [link](https://github.com/gohugoio/hugo/releases/tag/v{{< hugo-version >}})
 * Git
 
-Clone the repo, and start the hugo server.
-
-```
-git clone {{< param BookRepo >}}
-cd wiki.ledstrain.org
+Clone the repo and its submodules, then start the hugo server.                  
+                                                                                
+```                                                                             
+git clone --recurse-submodules {{< param BookRepo >}}                           
+cd wiki.ledstrain.org                                                           
 hugo serve -wD
 ```
 
