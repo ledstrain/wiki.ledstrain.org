@@ -5,7 +5,7 @@
 {{/* Usage: {{-< forum-post "555" domain="https://domain.tld/" >-}} */}}
 {{/* Usage: {{-< forum-post id="https://domain.tld/d/802-discussion-title/2" length="300">-}} */}}
 
-{{- $defaultDomain := "https://ledstrain.org" -}}
+{{- $defaultDomain := .Site.Params.flarumUrl -}}
 
 {{/* Use scratch for dealing with scope */}}
 {{- $scratch := newScratch -}}

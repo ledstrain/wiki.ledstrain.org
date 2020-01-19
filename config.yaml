@@ -69,8 +69,13 @@ params:
   BookSearch: true
 
   # Shortcode
-  # forum-post
+  # Content after this length will be truncated unless overidden with
+  # length. Length of -1 will show the full post
   postLength: "300"
+
+  # If using post ID's what domain to default to.
+  # Overidden with domain.
+  flarumUrl: https://ledstrain.org
 
 caches:
   getjson: 
