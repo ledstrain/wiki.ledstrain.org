@@ -59,6 +59,8 @@ Clone the repo, and start the hugo server.
 
 ```
 git clone {{< param BookRepo >}}
+git submodule init
+git submodule update
 cd wiki.ledstrain.org
 hugo serve -wD
 ```
