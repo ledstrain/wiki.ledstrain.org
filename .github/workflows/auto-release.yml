@@ -45,7 +45,8 @@ jobs:
 
       - name: Archive source of site
         run: |
-          zip -8 --exclude='*.git*' -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}-source.zip ./
+          cd ${{ github.workspace }}
+          zip -8 --exclude='*.git*' -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}-source.zip ${{ github.repository }}
 
       - name: Get Current Month
         id: current-month
@@ -81,8 +82,9 @@ jobs:
 
       - name: Archive compiled site
         run: |
-          mv public wiki.ledstrain.org
-          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip wiki.ledstrain.org
+          mkdir -p ${{ github.repository }} # -> ledstrain/wiki.ledstrain.org
+          mv public ${{ github.repository }}
+          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip ${{ github.repository }}
           
       - name: Upload Source Asset
         uses: actions/upload-release-asset@v1.0.1
