@@ -1,5 +1,8 @@
 name: Create Release
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron:  '0 0 1 * *'
 
@@ -32,21 +35,50 @@ jobs:
             What changed?
             See the changes from the last month here
             [${{ steps.current-date.outputs.date-long-last-month }} updated to ${{ steps.current-date.outputs.date-long }}](https://github.com/ledstrain/wiki.ledstrain.org/compare/V-${{ steps.current-date.outputs.date-slug }}...V-${{ steps.current-date.outputs.date-slug-last-month }})
-          draft: false
+          draft: true
           prerelease: false
+
+
 
       - name: Archive source of site
         run: |
           zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}-source.zip ./
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v2
+      - name: Get Current Month
+        id: current-month
+        run: echo "::set-output name=month::$(date '+%m')"
+
+      - name: Cache Hugo Assets
+        id: cache-hugo-assets
+        uses: actions/cache@v1
         with:
-          ref: gh-pages
-        
-      - name: Archive docs of compiled site
+          path: /tmp/hugo_cache
+          key: hugo-${{ steps.current-month.outputs.month }}
+          restore-keys: |
+            hugo-${{ steps.current-month.outputs.month }}
+            hugo-
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Stats
+        env:
+          MATOMO_API: ${{ secrets.MATOMO_API }}
+          MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
+          BUILD: "SOURCE"
+        run: bash '.github/scripts/download-assets.sh' 'assets'
+
+      - name: Build Hugo with relative URL for Release asset
+        env:
+          HUGO_RELATIVEURLS: true
+        run: hugo
+
+      - name: Archive compiled site
         run: |
-          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip docs/
+          zip -8 -r ${{ runner.temp }}/V-${{ steps.current-date.outputs.date-slug }}.zip public
           
       - name: Upload Source Asset
         uses: actions/upload-release-asset@v1.0.1
