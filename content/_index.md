@@ -1,5 +1,7 @@
 ---
 title: LEDStrain Wiki
+description: Wiki for LEDStrain
+type: docs
 ---
 
 Welcome to the LEDStrain Wiki!  
