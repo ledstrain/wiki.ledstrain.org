@@ -17,9 +17,10 @@ collections: # A list of collections the CMS should be able to edit
         file: "content/_index.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
           - {label: "Weight", name: "weight", widget: "hidden"}
           - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "type", name: "type", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "FAQ"
         name: "faq"
