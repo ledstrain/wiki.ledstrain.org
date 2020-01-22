@@ -1,7 +1,5 @@
 ---
 title: LEDStrain Wiki
-description: Wiki for LEDStrain
-type: docs
 ---
 
 Welcome to the LEDStrain Wiki!  
@@ -21,7 +19,7 @@ All are free to use and are community based!
 #### Existing Content  
 
 A lot of useful information is available on the [forum](https://ledstrain.org). 
-To make organzing this information easier, selected content can be
+To make organizing this information easier, selected content can be
 [embedded through shortcodes](wiki#forum-post-embed).   
 You can identify existing content with a light blue background. Embedded content has 
 its discussion title and author linked, to allow you to jump into any post on the forum!  
