@@ -66,10 +66,12 @@
     {{- if eq .type "users" -}}
         {{- $scratch.Set "authorID" .attributes.displayName -}}
         {{- $scratch.Set "usernameID" .attributes.username -}}
+        {{- $scratch.Set "authorAvatarUrl" .attributes.avatarUrl -}}
     {{- end -}}
 {{- end -}}
 {{- $forumPostAuthor := $scratch.Get "authorID" -}}
 {{- $forumPostUsername := $scratch.Get "authorID" -}}
+{{- $forumPostAvatarUrl := $scratch.Get "authorAvatarUrl" -}}
 
 {{/* Post Content; truncate if length is set */}}
 {{/* if >= 0, truncate to specified value. If less (-1) do not truncate */}}
