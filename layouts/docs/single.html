@@ -1,17 +1,6 @@
 {{ define "main" }}
-<div class="flex justify-between">
-    <div>
-        <h1>{{ .Title }}</h1>
-    </div>
-{{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
-    <div>
-        <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ replace .File.Path "\\" "/" }}" target="_blank">
-        <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
-        <span class="edit-page">{{ i18n "Edit this page" }}</span>
-        </a>
-    </div>
-{{ end }}
-</div>
+
+<h1>{{ .Title }}</h1>
 <article class="markdown">
   {{/* Create permalink for each header */}}
   {{- with .Content -}}
