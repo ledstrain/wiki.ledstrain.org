@@ -3,7 +3,7 @@ title: LEDStrain Wiki
 description: Wiki for LEDStrain
 type: docs
 ---
-**Test edit please ignore**
+# Test edit please ignore
 
 Welcome to the LEDStrain Wiki!\
 If we have a green badge, the site should be ok!\
@@ -18,8 +18,7 @@ All are free to use and are community based!
 
 #### Existing Content
 
-A lot of useful information is available on the [forum](https://ledstrain.org).  To make organizing this information easier, selected content can be
-[embedded through shortcodes](wiki#forum-post-embed).\
+A lot of useful information is available on the [forum](https://ledstrain.org).  To make organizing this information easier, selected content can be [embedded through shortcodes](wiki#forum-post-embed).\
 You can identify existing content with a light blue background. Embedded content has  its discussion title and author linked, to allow you to jump into any post on the forum!  
 
 {{< forum-post id=11714 length=60 >}}
