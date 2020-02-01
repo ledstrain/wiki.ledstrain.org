@@ -30,7 +30,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: V-${{ steps.current-date.outputs.date-slug }}
-          release_name: ${{ steps.current-date.outputs.date-long }} Release
+          release_name: ${{ steps.current-date.outputs.date-long }} Snapshot
           body: |
             What changed?
             See the changes from the last month here
