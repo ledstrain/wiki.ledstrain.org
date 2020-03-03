@@ -12,7 +12,6 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: true
-        fetch-depth: 20
 
     - name: Get Current Month
       id: current-month
