@@ -1,11 +1,18 @@
-{{/* https://github.com/bep/portable-hugo-links/blob/master/layouts/_default/_markup/render-link.html */}}
+{{/* Original - https://github.com/bep/portable-hugo-links/blob/master/layouts/_default/_markup/render-link.html */}}
+{{/* Use scratch for dealing with scope */}}                                    
+{{- $scratch := newScratch -}}
+
 {{- $link := .Destination -}}
+{{- $scratch.Set "link" $link -}}
+
 {{- $isRemote := strings.HasPrefix $link "http" -}}
 {{- if not $isRemote -}}
-{{- $url := urls.Parse .Destination -}}
-{{- if $url.Path -}}
-{{- $fragment := "" -}}
-{{- with $url.Fragment -}}{{- $fragment = printf "#%s" . -}}{{- end -}}
-{{- with .Page.GetPage $url.Path -}}{{- $link = printf "%s%s" .RelPermalink $fragment -}}{{- end -}}{{- end -}}
+    {{- $url := urls.Parse .Destination -}}
+    {{- if $url.Path -}}
+        {{- $link := relref .Page .Destination -}}
+        {{- $scratch.Set "link" $link -}}
+    {{- end -}}
 {{- end -}}
+{{- $link := $scratch.Get "link" -}}
+
 <a href="{{- $link | safeURL -}}"{{- with .Title}} title="{{- . -}}"{{- end -}}{{- if $isRemote -}} target="_blank"{{- end -}}>{{- .Text | safeHTML -}}</a>
