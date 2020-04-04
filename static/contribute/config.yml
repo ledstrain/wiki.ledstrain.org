@@ -62,6 +62,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Weight", name: "weight", widget: "hidden"}
       - {label: "bookToc", name: "booktoc", widget: "hidden"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "awareness" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Awareness" # Used in the UI, ie.: "New Post"
+    files:
+      - label: "Awareness Page"
+        name: "Awareness"
+        file: "content/docs/awareness.md" # The path to the folder where the documents are stored
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "appendix" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Appendix" # Used in the UI, ie.: "New Post"
     folder: "content/docs/appendix" # The path to the folder where the documents are stored
