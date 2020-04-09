@@ -1,10 +1,16 @@
 {{ $img := resources.GetMatch (.Get 0)}}
 {{ if $img }}
+
+{{ $hackedString := printf "assets/%s" $img.RelPermalink }}
 <figure>
     <img 
         src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
         data-src="{{ $img.RelPermalink }}" 
         alt="{{ .Get 1 }}" 
+        {{ with imageConfig $hackedString }}
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+        {{ end }}
         />
     <figcaption>{{ .Get 1 }}</figcaption>
 </figure>
