@@ -47,7 +47,7 @@ Note: be sure to set the status to `In Review` after saving. This causes a chang
 
 #### Direct GitHub Edit
 ![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg)
-At the top and bottom of every page you can click on the edit icon to edit that page
+At the bottom of every page you can click on the edit icon to edit that page
 This will bring you to the source file on GitHub and you can make your changes there.
 
 #### Clone Repo
@@ -55,11 +55,11 @@ You will need:
 * Hugo Extended {{< hugo-version >}} - [link](https://github.com/gohugoio/hugo/releases/tag/v{{< hugo-version >}})
 * Git
 
-Clone the repo and its submodules, then start the hugo server.                  
-                                                                                
-```                                                                             
-git clone --recurse-submodules {{< param BookRepo >}}                           
-cd wiki.ledstrain.org                                                           
+Clone the repo and its submodules, then start the hugo server.
+
+```
+git clone --recurse-submodules {{< param BookRepo >}}
+cd wiki.ledstrain.org
 hugo serve -wD
 ```
 
@@ -104,7 +104,9 @@ Positional arguments can be used, but cannot be combined with labeled arguments
 For example, this will work:
 `{{</* forum-post 11714 */>}}`  
 This will not:
-`{{</* forum-post 11714 length=300 */>}}`
+`{{</* forum-post 11714 length=300 */>}}`  
+Instead, use this:
+`{{</* forum-post id=11714 length=300 */>}}`
 {{< /hint >}}
 
 ```
