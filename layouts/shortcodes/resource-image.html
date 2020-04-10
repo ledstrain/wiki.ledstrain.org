@@ -1,7 +1,8 @@
-{{ $img := resources.GetMatch (.Get 0)}}
+{{- $img := resources.GetMatch (.Get 0) -}}
+{{- $caption := (.Get 1) -}}
 {{ if $img }}
 
-{{ $hackedString := printf "assets/%s" $img.RelPermalink }}
+{{ $hackedString := printf "assets/%s" $img.Permalink }}
 <figure>
     <img 
         src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
@@ -12,8 +13,10 @@
         width="{{ .Width }}"
         {{ end }}
         />
-    <figcaption>{{ .Get 1 }}</figcaption>
+    {{- if $caption -}}
+    <figcaption>{{ $caption }}</figcaption>
+    {{- end -}}
 </figure>
 {{ else }}
-<p>NO IMAGE MATCH</p>
+<p>NO IMAGE FOUND</p>
 {{ end }}

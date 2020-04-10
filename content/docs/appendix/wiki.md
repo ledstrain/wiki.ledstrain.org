@@ -12,8 +12,8 @@ weight: 6
 {{< bootstrap-table >}}
 |Date|Change|
 |:--|:--|
-|[June 13, 2017](https://ledstrain.org/d/240/5)|Wiki \| Jekyll static site [Deprecated]; Github  repo created|
-|[November 20, 2018](https://ledstrain.org/d/463)|Wiki [Deprecated]|
+|[June 13, 2017](https://ledstrain.org/d/240)|Wiki \| Jekyll static site [Deprecated]; Github  repo created|
+|November 20, 2018|Wiki [Deprecated]|
 |[December 27 2019](https://ledstrain.org/d/795-community-wiki)| Introduce Community Wiki, Github based|
 {{< /bootstrap-table >}}
 
@@ -47,7 +47,7 @@ Note: be sure to set the status to `In Review` after saving. This causes a chang
 
 #### Direct GitHub Edit
 ![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg)
-At the bottom of every page you can click on the edit icon to edit that page
+At the bottom of every page you can click on the edit icon to edit that page  
 This will bring you to the source file on GitHub and you can make your changes there.
 
 #### Clone Repo
