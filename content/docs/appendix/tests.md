@@ -21,7 +21,7 @@ Doesn't occur during the day with sufficent lighting.
 
 Dashboard
 
-![Car Dashboard PWM](https://i.imgur.com/r60k9ZT.gif)
+![Car Dashboard PWM](https://cdn.ledstrain.org/image/car_dashboard_pwm.gif)
 
 Radio
-![Car Radio PWM](https://i.imgur.com/byK71J3.gif)
+![Car Radio PWM](https://cdn.ledstrain.org/image/car_radio_pwm.gif)
