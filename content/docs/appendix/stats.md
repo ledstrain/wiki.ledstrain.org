@@ -1,7 +1,7 @@
 ---
 title: Stats
 description: Stats for LEDStrain
-weight: 1
+weight: 4
 ---
 
 [![download-assets](https://github.com/ledstrain/wiki.ledstrain.org/workflows/download-assets/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org/actions?query=workflow%3Adownload-assets)

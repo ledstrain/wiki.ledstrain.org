@@ -7,4 +7,4 @@ Github Pages Build Status
 
 The LED Strain Wiki uses a static site generator called [Hugo](https://gohugo.io/) with the [Book](https://themes.gohugo.io/hugo-book/) theme.
 
-[How can I contribute?](https://wiki.ledstrain.org/docs/appendix/meta/wiki/#contributing)
+[How can I contribute?](https://wiki.ledstrain.org/docs/appendix/ledstrain/#contributing)
