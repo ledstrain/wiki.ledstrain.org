@@ -16,8 +16,8 @@ weight: 2
 
 ## Installing Paranoid Android on OnePlus 3
 ___
-{{< forum-post 10025 >}}
-{{< forum-post id=10026 length=-1 >}}
+{{< forum-post 10025 >}}  
+{{< forum-post id=10026 length=-1 >}}  
 ___
 
 

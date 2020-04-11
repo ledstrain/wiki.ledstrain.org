@@ -39,10 +39,10 @@ Post the link formatted per the API (here's a [demo one](https://demo.matomo.org
 * Post the link and what it does on the [forum](https://ledstrain.org/d/803-statistics-metrics) 
 or as a [wiki issue](https://github.com/ledstrain/wiki.ledstrain.org/issues).
 
-{{< hint info >}}
+{{< hint info >}}  
 User privacy is important!
 API requests that provides too much information about specific visitors will not be added.  
-For example, visitor logs, .
+For example, visitor logs.  
 {{< /hint >}}
 
 

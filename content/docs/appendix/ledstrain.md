@@ -1,6 +1,6 @@
 ---
 title: "LEDStrain"
-description: meta information of LEDStrain Forum
+description: Information about LEDStrain
 weight: 5
 # bookFlatSection: false
 # bookToc: 6
@@ -12,13 +12,13 @@ weight: 5
 
 ### Changes
 
-{{< bootstrap-table >}}
+{{< bootstrap-table >}}  
 |Date|Change|
 |:--|:--|
 |[June 13, 2017](https://ledstrain.org/d/240)|Wiki \| Jekyll static site [Deprecated]; Github  repo created|
 |November 20, 2018|Wiki [Deprecated]|
 |[December 27 2019](https://ledstrain.org/d/795-community-wiki)| Introduce Community Wiki, Github based|
-{{< /bootstrap-table >}}
+{{< /bootstrap-table >}}  
 
 ### Requests
 
@@ -41,12 +41,12 @@ There are three ways,
 
 ##### Front End
 
-Go to https://wiki.ledstrain.org/contribute and login with GitHub.   
+Go to [/contribute](https://wiki.ledstrain.org/contribute) and login with GitHub.   
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
 
-{{< expand "Set Status" >}}
+{{< expand "Set Status" >}}  
 ![Set Status to In Review](https://cdn.ledstrain.org/image/set_status_to_in_review.png)
-{{< /expand >}}
+{{< /expand >}}  
 
 ##### Direct GitHub Edit
 ![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg)
@@ -102,7 +102,7 @@ length of `-1` will show the entire post, regardless of length.
 A domain can be specified, which can allow embedding content from other flarum
 based forums. This is primarily useful with using Post ID.
 
-{{< hint warning >}}
+{{< hint warning >}}  
 Positional arguments can be used, but cannot be combined with labeled arguments  
 For example, this will work:
 `{{</* forum-post 11714 */>}}`  
@@ -110,15 +110,15 @@ This will not:
 `{{</* forum-post 11714 length=300 */>}}`  
 Instead, use this:
 `{{</* forum-post id=11714 length=300 */>}}`
-{{< /hint >}}
+{{< /hint >}}  
 
 ```
-{{</* forum-post 11714  */>}}
-{{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}
-{{</* forum-post id=11714 length="-1"  */>}}
-{{</* forum-post "https://ledstrain.org/d/795-community-wiki/1"  */>}}
+{{</* forum-post 11714  */>}}  
+{{</* forum-post id=11714 domain="https://ledstrain.org" length="300"  */>}}  
+{{</* forum-post id=11714 length="-1"  */>}}  
+{{</* forum-post "https://ledstrain.org/d/795-community-wiki/1"  */>}}  
 ```
-{{< forum-post 11714  >}}
+{{< forum-post 11714  >}}  
 
 
 Extra shortcodes
@@ -130,11 +130,11 @@ ___
 Hint shortcode can be used as hint/alerts/notification block. There are 3 colors to choose: `info`, `warning` and `danger`.
 
 ```tpl
-{{</* hint [info|warning|danger] */>}}
+{{</* hint [info|warning|danger] */>}}  
 **Markdown content**  
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{</* /hint */>}}
+{{</* /hint */>}}  
 ```
 
 ##### Buttons
@@ -190,7 +190,7 @@ Provides clickable panel that show extra hidden content.
 
 ### Changes
 
-{{< bootstrap-table >}}
+{{< bootstrap-table >}}  
 |Date|Change|
 |:--|:--|
 |[August 19, 2015](https://discussions.apple.com/thread/1677617?answerId=28757594022#28757594022)|LED focused forum conceptualized|
@@ -203,7 +203,7 @@ Provides clickable panel that show extra hidden content.
 |[July 27, 2019](https://ledstrain.org/d/151/24)|[Tutorial](https://ledstrain.org/d/715-forum-tutorial) added; [Donations](https://donorbox.org/ledstrain) added
 |[Sept 24, 2019](https://ledstrain.zulipchat.com/#narrow/stream/205604-meta/topic/Forum.20Update.20-.20Version.200.2E1.2E0-beta.2E10)| Upgrade to `Version 0.1.0-beta.10`|
 |[December 2 2019](https://ledstrain.org/d/151-forum-changes/28)|Upgrade to `Version 0.1.0-beta.11`|
-{{< /bootstrap-table >}}
+{{< /bootstrap-table >}}  
 
 ### Requests
 
@@ -211,17 +211,17 @@ Provides clickable panel that show extra hidden content.
 ### Issues
 
 ##### HTTP Redirects
-{{< forum-post 11584 >}}
-{{< forum-post 11381 >}}
+{{< forum-post 11584 >}}  
+{{< forum-post 11381 >}}  
 
 ##### Resolution
-{{< forum-post 11604 >}}
+{{< forum-post 11604 >}}  
 
 ##### You do not have permission to do that
-{{< forum-post 10967 >}}
+{{< forum-post 10967 >}}  
 
 ##### Resolution
-{{< forum-post 10970 >}}
+{{< forum-post 10970 >}}  
 
 
 ### Forum Tutorial
@@ -230,7 +230,7 @@ LEDStrain Forum takes on a minimalist approach to posting.
 However, there are some tools available to creating your posts, available in a toolbar.
 
 ![Text Editor GUI](https://cdn.ledstrain.org/image/compose-post-toolbar.png)
-{{< bootstrap-table >}}
+{{< bootstrap-table >}}  
 |Function|Action|Key|
 |:-|:-|:-:|
 |Preview|Returns view back to post while editing|👁️|
@@ -245,7 +245,7 @@ However, there are some tools available to creating your posts, available in a t
 |List | Adds a ordered list with numbers|![Button to create a ordered list](https://cdn.ledstrain.org/image/ordered_list_button.png)|
 |Emoji| Insert Twemoji based emoji |![Insert Twemoji emoji](https://cdn.ledstrain.org/image/twemoji_emoji_button.png)|
 |Mention|Mention a user or post. If set, will notify the user|`@`|
-{{< /bootstrap-table >}}
+{{< /bootstrap-table >}}  
 
 
 
@@ -265,7 +265,7 @@ Headers of h1, h2, and h3 are centered
 #### Header 3
 ```
 
-{{< bootstrap-table >}}
+{{< bootstrap-table >}}  
 Tables can be created.
 The second row, `|:-|:-:|` indicates the justification. Left-aligned: `|:-|`, Centered: `|:-:|`, Right-Aligned: `|-:|`
 ```markdown
@@ -278,7 +278,7 @@ The second row, `|:-|:-:|` indicates the justification. Left-aligned: `|:-|`, Ce
 |:-|:-:|
 |Apple|5|
 |Pear|6|
-{{< /bootstrap-table >}}
+{{< /bootstrap-table >}}  
 ___
 
 Lines can be created to help separate a post with either 3 underscores or 3 dashes.
@@ -325,9 +325,9 @@ ___
 [![project chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://ledstrain.zulipchat.com)
 
 Messaging and Private Messaging is provided by Zulip Chat
-{{< forum-post id=10562 length=-1 >}}
+{{< forum-post id=10562 length=-1 >}}  
 
-{{< forum-post 10641 >}}
+{{< forum-post 10641 >}}  
 
 ### Community Guidelines
 
@@ -346,9 +346,9 @@ The following forms of behavior will not be tolerated:
 * Attempts to abuse or expose the private information of others  
 * Posts intended to harass, impersonate, or defame others  
 
-{{< hint info >}}
+{{< hint info >}}  
 Your discussion may be moved to a more appropriate tag at a moderator's discretion.
-{{< /hint >}}
+{{< /hint >}}  
 
 #### Commercial
 
@@ -368,22 +368,22 @@ For your safety, consult with your doctor before taking any supplements or medic
 If you're having difficulty logging in, unable to post or other issues, reach out for help here\
 [https://ledstrain.zulipchat.com](https://ledstrain.zulipchat.com/#narrow/stream/205604-meta)
 
-Alternatively, support can be reached here: {{< cloakemail address="support@ledstrain.org" >}}\
-{{< hint warning >}} 
-This is a non-reply email\
-We may reach out to you with a different email 
-{{< /hint >}}
+Alternatively, support can be reached here: {{< cloakemail address="support@ledstrain.org" >}}  
+{{< hint warning >}}   
+This is a non-reply email  
+We may reach out to you with a different email  
+{{< /hint >}}  
 
 ## LEDStrain Chat
 
 ### Changes
 
-{{< bootstrap-table >}}
+{{< bootstrap-table >}}  
 |Date|Change|
 |:--|:--|
 |[January 7, 2019](https://ledstrain.org/d/524)|XMPP Chat implemented [Deprecated]|
 |[July 31, 2019](https://ledstrain.org/d/722)|[Chat implemented](https://ledstrain.zulipchat.com/) (Hosted by Zulip)|
-{{< /bootstrap-table >}}
+{{< /bootstrap-table >}}  
 
 ### Requests
 
