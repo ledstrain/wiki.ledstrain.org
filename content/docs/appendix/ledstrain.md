@@ -50,7 +50,7 @@ weight: 5
 LEDStrain Forum takes on a minimalist approach to posting. 
 However, there are some tools available to creating your posts, available in a toolbar.
 
-![Text Editor GUI](https://i.imgur.com/dlwc0rb.png)
+![Text Editor GUI](https://cdn.ledstrain.org/image/compose-post-toolbar.png)
 {{< bootstrap-table >}}
 |Function|Action|Key|
 |:-|:-|:-:|
@@ -59,12 +59,12 @@ However, there are some tools available to creating your posts, available in a t
 |Header |Inputs header|`H`|
 |Bold      |Sets selected text to bold|`B` |
 |Italic     |Sets selected text to italic|*I* |
-|Quote  |Quote the selected text|![Quote selected text](https://i.imgur.com/BzpSSWN.png))
-|Code    |Sets the selected text in code format for easier reading / copying|![Sets code format](https://i.imgur.com/0CqPOS1.png)|
+|Quote  |Quote the selected text|![Button for quoting selected text](https://cdn.ledstrain.org/image/quote_selected_text_button.png))
+|Code    |Sets the selected text in code format for easier reading / copying|![Button for Setting code format](https://cdn.ledstrain.org/image/set_code_formatting_button.png)|
 |Link      |Set a clickable link. Works on images as well|🔗 |
-| List|Adds a unordered list with bullet points |![Create a unordered list](https://i.imgur.com/hzBVWTi.png)|
-|List | Adds a ordered list with numbers|![Create a ordered list](https://i.imgur.com/E5Xr5jI.png)|
-|Emoji| Insert Twemoji based emoji |![Insert Twemoji emoji](https://i.imgur.com/uc1rQXD.png)|
+| List|Adds a unordered list with bullet points |![Button to create a unordered list](https://cdn.ledstrain.org/image/unordered_list_button.png)|
+|List | Adds a ordered list with numbers|![Button to create a ordered list](https://cdn.ledstrain.org/image/ordered_list_button.png)|
+|Emoji| Insert Twemoji based emoji |![Insert Twemoji emoji](https://cdn.ledstrain.org/image/twemoji_emoji_button.png)|
 |Mention|Mention a user or post. If set, will notify the user|`@`|
 {{< /bootstrap-table >}}
 
@@ -113,10 +113,10 @@ Inline links `[can be created](https://ledstrain.org)` to look cleaner
 Inline links [can be created](https://ledstrain.org) to look cleaner  
 Images as well  
 
-`[![Image inline link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)`  
-[![Image inline link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org)  
-`[![Internal Link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![External link](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)`  
-[![Internal Link](https://i.imgur.com/lulyQtW.jpg)](https://ledstrain.org) [![External Link](https://i.imgur.com/lulyQtW.jpg)](https://anothersite.com)  
+`[![Image inline link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org)`  
+[![Image inline link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org)  
+`[![Internal Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org) [![External link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://anothersite.com)`  
+[![Internal Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org) [![External Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://anothersite.com)  
 
 ___
 Links are colored either green or purple.  
@@ -126,7 +126,7 @@ Links are colored either green or purple.
 * Purple indicate the link is *external* and points out to the web  
 
 Touchscreen users will have a boundary around linked images to indicate this as well  
-![Image Boundary](https://i.imgur.com/Rr1mvRN.png)  
+![Image Boundary](https://cdn.ledstrain.org/image/green-purple-box-border.png)  
 
 ___
 
@@ -136,9 +136,9 @@ We're here to help
 If there's spam, or if you wish to split a discussion to a new thread let us know by flagging the post.  
 We can also help with adjusting tags or renaming discussions   
 
-![Flag Icon](https://i.imgur.com/MN2mqZv.png)
+![Flag Icon](https://cdn.ledstrain.org/image/flag_button.png)
 
-![Demo Creating Report](https://i.imgur.com/8ohnLnY.gif)
+![Demo Creating Report](https://cdn.ledstrain.org/image/demo_creating_report.gif)
 
 ___ 
 
@@ -232,7 +232,7 @@ Go to https://wiki.ledstrain.org/contribute and login with GitHub.
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
 
 {{< expand "Set Status" >}}
-![Set Status to In Review](https://i.imgur.com/gDsHYS0.png)
+![Set Status to In Review](https://cdn.ledstrain.org/image/set_status_to_in_review.png)
 {{< /expand >}}
 
 ##### Direct GitHub Edit

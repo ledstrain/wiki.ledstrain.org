@@ -13,5 +13,5 @@ weight: 10
 #### Toyota Camry 2010
 
 ##### PWM
-![Car Dashboard PWM](https://i.imgur.com/r60k9ZT.gif)
-![Car Radio PWM](https://i.imgur.com/byK71J3.gif)
+![Car Dashboard PWM](https://cdn.ledstrain.org/image/car_dashboard_pwm.gif)
+![Car Radio PWM](https://cdn.ledstrain.org/image/car_radio_pwm.gif)
