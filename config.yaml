@@ -21,16 +21,16 @@ markup:
 languages:
   en:
     languageName: English
-    contentDir: content
+    contentDir: content/en
     weight: 1
-    #  ru:
-    #    languageName: Russian
-    #    contentDir: content.ru
-    #    weight: 2
-    #  cn:
-    #    languageName: Chinese
-    #    contentDir: content.cn
-    #    weight: 3
+  # ru:
+  #   languageName: Russian
+  #   contentDir: content.ru
+  #   weight: 2
+  # cn:
+  #   languageName: Chinese
+  #   contentDir: content/cn
+  #   weight: 3
 
 params:
   # (Optional, default true) Controls table of contents visibility on right side of pages.
