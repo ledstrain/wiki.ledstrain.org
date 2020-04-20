@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Home Page"
         name: "home"
-        file: "content/_index.md"
+        file: "content/en/_index.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "FAQ"
         name: "faq"
-        file: "content/docs/faq.md"
+        file: "content/en/docs/faq.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Guides"
         name: "guides"
-        file: "content/docs/guides.md"
+        file: "content/en/docs/guides.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "hardware" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Hardware" # Used in the UI, ie.: "New Post"
-    folder: "content/docs/hardware" # The path to the folder where the documents are stored
+    folder: "content/en/docs/hardware" # The path to the folder where the documents are stored
     extension: "md"
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "software" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Software" # Used in the UI, ie.: "New Post"
-    folder: "content/docs/software" # The path to the folder where the documents are stored
+    folder: "content/en/docs/software" # The path to the folder where the documents are stored
     extension: "md"
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -67,7 +67,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Awareness Page"
         name: "Awareness"
-        file: "content/docs/awareness.md" # The path to the folder where the documents are stored
+        file: "content/en/docs/awareness.md" # The path to the folder where the documents are stored
         fields: # The fields each document in this collection have
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
@@ -76,7 +76,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "appendix" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Appendix" # Used in the UI, ie.: "New Post"
-    folder: "content/docs/appendix" # The path to the folder where the documents are stored
+    folder: "content/en/docs/appendix" # The path to the folder where the documents are stored
     path: "dir1/dir2/dir3"
     extension: "md"
     create: false # Allow users to create new documents in this collection
