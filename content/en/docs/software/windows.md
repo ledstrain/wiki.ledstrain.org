@@ -9,10 +9,12 @@ weight: 3
 ## Reference Links                                                              
 * [LED Strain {{< param title >}} Tag](https://ledstrain.org/t/{{< param title >}}?sort=top)
 
-## Gradient banding issue
+# Gradient banding issue
+
 {{< forum-post "11638" >}}
 
 # ClearType font rendeing
+
 Cleartype is a feature in Windows Vista and later that attempts to smooth on-screen fonts using RGB based antialiasing. However because of this it is possible to see blurriness in the rendered fonts and color fringing on the edges of on-screen text, which can cause eyestrain in more sensitive users.
 
 # Graphical rendering changes
