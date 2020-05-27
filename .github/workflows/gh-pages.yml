@@ -15,16 +15,16 @@ jobs:
 
     - name: Get Current Month
       id: current-month
-      run: echo "::set-output name=month::$(date '+%m')"
+      run: echo "::set-output name=day::$(date '+%d')"
 
     - name: Cache Hugo Assets
       id: cache-hugo-assets
       uses: actions/cache@v1
       with:
         path: /tmp/hugo_cache
-        key: hugo-${{ steps.current-month.outputs.month }}
+        key: hugo-${{ steps.current-month.outputs.day }}
         restore-keys: |
-          hugo-${{ steps.current-month.outputs.month }}
+          hugo-${{ steps.current-month.outputs.day }}
           hugo-
 #    - name: Cache htmltest 
 #      id: cache-html-assets
