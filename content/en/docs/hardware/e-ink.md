@@ -1,6 +1,6 @@
 ---
-title: "E-Reader"
-slug: e-reader
+title: "E-Ink"
+slug: e-ink
 weight: 3
 # bookFlatSection: false
 # bookToc: 6
