@@ -365,14 +365,7 @@ For your safety, consult with your doctor before taking any supplements or medic
 
 ### Logging in / Troubleshooting
 
-If you're having difficulty logging in, unable to post or other issues, reach out for help here\
-[https://ledstrain.zulipchat.com](https://ledstrain.zulipchat.com/#narrow/stream/205604-meta)
-
-Alternatively, support can be reached here: {{< cloakemail address="support@ledstrain.org" >}}  
-{{< hint warning >}}   
-This is a non-reply email  
-We may reach out to you with a different email  
-{{< /hint >}}  
+Support can be reached here: {{< cloakemail address="admin@support.xyzz.work" query="subject=Support with LEDStrain&body=Hi,%0D%0A%0D%0AMy username is:%0D%0A%0D%0A%0D%0AI need help with:%0D%0A%0D%0A%0D%0AThank you!" >}}  
 
 ## LEDStrain Chat
 
