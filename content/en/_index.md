@@ -5,8 +5,9 @@ type: docs
 ---
 
 Welcome to the LEDStrain Wiki!  
-If we have a green badge, the site should be ok!  
+Wiki and Forum status
 [![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org)
+[![LEDStrain Forum Status](https://ping.xyzz.work/badge/5c74280b-79d6-4861-8b13-b1d5d1fc7bc6/LIzpDwee/LEDStrainForum.svg)](https://ledstrain.org)
 
 [Interested in contributing?](ledstrain#contributing)  
 
