@@ -21,7 +21,7 @@ Dithering technique used by Nvidia and Ati to create more million colours to sho
 
 ## Dithering
 
-* [Tests](tests#dithering)
+* [Tests](tests/dithering)
 
 ### Temporal Dithering
 
