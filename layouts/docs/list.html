@@ -7,6 +7,15 @@
       {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> 🔗</a> ${3}` | safeHTML }}
   {{- end -}}
 </article>
+
+{{ with .Data.Pages }}
+Subpages
+
+{{ range . }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{ end }}
+{{ end }}
+
 {{ end }}
 
 {{ define "toc" }}
