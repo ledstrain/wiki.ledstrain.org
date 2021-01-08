@@ -8,15 +8,20 @@
   {{- end -}}
 </article>
 
+{{ if not .IsHome }}
 {{ with .Data.Pages }}
-Subpages
+<h2>More</h2>
 
 {{ range . }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{ end }}
-{{ end }}
+<ul>
+    <li>--> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+</ul>
+{{- end -}}
 
-{{ end }}
+{{- end -}}
+{{- end -}}
+
+{{- end -}}
 
 {{ define "toc" }}
   {{ partial "docs/toc" . }}
