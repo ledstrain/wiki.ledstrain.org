@@ -7,8 +7,6 @@ weight: 5
 # bookHidden: false
 ---
 
-[Changes](ledstrain_changes)
-
 ### Contributing
 
 Contributing is easy!  

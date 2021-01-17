@@ -1,7 +1,7 @@
 ---
 title: "jtl"
 date: 2020-12-29T02:24:28-08:00
-draft: true
+draft: false
 ---
 
 ## Dithering tests

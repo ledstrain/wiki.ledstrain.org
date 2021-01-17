@@ -1,7 +1,7 @@
 ---
 title: "Seagull"
 date: 2020-12-29T02:21:35-08:00
-draft: true
+draft: false
 ---
 ## Dithering
 
