@@ -1,7 +1,5 @@
 ---
 title: "Appendix"
-weight: 10
-# bookFlatSection: false
-# bookToc: 6
-# bookHidden: false
+date: 2021-01-15T21:17:18-08:00
+draft: false
 ---
