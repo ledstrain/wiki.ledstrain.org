@@ -26,7 +26,7 @@ jobs:
         restore-keys: |
           hugo-${{ steps.current-month.outputs.day }}
           hugo-
-#    - name: Cache htmltest 
+#    - name: Cache htmltest
 #      id: cache-html-assets
 #      uses: actions/cache@v1
 #      with:
@@ -44,14 +44,14 @@ jobs:
 #        path: ${{ runner.temp }}/hugo_cache
 #        key: hugo-${{ hashfiles('**/filecache/**') }}
 #        restore-keys: hugo-
-    
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
         extended: true
-        
-        
+
+
     - name: Build Hugo Testing
       env:
         TESTDIR: ${{ runner.temp }}/publicTesting
@@ -64,9 +64,9 @@ jobs:
         TMPDIR: ${{ runner.temp }}
         TESTDIR: ${{ runner.temp }}/publicTesting
       run: bash '.github/scripts/htmltest.sh'
-        
-#    - name: Spellcheck Action
-#      uses: rojopolis/spellcheck-github-actions@0.2.0
+
+    - name: Log files set to draft
+      run: bash '.github/scripts/check_drafts.sh'
 
     - name: Stats
       env:
@@ -74,7 +74,7 @@ jobs:
         MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
         BUILD: "SOURCE"
       run: bash '.github/scripts/download-assets.sh' 'assets'
-      
+
     - name: Build
       run: hugo --minify
 

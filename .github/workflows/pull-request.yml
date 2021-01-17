@@ -1,6 +1,6 @@
 name: pull-request
 
-on: 
+on:
   pull_request:
     branches:
       master
@@ -10,12 +10,12 @@ jobs:
   test:
     name: Run tests
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v1
       with:
         submodules: true
-        
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
@@ -32,3 +32,6 @@ jobs:
       env:
         TESTDIR: "${{ runner.temp }}/publicTesting"
       run: bash '.github/scripts/htmltest.sh'
+
+    - name: Log files set to draft
+      run: bash '.github/scripts/check_drafts.sh'
