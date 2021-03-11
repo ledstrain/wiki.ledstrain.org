@@ -315,9 +315,11 @@ Your discussion may be moved to a more appropriate tag at a moderator's discreti
 #### Commercial
 
 To help improve awareness and access to this issue, a minimal commercial presence is allowed.\
-Any commercial presence must be through a personal account representing a company.\
-For example, a username LEDstrain is not permitted, however a username Slacor representing LEDstrain is.\
-Each commercial interest may have one discussion for their product  
+However, these conditions are required:
+* Personal account representing a commercial interest.
+* One discussion for each commerical presence to advertise from.
+* Engagement with community. Only posting promotional links is not permitted.
+
 
 #### Medical
 
