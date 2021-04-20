@@ -37,7 +37,8 @@ bookHidden: true
 |[July 27, 2019](https://ledstrain.org/d/151/24)|[Tutorial](https://ledstrain.org/d/715-forum-tutorial) added; [Donations](https://donorbox.org/ledstrain) added
 |[Sept 24, 2019](https://ledstrain.zulipchat.com/#narrow/stream/205604-meta/topic/Forum.20Update.20-.20Version.200.2E1.2E0-beta.2E10)| Upgrade to `Version 0.1.0-beta.10`|
 |[December 2 2019](https://ledstrain.org/d/151-forum-changes/28)|Upgrade to version `0.1.0-beta.11`|
-|[December 23, 2020](https://ledstrain.org/d/151-forum-changes/31)|Upgrade to version ` v0.1.0-beta.15`; Added a [view](https://view.ledstrain.org/) page|
+|[December 23, 2020](https://ledstrain.org/d/151-forum-changes/31)|Upgrade to version ` v0.1.0-beta.15`; ~~Added a view page~~|
+|[March 5, 2021](https://ledstrain.org/d/151-forum-changes/32)|Forum implemented in docker - [repo](https://github.com/ledstrain/ledstrain-docker)|
 {{< /bootstrap-table >}}  
 
 ## LEDStrain Chat

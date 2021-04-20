@@ -78,7 +78,7 @@ params:
   flarumUrl: https://ledstrain.org
 
 caches:
-  getjson: 
+  getjson:
     # Reset json cache every month
     # This will refresh permalinked comments with forum-post shortcode
     maxAge: "720h"
