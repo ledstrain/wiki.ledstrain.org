@@ -1,6 +1,18 @@
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
+{{ if not .IsHome }}
+{{ with .Data.Pages }}
+<div>
+{{ range . }}
+| <a href="{{ .RelPermalink }}"><i>{{ .Title }}</i></a>
+{{- end -}}
+&nbsp;|
+</div>
+<br>
+
+{{- end -}}
+{{- end -}}
 <article class="markdown">
   {{/* Create permalink for each header */}}
   {{- with .Content -}}
@@ -8,18 +20,6 @@
   {{- end -}}
 </article>
 
-{{ if not .IsHome }}
-{{ with .Data.Pages }}
-<h2>More</h2>
-
-{{ range . }}
-<ul>
-    <li>--> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-</ul>
-{{- end -}}
-
-{{- end -}}
-{{- end -}}
 
 {{- end -}}
 
