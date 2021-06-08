@@ -1,10 +1,10 @@
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
-{{ if not .IsHome }}
-{{ with .Data.Pages }}
+{{- if and (not .IsHome) (ne (len .Content) 0) -}}
+{{- with .Data.Pages -}}
 <div>
-{{ range . }}
+{{- range . -}}
 | <a href="{{ .RelPermalink }}"><i>{{ .Title }}</i></a>
 {{- end -}}
 &nbsp;|
@@ -17,6 +17,16 @@
   {{/* Create permalink for each header */}}
   {{- with .Content -}}
       {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> 🔗</a> ${3}` | safeHTML }}
+  {{- end -}}
+  {{ if and (not .IsHome) (eq (len .Content) 0) }}
+    {{ with .Data.Pages }}
+    <h2>Subpages</h2>
+    <ul>
+    {{ range . }}
+    <li>--> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end -}}
+    </ul>
+    {{- end -}}
   {{- end -}}
 </article>
 
