@@ -293,10 +293,6 @@ Alternatively, Zulip Chat can be used
 
 ### Community Guidelines
 
-#### Posting
-
-Write a clear title. Try make a summary of your discussion so others know what they will be reading and discussing. No post signatures
-
 #### Conduct
 
 The following forms of behavior will not be tolerated:  
@@ -327,6 +323,22 @@ Due to the nature of the forum advice may be given related to improving or manag
 Discretion is upon the user to critically evaluate all information posted on the forum\
 For your safety, consult with your doctor before taking any supplements or medication.  
 
-### Logging in / Troubleshooting
+### Account Deletion
+Users may [request](#logging-in--troubleshooting--requests) to have their account deleted.  
+To request for an account to be deleted, the User **must** email from their listed email address
+ as well as verify understanding of the below information. Requests in forum will be referred here.
+
+Deleting a user account includes the following personal identifying information
+* Email
+* Username
+* Profile picture
+* Bio or other "profile meta information"
+* Posts that contain User personal information (upon request and User must provide permalinks)
+
+This does not include
+* Discussions the User created
+* Posts the User created
+
+### Logging in / Troubleshooting / Requests
 
 Support can be reached here: {{< cloakemail address="admin@support.xyzz.work" query="subject=Support with LEDStrain&body=Hi,%0D%0A%0D%0AMy username is:%0D%0A%0D%0A%0D%0AI need help with:%0D%0A%0D%0A%0D%0AThank you!" >}}  

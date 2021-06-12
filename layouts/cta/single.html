@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir={{ .Site.Language.LanguageDirection }}>
+
+<head>
+  {{ hugo.Generator }}
+  {{- $main      := resources.Get "_custom.scss" | resources.ToCSS -}}
+  {{- $bootstrap := resources.Get "cta/css/bootstrap.min.css" -}}
+  {{- $style     := resources.Get "cta/css/style.css" -}}
+  {{- $iconfont  := resources.Get "cta/css/icons-fonts.css" -}}
+  {{- $animate   := resources.Get "cta/css/animate.min.css" -}}
+  {{- $css       := slice $main $bootstrap $style $iconfont $animate | resources.Concat "style.css" -}}
+  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
+
+  {{- $jquery      := resources.Get "cta/js/jquery-1.11.2.min.js" -}}
+  {{- $bootstrapjs := resources.Get "cta/js/bootstrap.min.js" -}}
+  {{- $appearjs    := resources.Get "cta/js/jquery.appear.js" -}}
+  {{- $popup       := resources.Get "cta/js/jquery.magnific-popup.min.js" -}}
+  {{- $imgload     := resources.Get "cta/js/imagesloaded.pkgd.min.js" -}}
+  {{- $carousel    := resources.Get "cta/js/owl.carousel.min.js" -}}
+  {{- $mainjs      := resources.Get "cta/js/main.js" -}}
+  {{- $js          := slice $jquery $bootstrapjs $appearjs $mainjs | resources.Concat "script.js" | minify | fingerprint -}}
+  <script src="{{ $js.Permalink }}" defer></script>
+</head>
+
+<body>
+  <main>
+        <!-- PAGE TITLE SMALL -->
+        <div class="page-title-cont page-title-small grey-light-bg">
+          <div class="relative container align-left">
+            <div class="row">
+
+              <div class="col-md-8">
+                <h1 class="page-title">{{ .Title }}</h1>
+              </div>
+
+              {{- if isset .Params "forum_thread" -}}
+              <div class="col-md-4">
+                <div>
+                  {{ partial "forum-post" . }}
+                </div>
+              </div>
+              {{- end -}}
+
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTENT CONTAINER -->
+
+
+          <!-- ACCORDIONS -->
+					<div class="container p-110-cont">
+            <div class="row">
+              <div class="col-md-12">
+
+                <!-- Accordion -->
+                {{- with .Params.faq -}}
+                 <dl class="accordion">
+                {{- range . -}}
+                   <dt id={{ urlize .q }}>
+                     <a href="#{{ urlize .q }}">{{ .q }}</a>
+                   </dt>
+                   <dd>
+                   {{ .a }}
+                   </dd>
+                {{ end }}
+                 <!-- End Accordion -->
+                 </dl>
+                {{- end -}}
+              </div>
+            </div>
+					</div>
+
+          <div class="container p-110-cont">
+            {{ .Content }}
+          </div>
+  </main>
+</body>
+</html>

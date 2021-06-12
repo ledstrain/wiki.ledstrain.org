@@ -1,0 +1,101 @@
+{{- if ne (getenv "HUGO_ENVIRONMENT") "testing" -}}
+
+{{/* Uses Flarum /api */}}
+{{/* Usage: {{-< forum-post "555" >-}} */}}
+{{/* Usage: {{-< forum-post "555" domain="https://domain.tld/" >-}} */}}
+{{/* Usage: {{-< forum-post id="https://domain.tld/d/802-discussion-title/2" length="300">-}} */}}
+
+{{- $defaultDomain := .Site.Params.flarumUrl -}}
+
+{{/* Use scratch for dealing with scope */}}
+{{- $scratch := newScratch -}}
+
+{{/* Take single entry for post ID or permalink */}}
+{{- $entry := .Params.forum_thread -}}
+
+{{/* Identify if postID or permalink. If either, format for /api correctly */}}
+{{/* If permalink used, take the domain as well */}}
+{{- $postID := findRE `^(\d+)$` $entry -}}
+{{- if $postID -}}
+    {{- $scratch.Set "postType" "id" -}}
+    {{- $postID := index $postID 0 -}}
+    {{- $scratch.Set "postID" (printf `/%s` $postID ) -}}
+{{- else -}}
+    {{- $scratch.Set "postType" "filtered" -}}
+    {{/* https://regex101.com/r/8Q88Qe/1 */}}
+    {{- $scratch.Set "postDomain" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$1` $entry ) -}}
+    {{- $scratch.Set "postDiscussionID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$2` $entry ) -}}
+    {{- $scratch.Set "postID" (replaceRE `((?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?[^:\/\n]+)/d/(\d+).*?/(\d+)` `$3` $entry ) -}}
+    {{- $scratch.Set "postID" (printf `?filter[discussion]=%s&filter[number]=%s` ($scratch.Get "postDiscussionID") ($scratch.Get "postID")) -}}
+{{- end -}}
+{{- $postID := $scratch.Get "postID" -}}
+{{- $postDomain := $scratch.Get "postDomain" -}}
+
+{{/* request the json file based on postType */}}
+{{- $urlPre := default $defaultDomain $postDomain -}}
+{{- $urlApi := "/api/posts" -}}
+{{- $postRequest := getJSON $urlPre $urlApi $postID -}}
+
+{{/* Each post type is slightly different. If permalink, range over the data and grab the first one to simulate a postID */}}
+{{- if eq ($scratch.Get "postType") "id" -}}
+    {{- $scratch.Set "postRequestData" $postRequest.data -}}
+{{- else -}}
+    {{- range first 1 $postRequest.data -}}
+        {{- $scratch.Set "postRequestData" . -}}
+    {{- end -}}
+{{- end -}}
+{{- $postRequestData := $scratch.Get "postRequestData" -}}
+
+{{/* Post Discussion Name */}}
+{{- range $postRequest.included -}}
+    {{- if eq .type "discussions" -}}
+        {{- $scratch.Set "discussionName" .attributes.title -}}
+    {{- end -}}
+{{- end -}}
+{{- $discussionName := $scratch.Get "discussionName" -}}
+
+{{/* Discussion Number of Post */}}
+{{- $discussionID := $postRequestData.relationships.discussion.data.id -}}
+
+{{/* Post Number of Discussion */}}
+{{- $discussionPostID := $postRequestData.attributes.number -}}
+
+{{/* Post Author */}}
+{{- range first 1 $postRequest.included -}}
+    {{- if eq .type "users" -}}
+        {{- $scratch.Set "authorID" .attributes.displayName -}}
+        {{- $scratch.Set "usernameID" .attributes.username -}}
+        {{- $scratch.Set "authorAvatarUrl" .attributes.avatarUrl -}}
+    {{- end -}}
+{{- end -}}
+{{- $forumPostAuthor := $scratch.Get "authorID" -}}
+{{- $forumPostUsername := $scratch.Get "authorID" -}}
+{{- $forumPostAvatarUrl := $scratch.Get "authorAvatarUrl" -}}
+
+{{/* Post Content; truncate if length is set */}}
+{{/* if >= 0, truncate to specified value. If less (-1) do not truncate */}}
+{{- if and (.Params.post_length) (ge (.Params.post_length) 0) -}}
+    {{- $scratch.Set "forumPostContent" (truncate (.Params.post_length) ($postRequestData.attributes.contentHtml | safeHTML)) -}}
+{{- else if and (.Params.post_length) (lt (.Params.post_length) 0) -}}
+    {{- $scratch.Set "forumPostContent" ($postRequestData.attributes.contentHtml | safeHTML) -}}
+{{- else if .Site.Params.postLength -}}
+    {{- $scratch.Set "forumPostContent" (truncate .Site.Params.postLength ($postRequestData.attributes.contentHtml | safeHTML)) -}}
+{{- else -}}
+    {{- $scratch.Set "forumPostContent" ($postRequestData.attributes.contentHtml | safeHTML) -}}
+{{- end -}}
+{{- $forumPostContent := $scratch.Get "forumPostContent" -}}
+
+<div class="forum-post">
+    <div class="forum-post-title">
+        <a href={{- printf "%s/d/%s/%s" $urlPre (string $discussionID) (string $discussionPostID) -}}>{{- $discussionName -}}</a>
+    </div>
+    <div class="forum-post-author">
+        <a href={{- printf "%s/u/%s" $urlPre (string $forumPostUsername) -}}>{{- $forumPostAuthor -}}</a>
+    </div>
+    <div class="forum-post-content">
+        {{- $forumPostContent -}}
+    </div>
+</div>
+{{ else }}
+FORUM POST - Test Mode
+{{ end }}

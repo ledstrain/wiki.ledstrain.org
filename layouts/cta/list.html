@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+
+{{/* Content */}}
+<article class="markdown">
+  {{/* Create permalink for each header */}}
+  {{- with .Content -}}
+      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> 🔗</a> ${3}` | safeHTML }}
+  {{- end -}}
+  {{ if and (not .IsHome) (eq (len .Content) 0) }}
+    {{ with .Data.Pages }}
+    <h2>Subpages</h2>
+    <ul>
+    {{ range . }}
+    <li>--> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end -}}
+    </ul>
+    {{- end -}}
+  {{- end -}}
+</article>
+
+{{/* List of cta / projects */}}
+{{- if and (not .IsHome) (ne (len .Content) 0) -}}
+{{- with .Data.Pages -}}
+<div class="container">
+{{- range (.ByParam "lastmod").Reverse -}}
+  <div class="container">
+    <a href="{{ .RelPermalink }}"><i>{{ .Title }}</i></a>
+    <br>
+    {{ .Summary }}
+  </div>
+{{- end -}}
+</div>
+<br>
+
+{{- end -}}
+{{- end -}}
+
+{{- end -}}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
+{{ end }}
