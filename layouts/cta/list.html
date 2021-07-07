@@ -23,7 +23,7 @@
 
 {{/* List of cta / projects */}}
 {{- if and (not .IsHome) (ne (len .Content) 0) -}}
-{{- with .Data.Pages -}}
+{{- with (where .Data.Pages "Params.active" true) -}}
 <div class="container">
 {{- range (.ByParam "lastmod").Reverse -}}
   <div class="container">

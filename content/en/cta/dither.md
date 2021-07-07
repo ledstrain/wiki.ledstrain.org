@@ -1,5 +1,6 @@
 ---
 title: Demo Title
+active: false
 forum_thread: 11258
 post_length: 200
 faq:
