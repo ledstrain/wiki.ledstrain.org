@@ -6,6 +6,98 @@ weight: 5
 # bookToc: 6
 # bookHidden: false
 ---
+## LEDStrain Forum
+
+### Moderating
+
+We're here to help 🙂  
+If there's spam, or if you wish to split a discussion to a new thread let us know by flagging the post.  
+We can also help with adjusting tags or renaming discussions.   
+
+![Flag Icon](https://cdn.ledstrain.org/image/flag_button.png)
+
+![Demo Creating Report](https://cdn.ledstrain.org/image/demo_creating_report.gif)
+
+---
+
+### Private Messaging
+
+There is a internal PMing system available. Once logged in, click on Private Discussions -> Discuss privately in order to PM another member.  
+If you just registered and cannot PM other users, this is expected. Spend some time posting
+ and interacting in the forum and it will be granted automatically over time.
+
+{{< mermaid >}}
+flowchart LR
+  user[Sending message to 'user']
+  user --> pd[Private Discussions] --> createThread[Discuss Privately] --> users[1 Recipient] --> Search[Search 'user'] --> Ok
+  user --> highlight[Highlight over 'user'] --> Dropdown[Click on Dropdown] --> offerToSend[Send 'user' a message]
+{{< /mermaid >}}
+
+### Reducing motion
+
+LEDStrain supports the media `prefers-reduced-motion`.
+
+To enable - [other guides](https://prefers-reduced-motion.com/)
+{{< mermaid >}}
+graph LR
+  Firefox --> about:config --> ui.prefersReducedMotion --> 1
+  Chrome  --> chromedevtools[Chrome developer tools] --> cmd[Run Command] --> ShowRendering[Show Rendering] --> Emulate[Emulate CSS media feature prefers-reduced-motion]
+{{< /mermaid >}}
+
+### Community Guidelines
+
+#### Conduct
+
+The following forms of behavior will not be tolerated:  
+
+* Messages that are obscene, vulgar, sexually-orientated, hateful, threatening, hostile or insulting.  
+* Personal attacks on others.  
+* Non-Constructive feedback and support
+* Spam, phishing posts, and any actions intended to deface this site  
+* Attempts to abuse or expose the private information of others  
+* Posts intended to harass, impersonate, or defame others  
+
+{{< hint info >}}  
+Your discussion may be moved to a more appropriate tag at a moderator's discretion.
+{{< /hint >}}  
+
+#### Commercial
+
+To help improve awareness and access to this issue, a minimal commercial presence is allowed.\
+However, these conditions are required:
+* Personal account representing a commercial interest.
+* One discussion for each commerical presence to advertise from.
+* Engagement with community. Only posting promotional links is not permitted.
+
+
+#### Medical
+
+Due to the nature of the forum advice may be given related to improving or managing your health\
+Discretion is upon the user to critically evaluate all information posted on the forum\
+For your safety, consult with your doctor before taking any supplements or medication.  
+
+### Account Deletion
+Users may [request](#logging-in--troubleshooting--requests) to have their account deleted.  
+To request for an account to be deleted, the User **must** email from their listed email address
+ as well as verify understanding of the below information. Requests in forum will be referred here.
+
+Deleting a user account includes the following personal identifying information
+* Email
+* Username
+* Profile picture
+* Bio or other "profile meta information"
+* Posts that contain User personal information (upon request and User must provide permalinks)
+
+This does not include
+* Discussions the User created
+* Posts the User created
+
+### Logging in / Troubleshooting / Requests
+
+Support can be reached here: {{< cloakemail address="admin@support.xyzz.work" query="subject=Support with LEDStrain&body=Hi,%0D%0A%0D%0AMy username is:%0D%0A%0D%0A%0D%0AI need help with:%0D%0A%0D%0A%0D%0AThank you!" >}}  
+
+
+## LEDStrain Wiki
 
 ### Contributing
 
@@ -167,178 +259,3 @@ Provides clickable panel that show extra hidden content.
 {{</* /expand */>}}
 ```
 
-## LEDStrain Forum
-
-##### HTTP Redirects
-{{< forum-post 11584 >}}  
-{{< forum-post 11381 >}}  
-
-##### Resolution
-{{< forum-post 11604 >}}  
-
-##### You do not have permission to do that
-{{< forum-post 10967 >}}  
-
-##### Resolution
-{{< forum-post 10970 >}}  
-
-
-### Forum Tutorial
-
-LEDStrain Forum takes on a minimalist approach to posting. 
-However, there are some tools available to creating your posts, available in a toolbar.
-
-![Text Editor GUI](https://cdn.ledstrain.org/image/compose-post-toolbar.png)
-{{< bootstrap-table >}}  
-|Function|Action|Key|
-|:-|:-|:-:|
-|Preview|Returns view back to post while editing|👁️|
-|Attach  |Attaches image to post by uploading through imgur|📄 |
-|Header |Inputs header|`H`|
-|Bold      |Sets selected text to bold|`B` |
-|Italic     |Sets selected text to italic|*I* |
-|Quote  |Quote the selected text|![Button for quoting selected text](https://cdn.ledstrain.org/image/quote_selected_text_button.png))
-|Code    |Sets the selected text in code format for easier reading / copying|![Button for Setting code format](https://cdn.ledstrain.org/image/set_code_formatting_button.png)|
-|Link      |Set a clickable link. Works on images as well|🔗 |
-| List|Adds a unordered list with bullet points |![Button to create a unordered list](https://cdn.ledstrain.org/image/unordered_list_button.png)|
-|List | Adds a ordered list with numbers|![Button to create a ordered list](https://cdn.ledstrain.org/image/ordered_list_button.png)|
-|Emoji| Insert Twemoji based emoji |![Insert Twemoji emoji](https://cdn.ledstrain.org/image/twemoji_emoji_button.png)|
-|Mention|Mention a user or post. If set, will notify the user|`@`|
-{{< /bootstrap-table >}}  
-
-
-
-
-
-
-
-___
-
-#### Creating a post
-
-Headers of h1, h2, and h3 are centered
-
-```
-## Header 1
-### Header 2
-#### Header 3
-```
-
-{{< bootstrap-table >}}  
-Tables can be created.
-The second row, `|:-|:-:|` indicates the justification. Left-aligned: `|:-|`, Centered: `|:-:|`, Right-Aligned: `|-:|`
-```markdown
-|Fruit|Count|
-|:-|:-:|
-|Apple|5|
-|Pear|6|
-```
-|Fruit|Count|
-|:-|:-:|
-|Apple|5|
-|Pear|6|
-{{< /bootstrap-table >}}  
-___
-
-Lines can be created to help separate a post with either 3 underscores or 3 dashes.
-```
-___
----
-```
-___
----
-Inline links `[can be created](https://ledstrain.org)` to look cleaner  
-Inline links [can be created](https://ledstrain.org) to look cleaner  
-Images as well  
-
-`[![Image inline link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org)`  
-[![Image inline link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org)  
-`[![Internal Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org) [![External link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://anothersite.com)`  
-[![Internal Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://ledstrain.org) [![External Link](https://cdn.ledstrain.org/image/green_lightbulb.jpg)](https://anothersite.com)  
-
-___
-Links are colored either green or purple.  
-[A local link](https://ledstrain.org)  
-[A external link](https://testsite.tld)  
-* Green indicate the link is *internal* and points somewhere within ledstrain.org  
-* Purple indicate the link is *external* and points out to the web  
-
-Touchscreen users will have a boundary around linked images to indicate this as well  
-![Image Boundary](https://cdn.ledstrain.org/image/green-purple-box-border.png)  
-
-___
-
-#### Moderating
-
-We're here to help  
-If there's spam, or if you wish to split a discussion to a new thread let us know by flagging the post.  
-We can also help with adjusting tags or renaming discussions   
-
-![Flag Icon](https://cdn.ledstrain.org/image/flag_button.png)
-
-![Demo Creating Report](https://cdn.ledstrain.org/image/demo_creating_report.gif)
-
-___ 
-
-#### Private Messaging
-
-There is a internal PMing system available. Once logged in, click on Private Discussions -> Discuss privately in order to PM another member
-
-[![project chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://ledstrain.zulipchat.com)
-
-Alternatively, Zulip Chat can be used
-{{< forum-post id=10562 length=-1 >}}  
-
-{{< forum-post 10641 >}}  
-
-### Community Guidelines
-
-#### Conduct
-
-The following forms of behavior will not be tolerated:  
-
-* Messages that are obscene, vulgar, sexually-orientated, hateful, threatening, hostile or insulting.  
-* Personal attacks on others.  
-* Non-Constructive feedback and support
-* Spam, phishing posts, and any actions intended to deface this site  
-* Attempts to abuse or expose the private information of others  
-* Posts intended to harass, impersonate, or defame others  
-
-{{< hint info >}}  
-Your discussion may be moved to a more appropriate tag at a moderator's discretion.
-{{< /hint >}}  
-
-#### Commercial
-
-To help improve awareness and access to this issue, a minimal commercial presence is allowed.\
-However, these conditions are required:
-* Personal account representing a commercial interest.
-* One discussion for each commerical presence to advertise from.
-* Engagement with community. Only posting promotional links is not permitted.
-
-
-#### Medical
-
-Due to the nature of the forum advice may be given related to improving or managing your health\
-Discretion is upon the user to critically evaluate all information posted on the forum\
-For your safety, consult with your doctor before taking any supplements or medication.  
-
-### Account Deletion
-Users may [request](#logging-in--troubleshooting--requests) to have their account deleted.  
-To request for an account to be deleted, the User **must** email from their listed email address
- as well as verify understanding of the below information. Requests in forum will be referred here.
-
-Deleting a user account includes the following personal identifying information
-* Email
-* Username
-* Profile picture
-* Bio or other "profile meta information"
-* Posts that contain User personal information (upon request and User must provide permalinks)
-
-This does not include
-* Discussions the User created
-* Posts the User created
-
-### Logging in / Troubleshooting / Requests
-
-Support can be reached here: {{< cloakemail address="admin@support.xyzz.work" query="subject=Support with LEDStrain&body=Hi,%0D%0A%0D%0AMy username is:%0D%0A%0D%0A%0D%0AI need help with:%0D%0A%0D%0A%0D%0AThank you!" >}}  
