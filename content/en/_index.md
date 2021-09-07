@@ -13,8 +13,7 @@ Wiki and Forum status
 
 #### What is LEDStrain?
 
-The [Forum](https://ledstrain.org/), Wiki and 
-[Chat](https://ledstrain.zulipchat.com/) are all here to help with the impact
+The [Forum](https://ledstrain.org/) and Wiki are here to help with the impact
  electrical devices have on our health.  
 All are free to use and are community based!  
 
