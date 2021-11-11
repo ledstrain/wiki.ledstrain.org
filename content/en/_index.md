@@ -7,7 +7,7 @@ type: docs
 Welcome to the LEDStrain Wiki!  
 Wiki and Forum status
 [![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org)
-[![LEDStrain Status](https://ping.xyzz.work/badge/43118397-5927-48c3-b3fe-6ee1f0028de4/YQEe069s-2/LEDStrain.svg)](https://ledstrain.org)
+[![LEDStrain Status](https://ping.xyzz.work/badge/43118397-5927-48c3-b3fe-6ee1f0028de4/tt6elx4m-2/LEDStrain.svg)](https://ledstrain.org)
 
 [Interested in contributing?](ledstrain#contributing)  
 
