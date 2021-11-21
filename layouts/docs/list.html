@@ -3,11 +3,11 @@
 <h1>{{ .Title }}</h1>
 {{- if and (not .IsHome) (ne (len .Content) 0) -}}
 {{- with .Data.Pages -}}
-<div>
+<div class="navbar-subpages">
 {{- range . -}}
-| <a href="{{ .RelPermalink }}"><i>{{ .Title }}</i></a>
+  <a href="{{ .RelPermalink }}"><i class="fa fa-fw fa-user"></i>{{ .Title }}</a>
+{{/* This renders the subpages when the page does have content */}}
 {{- end -}}
-&nbsp;|
 </div>
 <br>
 
@@ -20,6 +20,7 @@
   {{- end -}}
   {{ if and (not .IsHome) (eq (len .Content) 0) }}
     {{ with .Data.Pages }}
+    {{/* This renders the subpages when the page does _not_ have content */}}
     <h2>Subpages</h2>
     <ul>
     {{ range . }}

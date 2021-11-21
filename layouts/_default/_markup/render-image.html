@@ -3,7 +3,7 @@
     src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
     data-src="{{ .Destination | safeURL }}" 
     alt="{{ .Text }}" 
-    loading="lazy"
+    loading="eager"
     {{ with .Title}} 
     title="{{ . }}"
     {{ end }} />

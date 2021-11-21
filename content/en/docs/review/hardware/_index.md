@@ -1,7 +1,8 @@
 ---
 title: "Hardware"
 weight: 5
-# bookFlatSection: false
+bookCollapseSection: true
 # bookToc: 6
 # bookHidden: false
 ---
+.

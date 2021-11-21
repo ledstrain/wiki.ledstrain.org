@@ -126,3 +126,34 @@ img {
 li {
   list-style-type: none;
 }
+
+/* Subpage navigation
+ /* Style the navigation bar */
+.navbar-subpages {
+  width: 100%;
+  background-color: #00BB09;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar-subpages a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar-subpages a:hover {
+  background-color: #008006;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar-subpages a {
+    float: none;
+    display: block;
+  }
+}
