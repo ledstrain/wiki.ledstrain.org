@@ -40,31 +40,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Weight", name: "weight", widget: "hidden"}
           - {label: "bookToc", name: "booktoc", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
-  - name: "hardware" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Hardware" # Used in the UI, ie.: "New Post"
-    folder: "content/en/docs/hardware" # The path to the folder where the documents are stored
-    extension: "md"
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Weight", name: "weight", widget: "hidden"}
-      - {label: "bookToc", name: "booktoc", widget: "hidden"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "software" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Software" # Used in the UI, ie.: "New Post"
-    folder: "content/en/docs/software" # The path to the folder where the documents are stored
-    extension: "md"
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Weight", name: "weight", widget: "hidden"}
-      - {label: "bookToc", name: "booktoc", widget: "hidden"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "awareness" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Awareness" # Used in the UI, ie.: "New Post"
-    files:
       - label: "Awareness Page"
         name: "Awareness"
         file: "content/en/docs/awareness.md" # The path to the folder where the documents are stored
@@ -74,6 +49,27 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Weight", name: "weight", widget: "hidden"}
           - {label: "bookToc", name: "booktoc", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Health Page"
+        name: "Health"
+        file: "content/en/docs/health/_index.md" # The path to the folder where the documents are stored
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "review" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Review" # Used in the UI, ie.: "New Post"
+    folder: "content/en/docs/review" # The path to the folder where the documents are stored
+    path: "dir1/dir2/dir3/dir4"
+    extension: "md"
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "hidden"}
+      - {label: "bookToc", name: "booktoc", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "appendix" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Appendix" # Used in the UI, ie.: "New Post"
     folder: "content/en/docs/appendix" # The path to the folder where the documents are stored
