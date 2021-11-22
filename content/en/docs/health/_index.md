@@ -3,8 +3,6 @@ title: Health
 description: Things that help your health directly, and not through software or hardware
 weight: 5
 ---
-null
-
 ## Pills
 
 * [Vitamin C](https://ledstrain.org/d/334-treatments-desensitization-pills-exercises-solutions/219)
