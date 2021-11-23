@@ -14,9 +14,9 @@ We're here to help 🙂
 If there's spam, or if you wish to split a discussion to a new thread let us know by flagging the post.  
 We can also help with adjusting tags or renaming discussions.   
 
-![Flag Icon](https://cdn.ledstrain.org/image/flag_button.png)
+![Flag Icon](/images/flag_button.png)
 
-![Demo Creating Report](https://cdn.ledstrain.org/image/demo_creating_report.gif)
+![Demo Creating Report](/images/demo_creating_report.gif)
 
 ---
 
@@ -118,7 +118,7 @@ Go to [/contribute](https://wiki.ledstrain.org/contribute) and login with GitHub
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
 
 {{< expand "Set Status" >}}  
-![Set Status to In Review](https://cdn.ledstrain.org/image/set_status_to_in_review.png)
+![Set Status to In Review](/images/set_status_to_in_review.png)
 {{< /expand >}}  
 
 ##### Direct GitHub Edit
