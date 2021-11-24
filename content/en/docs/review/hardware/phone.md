@@ -17,11 +17,10 @@ bookToc: 2
 
 ## Essential
 
-* https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/
-
-{{< forum-post id=5418 >}}
-{{< forum-post 5641 >}}
-{{< forum-post 6559 >}}
+* [threepeeo on reddit](https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/) found PWM at all brightness levels (appears to be 230 Hz)
+* [Sunspark](https://ledstrain.org/d/21-usable-smartphones/675) got eyestrain
+* [Olgomar](https://ledstrain.org/d/21-usable-smartphones/683) found PWM at all brightness levels
+* [CCitrine](https://ledstrain.org/d/21-usable-smartphones/738): "No eyestrain at all"
 
 ## HTC
 
