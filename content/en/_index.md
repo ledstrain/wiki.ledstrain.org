@@ -14,7 +14,7 @@ Wiki and Forum status
 #### What is LEDStrain?
 
 The [Forum](https://ledstrain.org/) and Wiki are here to help with the impact
- electrical devices have on our health.  
+ light-emitting devices have on our health - particularly eye health.  
 All are free to use and are community based!  
 
 
