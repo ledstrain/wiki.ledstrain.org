@@ -26,3 +26,5 @@ public/
 tmp/
 
 _temp/wiki.ledstrain.org/filecache/getjson/
+
+.hugo_build.lock
