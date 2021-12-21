@@ -104,32 +104,28 @@ Support can be reached here: {{< cloakemail address="admin@support.xyzz.work" qu
 Contributing is easy!  
 Menu's and Table of Content's are generated automatically
 
-There are three ways,
+There are two ways,
 * Using a front-end editor (similar to WordPress)
 * Directly editing on GitHub
-* Cloning the repo and making pull requests
 
 
 #### Editing
 
-##### Front End
-
 Go to [/contribute](https://wiki.ledstrain.org/contribute) and login with GitHub.   
 Note: be sure to set the status to `In Review` after saving. This causes a change request to be made.
 
-{{< expand "Set Status" >}}  
+{{< details "Set Status" >}}  
 ![Set Status to In Review](/images/set_status_to_in_review.png)
-{{< /expand >}}  
+{{< /details >}}  
 
 ##### Direct GitHub Edit
 ![Edit Icon](https://wiki.ledstrain.org/svg/edit.svg)
 At the bottom of every page you can click on the edit icon to edit that page  
 This will bring you to the source file on GitHub and you can make your changes there.
 
-##### Clone Repo
+{{< details "Advanced" >}}  
 You will need:
-* Hugo Extended {{< hugo-version >}} - [link](https://github.com/gohugoio/hugo/releases/tag/v{{< hugo-version >}})
-* Git
+- [Hugo Extended {{< hugo-version >}}](https://github.com/gohugoio/hugo/releases/tag/v{{< hugo-version >}})
 
 Clone the repo and its submodules, then start the hugo server.
 
@@ -138,6 +134,7 @@ git clone --recurse-submodules {{< param BookRepo >}}
 cd wiki.ledstrain.org
 hugo serve -wD
 ```
+{{< /details >}}
 
 #### Linking
 
