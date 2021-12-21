@@ -1,17 +1,15 @@
 ---
-title: "Phone"
+title: Phone
 slug: phone
 weight: 2
-# bookFlatSection: false
 bookToc: 2
-# bookHidden: false
+description: .
 ---
-
 ## Reference Links
-* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
+
+* \[LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
-
 
 # Android
 
@@ -26,10 +24,8 @@ bookToc: 2
 
 ### HTC One M8
 
-* XDA http://forum.xda-developers.com/showthread.php?t=2705983
-
-{{< forum-post 709 >}}
-{{< forum-post 1034 >}}
+* [XDA forum thread](http://forum.xda-developers.com/showthread.php?t=2705983)
+* Sunspark got eyestrain: [post1](https://ledstrain.org/d/21-usable-smartphones/66) [post2](https://ledstrain.org/d/21-usable-smartphones/107). He says other forum members loved it though.
 
 ### HTC 10
 
@@ -45,9 +41,9 @@ bookToc: 2
 ## OnePlus
 
 ### OnePlus 3
+
 * https://www.notebookcheck.com/Test-OnePlus-3-Smartphone-Erster-Eindruck.167713.0.html (German)
 * https://www.notebookcheck.net/OnePlus-3-Smartphone-Review.169223.0.html
-
 
 {{< bootstrap-table "table-striped table-bordered" >}}
 |Spec|Link||
@@ -59,7 +55,6 @@ bookToc: 2
 {{< forum-post 3675 >}}
 {{< forum-post 1023 >}}
 {{< forum-post 1297 >}}
-
 
 #### OnePlus 3T
 
@@ -74,7 +69,6 @@ bookToc: 2
 ### OnePlus 7
 
 ![OnePlus7](https://www.xda-developers.com/files/2019/05/OnePlus-7-Pro-OxygenOS-9-Display-Settings-11.jpg)
-
 
 ## Nokia
 
@@ -168,12 +162,10 @@ bookToc: 2
 
 {{< forum-post 8043 >}}
 
-
 # Microsoft
 
-## Lumia 
+## Lumia
 
 ### Lumia 650
 
 http://www.notebookcheck.net/Microsoft-Lumia-650-Smartphone-Review.165363.0.html
-
