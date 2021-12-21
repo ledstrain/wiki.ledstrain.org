@@ -7,7 +7,7 @@ description: .
 ---
 ## Reference Links
 
-* \[LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
+* [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
 
