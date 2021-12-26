@@ -4,28 +4,17 @@ description: Wiki for LEDStrain
 type: docs
 ---
 
-Welcome to the LEDStrain Wiki!  
-Wiki and Forum status
-[![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org)
-[![LEDStrain Status](https://ping.xyzz.work/badge/43118397-5927-48c3-b3fe-6ee1f0028de4/tt6elx4m-2/LEDStrain.svg)](https://ledstrain.org)
-
-[Interested in contributing?](ledstrain#contributing)  
-
 #### What is LEDStrain?
 
 The [Forum](https://ledstrain.org/) and Wiki are here to help with the impact
  light-emitting devices have on our health - particularly eye health.  
-All are free to use and are community based!  
+All are free to use and can use your help!
 
 
-#### Existing Content  
+#### Interested in contributing? 
 
-A lot of useful information is available on the [forum](https://ledstrain.org). 
-To make organizing this information easier, selected content can be
-[embedded through shortcodes](ledstrain#forum-post-embed).   
-You can identify existing content with a light blue background. Embedded content has 
-its discussion title and author linked, to allow you to jump into any post on the forum!  
+There are two ways: via a WordPress-like editor, or directly on GitHub. [Details](ledstrain#contributing)
 
-{{< forum-post id=11714 length=60 >}}
+Don't forget: you can embed any forum post directly into a wiki page [via shortcodes](ledstrain#forum-post-embed)! 🙂
 
 
