@@ -15,24 +15,23 @@ description: .
 
 ## Essential
 
-* [threepeeo on reddit](https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/) found PWM at all brightness levels (appears to be 230 Hz)
-* [Sunspark](https://ledstrain.org/d/21-usable-smartphones/675) got eyestrain
-* [Olgomar](https://ledstrain.org/d/21-usable-smartphones/683) found PWM at all brightness levels
-* [CCitrine](https://ledstrain.org/d/21-usable-smartphones/738): "No eyestrain at all"
+* 🛑 [threepeeo on reddit](https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/) found PWM at all brightness levels (appears to be 230 Hz)
+* 🛑 [Sunspark](https://ledstrain.org/d/21-usable-smartphones/675) got eyestrain
+* 🛑 [Olgomar](https://ledstrain.org/d/21-usable-smartphones/683) found PWM at all brightness levels
+* ✅ [CCitrine](https://ledstrain.org/d/21-usable-smartphones/738): "No eyestrain at all"
 
 ## HTC
 
 ### HTC One M8
 
 * [XDA forum thread](http://forum.xda-developers.com/showthread.php?t=2705983)
-* Sunspark got eyestrain: [post1](https://ledstrain.org/d/21-usable-smartphones/66) [post2](https://ledstrain.org/d/21-usable-smartphones/107). He says other forum members loved it though.
+* 🛑 Sunspark got eyestrain: [post1](https://ledstrain.org/d/21-usable-smartphones/66) [post2](https://ledstrain.org/d/21-usable-smartphones/107). He says other forum members loved it though.
 
 ### HTC 10
 
-* https://www.notebookcheck.net/HTC-10-Smartphone-Review.165871.0.html
-* https://forum.xda-developers.com/htc-10/how-to/poll-panel-htc-10-main-s820-variant-t3370972
-
-{{< forum-post 1125 >}}
+* [NotebookCheck.net review](https://www.notebookcheck.net/HTC-10-Smartphone-Review.165871.0.html)
+* [POLL: What panel type do you have on your HTC 10? (on XDA-Developers.com)](https://forum.xda-developers.com/htc-10/how-to/poll-panel-htc-10-main-s820-variant-t3370972)
+* 🛑 [shimmyzv](https://ledstrain.org/d/21-usable-smartphones/126) finds it unusable
 
 ### HTC Ultra
 
