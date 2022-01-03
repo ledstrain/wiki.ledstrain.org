@@ -15,3 +15,7 @@ weight: 2
 ## Common (generic) solutions for computers
 
 * [**Not sharp enough font, anti-aliasing problems**](https://ledstrain.org/d/47-anti-aliased-fonts-can-damage-eyesight-writeup): There may be problems with font anti-aliasing or ClearType. This can be turned off via [SwitchResX](https://heteroforie.webnode.cz/l/apps-to-ease-the-symptoms-of-heterophoria/) (on Mac).
+
+## Common (generic) solutions for any kind of screen
+
+* [Eye patching](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain)
