@@ -1,6 +1,6 @@
 ---
-title: Links
-description: Quick Links for useful info
+title: New Content
+description: New posts to be integrated into the wiki
 weight: 1
 bookCollapseSection: true
 # bookFlatSection: false
