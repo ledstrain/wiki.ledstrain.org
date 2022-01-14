@@ -56,9 +56,9 @@ Conversion cables
 - [Article about 16-235 and 0-255 (Russian)](http://www.vodkomotornik.ru/forum/viewtopic.php?t=3073)
 - [Nvidia drivers automatically interpret monitor as TV when it is plugged in through HDMI and gives it 16-235 range (dated 2015) (Russian)](https://render.ru/xen/threads/hdmi-nvidia-ogranichenie-dinamicheskogo-diapazona-do-16-235.159632/)
 
-## Integer Scaling
-Makes image blurry  
-- [Post about Integer Scaling on IXBT (Russian)](https://forum.ixbt.com/topic.cgi?id=28:30464:12#12)
+## Image resolution scaling
+Scaling algorithms make an image blurry  
+- [Big detailed article about scaling](https://tanalin.com/en/articles/integer-scaling/)
 
 ## Software and OS
 - [Detailed article about eyestrain from Linux (Russian)](https://www.linux.org.ru/forum/linux-hardware/15961616#comments)
