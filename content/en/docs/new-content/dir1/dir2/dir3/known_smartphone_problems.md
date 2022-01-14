@@ -17,7 +17,8 @@ Notice that there are two important numbers to measure: PWM frequency and PWM fl
 - [A nice article about PWM and its influence, google translation from Russian](https://deep--review-com.translate.goog/articles/amoled-pwm-flicker/?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=ru)
 - [A simplified guide on how to test whether PWM affects you](https://ledstrain.org/d/1404-eyestrain-triggers/9)
 - [Video that illustrates a pencil test, also called a pen test](https://www.youtube.com/watch?v=IHKWQRzS2tE&loop=0)
-- [Notebookcheck PWM frequency data table for all devices starting from 2016-2017](https://www.notebookcheck.net/Benchmarks-and-Test-Results.142793.0.html?type=&sort=&max_results=1000&archive=1&or=0&showBars=1&bench_350_944=1&model=1&screen_panel_type=1)
+- [Notebookcheck PWM frequency data table for all devices starting from 2016-2017](https://www.notebookcheck.net/Benchmarks-and-Test-Results.142793.0.html?type=&sort=&max_results=1000&archive=1&or=0&showBars=1&bench_350_944=1&model=1&screen_panel_type=1)   
+ 
 Phones can have dc-dimming option to reduce PWM. Try turning it on.  
 For Android phones there are few apps that can successfully eliminate PWM by setting up 100% brightness and applying a black filter above screen image, imitating dc-dimming:
 - Oled Saver, probably uses complicated filter
@@ -35,8 +36,8 @@ The problem was present before 2016, but rarely.
 Can be related to screen parts: [hypothesis here](https://ledstrain.org/d/1458-ips-screen-parts-description-and-dangerous-parts-hypothesis-lightvergence)
 
 ## Excessive blue light
-There are some reports that reducing blue light helps, but sometimes not for 100%.
-Many phones have a built-in blue filter, if not, you can download the application, there are a lot of apps on a search request "blue filter")
-To check the influence of the blue color from the blue subpixel, you can read/look at a picture where there is no blue color: for example, set the background and font colors with the rgb code in the FBReader reader (any value, any value, 0)
-To limit the blue spectrum from the entire screen - optics have glasses with a blue-blocking filter.
-[Post about blue light blocking glasses success](https://ledstrain.org/d/798-anyone-had-success-with-blue-light-filters/25)
+There are some reports that reducing blue light helps, but sometimes not for 100%.   
+Many phones have a built-in blue filter, if not, you can download the application, there are a lot of apps on a search request "blue filter")   
+To check the influence of the blue color from the blue subpixel, you can read/look at a picture where there is no blue color: for example, set the background and font colors with the rgb code in the FBReader reader (any value, any value, 0)   
+To limit the blue spectrum from the entire screen - optics have glasses with a blue-blocking filter.   
+- [Post about blue light blocking glasses success](https://ledstrain.org/d/798-anyone-had-success-with-blue-light-filters/25)   
