@@ -1,5 +1,5 @@
 ---
-title: List of image, signal, flicker related problems for monitors and laptops
+title: Problems with monitors/laptops (image/signal/flicker-related)
 ---
 
 
