@@ -1,6 +1,5 @@
 ---
-title: List of light, backlight, screen parts related problems for monitors and
-  laptops
+title: Problems with monitors/laptops (light/backlight/screen parts-related)
 ---
 ## 1. Undefined problem X
 Something in light that affects vergence. Complaints often include piercing white colour, inability to set up a pleasant brightness (screen always feels too bright), and inability to focus on a screen.   

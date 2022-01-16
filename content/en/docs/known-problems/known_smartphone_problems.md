@@ -1,5 +1,5 @@
 ---
-title: List of known problems, tests and solutions for smartphones
+title: Problems/tests/solutions for smartphones
 ---
 ## Poor image quality on a screen
 No complaints of eye pain from poor image quality on mobile phones have been reported yet. It is worth mentioning, though. First of all, poor image quality may happen on inexpensive phones or smaller Chinese brands.  
