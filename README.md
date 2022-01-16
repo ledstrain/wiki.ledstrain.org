@@ -1,6 +1,6 @@
 ## [LEDStrain Wiki](https://wiki.ledstrain.org)
 
-Also join us in the [forum](https://ledstrain.org) and [chat](https://chat.ledstrain.org)
+Also join us in the [forum](https://ledstrain.org)
 
 Github Pages Build Status  
 [![Actions Status](https://github.com/ledstrain/wiki.ledstrain.org/workflows/github-pages/badge.svg)](https://github.com/ledstrain/wiki.ledstrain.org/actions)
