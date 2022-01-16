@@ -1,6 +1,7 @@
 ---
 title: "Known Problems"
 weight: 2
+bookCollapseSection: true
 # bookFlatSection: false
 # bookToc: 6
 # bookHidden: false
