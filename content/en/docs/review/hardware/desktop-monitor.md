@@ -18,3 +18,7 @@ weight: 4
 {{< forum-post 3879 >}}
 
 {{< forum-post 8308 >}}
+
+### Dell 2408WPF
+
+* [deepflame](https://ledstrain.org/d/1030-should-i-buy-ccfl-monitor/2): "Works very well for me. Best used with DisplayPort".
