@@ -25,7 +25,7 @@ Inversion tests:
 [Post about inversion leading to real life visible colored spots (Russian)](https://4pda.to/forum/index.php?showtopic=943228&view=findpost&p=112435540)   
 
 ## Temporal dithering
-Small flickering of pixels to create a color, potentially visible
+Small flickering of pixels to create a color, potentially visible. [May happen faster than the screen's refresh rate](https://forums.blurbusters.com/viewtopic.php?t=6799#p50428) (which is usually 60 FPS).
 - [Article about dithering](https://smerity.com/articles/2013/dithering.html) with link to [example](https://codepen.io/Smerity/pen/Abwcu) (Caution! Severe flicker!)
 - [Another article that has advice on where to find dithering setting for Nvidia and AMD](https://vpixx.com/vocal/dithering/)
 - [Guide how to check whether dithering is affecting you and turn it off on Intel video cards (Russian)](https://4pda.to/forum/index.php?showtopic=943228&view=findpost&p=111856809)
@@ -45,7 +45,7 @@ Dithering tests and capture:
 - [Video of undefined dithering-like flicker, made visible with e-ink](https://ledstrain.org/d/152-temporal-dithering-sensitivity-my-solution/116) by ShivaWind (scroll through user posts for more info)   
 
 ## FRC
-Small flickering of pixels to create a color, potentially visible   
+Small flickering of pixels to create a color, potentially visible. [Happens as fast as the screen's refresh rate](https://forums.blurbusters.com/viewtopic.php?t=6799#p50428) (which is usually 60 FPS).  
 It is a form of temporal dithering that is tied to the matrix and is used to increase matrix color capacity.   
 Data about many matrices can be found here:
 - <http://www.tftcentral.co.uk/articles/monitor_panel_parts.htm>

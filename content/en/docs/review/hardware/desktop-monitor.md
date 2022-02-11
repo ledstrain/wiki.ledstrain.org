@@ -15,10 +15,10 @@ weight: 4
 
 ### Dell U2410
 
-{{< forum-post 3879 >}}
+* ✔ [MagnuM](https://ledstrain.org/d/320-monitor-buying-guide-2018/12): "The Dell U2410 has been my savior for a long time now."
 
 {{< forum-post 8308 >}}
 
 ### Dell 2408WPF
 
-* [deepflame](https://ledstrain.org/d/1030-should-i-buy-ccfl-monitor/2): "Works very well for me. Best used with DisplayPort".
+* ✔ [deepflame](https://ledstrain.org/d/1030-should-i-buy-ccfl-monitor/2): "Works very well for me. Best used with DisplayPort".
