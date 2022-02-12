@@ -14,3 +14,4 @@ weight: 5
 ## Other
 
 * [Regular eye washing](https://ledstrain.org/d/334-treatments-desensitization-pills-exercises-solutions/219)
+* [Neck muscle physiotherapy](https://ledstrain.org/d/938-check-your-neck-muscles)
