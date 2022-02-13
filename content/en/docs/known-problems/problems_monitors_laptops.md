@@ -4,14 +4,14 @@ title: Problems with monitors/laptops (image/signal/flicker-related)
 
 
 ## PWM
-Severe stroboscopic full-screen flicker, typically invisible (but easily detectable)   
+Full-screen flicker of the display backlight. Typically invisible, but easily detectable.   
 - [Article about PWM on notebookcheck](https://www.notebookcheck.net/Why-Pulse-Width-Modulation-PWM-is-such-a-headache.270240.0.html)
 - [Iris - software that emulates DC dimming, equalling PWM to that is used for 100% brightness on your device](https://iristech.co/)
 - [An old and experimental tool to adjust PWM driver frequency on Windows](https://github.com/tpurtell/PWM)
 - [IEEE Std 1789-2015 - recommended practices for PWM in LED lights (pdf)](http://www.bio-licht.org/02_resources/info_ieee_2015_standards-1789.pdf)
 
 ## Vcom (LCD screens)
-Small flickering of separate pixels, visible with bad factory settings  
+Small flickering of separate pixels, visible with bad factory settings.  
 - [Article about Vcom](https://www.eetimes.com/lcd-screens-dont-flicker-or-do-they/)
 - [Post about Vcom on IXBT with flicker sample (Russian)](https://forum.ixbt.com/topic.cgi?id=28:30236:7864#7864)
 
