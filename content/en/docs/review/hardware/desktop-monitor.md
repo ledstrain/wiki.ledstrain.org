@@ -22,3 +22,11 @@ weight: 4
 ### Dell 2408WPF
 
 * ✔ [deepflame](https://ledstrain.org/d/1030-should-i-buy-ccfl-monitor/2): "Works very well for me. Best used with DisplayPort".
+
+### Dell 2009WT
+
+* ✔ [SAH](https://ledstrain.org/d/1530-what-to-choose-6-bit-or-8bit-ccfl-ips-or-tn/2): "It's really nice".
+
+### Dell 2209WA 
+
+* ✔ [SAH](https://ledstrain.org/d/1530-what-to-choose-6-bit-or-8bit-ccfl-ips-or-tn/2): "it doesn't trigger awful symptoms such as brain fog or photophobia".
