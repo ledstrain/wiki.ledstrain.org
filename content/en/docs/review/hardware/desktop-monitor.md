@@ -30,3 +30,7 @@ weight: 4
 ### Dell 2209WA 
 
 * ✔ [SAH](https://ledstrain.org/d/1530-what-to-choose-6-bit-or-8bit-ccfl-ips-or-tn/2): "it doesn't trigger awful symptoms such as brain fog or photophobia".
+
+### Dell S2421HGF
+
+* ✔ [ensete](https://ledstrain.org/d/1529-feedback-from-microsoft-os-engineers-and-something-that-is-helping-me/12): "Minimal symptoms [...]; It has been a true lifesaver"
