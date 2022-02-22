@@ -18,7 +18,7 @@ description: .
 * 🛑 [threepeeo on reddit](https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/) found PWM at all brightness levels (appears to be 230 Hz)
 * 🛑 [Sunspark](https://ledstrain.org/d/21-usable-smartphones/675) got eyestrain
 * 🛑 [Olgomar](https://ledstrain.org/d/21-usable-smartphones/683) found PWM at all brightness levels
-* ✅ [CCitrine](https://ledstrain.org/d/21-usable-smartphones/738): "No eyestrain at all"
+* ✔ [CCitrine](https://ledstrain.org/d/21-usable-smartphones/738): "No eyestrain at all"
 
 ## HTC
 
@@ -113,6 +113,12 @@ description: .
 ### Galaxy J3
 
 {{< forum-post 4446 >}}
+
+## Motorola
+
+### Motorola G Stylus (2020)
+
+* ✔ [Rataplan](https://ledstrain.org/d/21-usable-smartphones/2039): "very pleasant on the eyes. Would've kept it but the performance was very bad, almost everything lagged and stuttered."
 
 # iOS
 
