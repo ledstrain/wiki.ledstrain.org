@@ -75,6 +75,10 @@ description: .
 
 {{< forum-post 3240 >}}
 
+### Nokia 7.2
+
+* ✔ [Rataplan](https://ledstrain.org/d/21-usable-smartphones/2039): "almost problem free. Unfortunately the speaker is very poor"
+
 ### Nokia 8
 
 {{< forum-post 5022 >}}
