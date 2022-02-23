@@ -161,6 +161,12 @@ description: .
 
 {{< forum-post 8043 >}}
 
+## ASUS
+
+### ROG Phone 2
+
+* ✅ [ludwig](https://ledstrain.org/d/21-usable-smartphones/2040): "i used samsung galaxy s7 and give me eyestrain, headache in few minutes i use it. Then 2 years ago i changed phone to rog phone 2 and **this phone just perfect**. Screen is oled but dont give me eye strain, my eyes feels good with this phone"
+
 # Microsoft
 
 ## Lumia
