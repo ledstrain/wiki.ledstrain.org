@@ -29,6 +29,10 @@ ___
 ### Dell Workstation 
 {{< forum-post 5101 >}}
 
+### Dell XPS 13 9350 2015
+
+* ✔ [Deepak](https://ledstrain.org/d/261-what-works-for-you-what-do-you-use-now-without-problems/186): "The display is INSANELY comfortable right?! I just use windows night-light at around 45% to reduce the blue light, and that is one of the BEST MOST COMFORTABLE looking displays I've ever seen. It looks so flat, non-imposing, and is so gentle on the eyes."
+
 ### XPS 13
 {{< forum-post 10921 >}}
 
