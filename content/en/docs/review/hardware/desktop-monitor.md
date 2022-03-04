@@ -34,3 +34,7 @@ weight: 4
 ### Dell S2421HGF
 
 * ✔ [ensete](https://ledstrain.org/d/1529-feedback-from-microsoft-os-engineers-and-something-that-is-helping-me/12): "Minimal symptoms [...]; It has been a true lifesaver"
+
+## LG 32gk850g
+
+* ✔ [f3likx](https://ledstrain.org/d/379-eyestrain-solved-after-6-years-and-multiple-panels-lg-32gk850g): "This... has finally solved it. The bags under my eyes are significantly reduced after only a week, and my eyes are very obviously less red (at all). I still wear anti-blue glasses but I don't use the anti-blue modes on the monitor. **I can stare at it for 12 hours without discomfort.**"
