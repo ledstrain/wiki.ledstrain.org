@@ -11,26 +11,28 @@ weight: 4
 * [LED Strain {{< param slug >}} Tag](https://ledstrain.org/t/{{< param slug >}}?sort=top)
 
 
-## Dell
-
-### Dell U2410
+## Dell U2410
 
 * ✔ [MagnuM](https://ledstrain.org/d/320-monitor-buying-guide-2018/12): "The Dell U2410 has been my savior for a long time now."
 
 {{< forum-post 8308 >}}
 
-### Dell 2408WPF
+## Dell 2408WPF
 
 * ✔ [deepflame](https://ledstrain.org/d/1030-should-i-buy-ccfl-monitor/2): "Works very well for me. Best used with DisplayPort".
 
-### Dell 2009WT
+## Dell 2009WT
 
 * ✔ [SAH](https://ledstrain.org/d/1530-what-to-choose-6-bit-or-8bit-ccfl-ips-or-tn/2): "It's really nice".
 
-### Dell 2209WA 
+## Dell 2209WA 
 
 * ✔ [SAH](https://ledstrain.org/d/1530-what-to-choose-6-bit-or-8bit-ccfl-ips-or-tn/2): "it doesn't trigger awful symptoms such as brain fog or photophobia".
 
-### Dell S2421HGF
+## Dell S2421HGF
 
 * ✔ [ensete](https://ledstrain.org/d/1529-feedback-from-microsoft-os-engineers-and-something-that-is-helping-me/12): "Minimal symptoms [...]; It has been a true lifesaver"
+
+## Samsung S27A850D
+
+* ✔ [Oshim](https://ledstrain.org/d/1558-lg-32gp850-g-or-lg-32gk850-g-for-10-hours-in-front-of-the-monitor-every-day): "I have to say this monitor is AMAZING aaand I am STILL using it to this day! No eye strain since 2012! No PWM, no shimmering, no gimmicks - just an outstanding quality sRGB PLS panel with great accurate colors and sturdy build quality."
