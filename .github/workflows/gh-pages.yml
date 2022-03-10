@@ -13,18 +13,18 @@ jobs:
       with:
         submodules: true
 
-    - name: Get Current Month
-      id: current-month
-      run: echo "::set-output name=day::$(date '+%d')"
+    - name: Get Current Month and Day
+      id: month-day
+      run: echo "::set-output name=d::$(date '+%m-%d')"
 
     - name: Cache Hugo Assets
       id:   cache-hugo-assets
       uses: actions/cache@v1
       with:
         path: /tmp/hugo_cache
-        key:  hugo-${{ steps.current-month.outputs.day }}
+        key:  hugo-${{ steps.current-month.outputs.d }}
         restore-keys: |
-          hugo-${{ steps.current-month.outputs.day }}
+          hugo-${{ steps.current-month.outputs.d }}
           hugo-
 
     - name: Setup Hugo
