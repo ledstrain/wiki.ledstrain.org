@@ -22,9 +22,9 @@ jobs:
       uses: actions/cache@v1
       with:
         path: /tmp/hugo_cache
-        key:  hugo-${{ steps.current-month.outputs.d }}
+        key:  hugo-${{ steps.month-day.outputs.d }}
         restore-keys: |
-          hugo-${{ steps.current-month.outputs.d }}
+          hugo-${{ steps.month-day.outputs.d }}
           hugo-
 
     - name: Setup Hugo
