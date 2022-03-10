@@ -9,7 +9,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
       with:
         submodules: true
 
@@ -18,50 +18,32 @@ jobs:
       run: echo "::set-output name=day::$(date '+%d')"
 
     - name: Cache Hugo Assets
-      id: cache-hugo-assets
+      id:   cache-hugo-assets
       uses: actions/cache@v1
       with:
         path: /tmp/hugo_cache
-        key: hugo-${{ steps.current-month.outputs.day }}
+        key:  hugo-${{ steps.current-month.outputs.day }}
         restore-keys: |
           hugo-${{ steps.current-month.outputs.day }}
           hugo-
-#    - name: Cache htmltest
-#      id: cache-html-assets
-#      uses: actions/cache@v1
-#      with:
-#        path: "tmp/.htmltest"
-#        key: ${{ runner.os }}-htmltest-${{ hashfiles('**/refcache.json') }}
-#        restore-keys: |
-#          ${{ runner.os }}-htmltest-
-#          -htmltest-
-
-# Disabled pending https://github.com/actions/cache/issues/106
-#    - name: Cache Hugo Assets
-#      id: cache-assets
-#      uses: actions/cache@v1
-#      with:
-#        path: ${{ runner.temp }}/hugo_cache
-#        key: hugo-${{ hashfiles('**/filecache/**') }}
-#        restore-keys: hugo-
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest'
-        extended: true
-
+        hugo-version: '0.90.1'
+        extended:     true
 
     - name: Build Hugo Testing
       env:
-        TESTDIR: ${{ runner.temp }}/publicTesting
+        TESTDIR:          ${{ runner.temp }}/publicTesting
         HUGO_ENVIRONMENT: "testing"
         HUGO_RELATIVEURLS: true
+        HUGO_CACHEDIR:     "/tmp/hugo_cache"
       run: hugo -d $TESTDIR
 
     - name: Test Broken Links
       env:
-        TMPDIR: ${{ runner.temp }}
+        TMPDIR:  ${{ runner.temp }}
         TESTDIR: ${{ runner.temp }}/publicTesting
       run: bash '.github/scripts/htmltest.sh'
 
@@ -70,18 +52,20 @@ jobs:
 
     - name: Stats
       env:
-        MATOMO_API: ${{ secrets.MATOMO_API }}
+        MATOMO_API:     ${{ secrets.MATOMO_API }}
         MATOMO_BASEURL: ${{ secrets.MATOMO_BASEURL }}
         BUILD: "SOURCE"
       run: bash '.github/scripts/download-assets.sh' 'assets'
 
     - name: Build
+      env:
+        HUGO_CACHEDIR: "/tmp/hugo_cache"
       run: hugo --minify
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./public
+        deploy_key:     ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir:    ./public
         publish_branch: gh-pages
-        force_orphan: true
+        force_orphan:   true
