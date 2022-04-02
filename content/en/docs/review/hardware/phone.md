@@ -124,6 +124,12 @@ description: .
 
 * ✔ [Rataplan](https://ledstrain.org/d/21-usable-smartphones/2039): "very pleasant on the eyes. Would've kept it but the performance was very bad, almost everything lagged and stuttered."
 
+## LG
+
+### LG G5
+
+* 🛑 [Maxx](https://ledstrain.org/d/21-usable-smartphones/189): "unusable"
+
 # iOS
 
 ## iPhone
