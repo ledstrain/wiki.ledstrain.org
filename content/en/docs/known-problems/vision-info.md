@@ -25,6 +25,8 @@ Please note that tech can affect your light sensitivity, lead to red eyes, etc. 
 
 Several of our users have tried prism lenses. Here are summaries of their feedback on this:
 
+* martin:
+    * [The help for me first were glasses with prismatic lenses, that **eased the problems by about 50%**.](https://ledstrain.org/d/369-my-possible-solution-treatment-and-progress-so-far)
 * bkdo:
     * "[I definitely have some strain from trying to adjust, but I'm absolutely noticing a **reduction in flicker sensitivity**.](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/64)"
     * "[I'm currently wearing lenses with this prescription & have about a **60-70% reduction in symptoms**.](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/83)
