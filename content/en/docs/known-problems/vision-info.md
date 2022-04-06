@@ -27,12 +27,12 @@ Several of our users have tried prism lenses. Here are summaries of their feedba
 
 * bkdo:
     * "[I definitely have some strain from trying to adjust, but I'm absolutely noticing a **reduction in flicker sensitivity**.](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/64)"
-    * "[I'm currently wearing lenses with this prescription & have about a 60-70% reduction in symptoms.](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/83)
-    * [I noticed the 60-70% relief from flicker symptoms pretty quickly, within a few days IIRC. It definitely took a long time to actually adjust to the lenses](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/104)
+    * "[I'm currently wearing lenses with this prescription & have about a **60-70% reduction in symptoms**.](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/83)
+    * [I noticed the 60-70% relief from flicker symptoms **pretty quickly, within a few days** IIRC. It definitely took a long time to **actually adjust** to the lenses](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/104)
 * ensete:
     * ["... They recommended adding prism to some lenses, so I had some custom lenses made up and they **didn't help at all**."](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/76)
 * Dominic:
-    * [Today I tried "vertical" prisms and my body reaction was pretty much the same as it was when I was trying my first and second prism lenses - I got a severe headache, pain around my eyes, dizziness](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
+    * [Today I tried "vertical" prisms and my body reaction was pretty much the same as it was when I was trying my first and second prism lenses - I got a severe **headache, pain around my eyes, dizziness**](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
 
 ## Prescription glasses
 Just to double-check: check your prescription glasses.
