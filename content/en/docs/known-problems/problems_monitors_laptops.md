@@ -67,7 +67,7 @@ Conversion cables
 ## Image output
 - [Post where eyestrain decreases *a lot* with 16-235 range **(on NVidia)**](https://ledstrain.org/d/884-bad-eye-strain-100-at-rgb-output-dymanic-range-full-20-at-limtied)
 - [Two examples of eyestrain or discomfort from different color range settings (Russian)](https://4pda.to/forum/index.php?showtopic=943228&view=findpost&p=112169530)
-- [Post where 16-235 helped to eliminate eyestrain completely](https://forums.blurbusters.com/viewtopic.php?f=2&t=6351&hilit=eyestrain&start=30#p65421)
+- [Post where 16-235 helped to eliminate eyestrain completely **(on NVidia, with one specific monitor)**](https://forums.blurbusters.com/viewtopic.php?f=2&t=6351&hilit=eyestrain&start=30#p65421)
 - [Article about 16-235 and 0-255 (Russian)](http://www.vodkomotornik.ru/forum/viewtopic.php?t=3073)
 - [Nvidia drivers automatically interpret monitor as TV when it is plugged in through HDMI and gives it 16-235 range (dated 2015) (Russian)](https://render.ru/xen/threads/hdmi-nvidia-ogranichenie-dinamicheskogo-diapazona-do-16-235.159632/)
 
