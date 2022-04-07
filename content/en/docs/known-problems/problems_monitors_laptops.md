@@ -65,7 +65,7 @@ Conversion cables
 - [Post about yellow tint with conversion cables](https://ledstrain.org/d/959-cables-actually-matter)
 
 ## Image output
-- [Post where eyestrain decreases with 16-235 range](https://ledstrain.org/d/884-bad-eye-strain-100-at-rgb-output-dymanic-range-full-20-at-limtied)
+- [Post where eyestrain decreases *a lot* with 16-235 range **(on NVidia)**](https://ledstrain.org/d/884-bad-eye-strain-100-at-rgb-output-dymanic-range-full-20-at-limtied)
 - [Two examples of eyestrain or discomfort from different color range settings (Russian)](https://4pda.to/forum/index.php?showtopic=943228&view=findpost&p=112169530)
 - [Post where 16-235 helped to eliminate eyestrain completely](https://forums.blurbusters.com/viewtopic.php?f=2&t=6351&hilit=eyestrain&start=30#p65421)
 - [Article about 16-235 and 0-255 (Russian)](http://www.vodkomotornik.ru/forum/viewtopic.php?t=3073)
