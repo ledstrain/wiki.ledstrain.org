@@ -8,10 +8,6 @@ weight: 10
 ---
 
 # Car
-## Toyota
-### Camry
-#### Toyota Camry 2010
+## Toyota Camry 2010
 
-##### PWM
-![Car Dashboard PWM](/images/car_dashboard_pwm.gif)
-![Car Radio PWM](/images/car_radio_pwm.gif)
+* 🛑 [Slacor](https://ledstrain.org/d/163-car-backlight-of-dashboard): Dashboard has PWM
