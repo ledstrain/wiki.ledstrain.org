@@ -34,7 +34,7 @@ Several of our users have tried prism lenses. Here are summaries of their feedba
 * ensete:
     * ["... They recommended adding prism to some lenses, so I had some custom lenses made up and they **didn't help at all**."](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/76)
 * Dominic:
-    * [I got prismatic eyeglasses. I didn't feel comfortable in any of them (I got three pairs). One of them made me sick to the point I was up all night due to horrific headache. The weakest prisms I got were bearable, but didn't give me any significant relief. Trying to get used to I was wearing them for two weeks, then **I gave up**.](https://ledstrain.org/d/1374-exophoriaaccommodation-spasmastigmatism-what-should-i-do)
+    * [Then I got prismatic eyeglasses. I didn't feel comfortable in any of them (I got three pairs). One of them made me sick to the point I was up all night due to horrific headache. The weakest prisms I got were bearable, but didn't give me any significant relief. Trying to get used to I was wearing them for two weeks, then I gave up.](https://ledstrain.org/d/1374-exophoriaaccommodation-spasmastigmatism-what-should-i-do)
     * [Today I tried "vertical" prisms and my body reaction was pretty much the same as it was when I was trying my first and second prism lenses - I got a severe **headache, pain around my eyes, dizziness**](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
 
 ## Prescription glasses
