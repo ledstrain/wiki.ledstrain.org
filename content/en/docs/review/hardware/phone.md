@@ -11,7 +11,7 @@ description: .
 * ["Usable Smartphones" mega-thread](https://ledstrain.org/d/21-usable-smartphones)
 * [CF.lumen](https://ledstrain.org/d/21-usable-smartphones/277)
 
-# Essential
+## Essential
 
 * 🛑 [threepeeo on reddit](https://www.reddit.com/r/essential/comments/96v6ft/essential_phone_screen_flicker/) found PWM at all brightness levels (appears to be 230 Hz)
 * 🛑 [Sunspark](https://ledstrain.org/d/21-usable-smartphones/675) got eyestrain
@@ -102,7 +102,7 @@ description: .
 {{< forum-post 2785 >}}
 {{< forum-post 3820 >}}
 
-### Samsung Galaxy J3
+## Samsung Galaxy J3
 
 {{< forum-post 4446 >}}
 
