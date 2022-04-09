@@ -50,3 +50,5 @@ Several of our users have tried astigmatism lenses. Here are summaries of their 
 * Dominic:
     * ["My astigmatism glasses also give me a slight headache and sometimes eye strain, but they **lessen my other symptoms** I usually get from devices."](https://ledstrain.org/d/1406-uncorrected-refractive-error/12)
     * ["They give me a **50% relief**."](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
+* DanielK:
+    * ["It's now been 10 days since getting the glasses and **I've been 6 days without the pain** I've become used to."](https://ledstrain.org/d/970-it-was-led-sensitivity-and-astigmatism-for-me)
