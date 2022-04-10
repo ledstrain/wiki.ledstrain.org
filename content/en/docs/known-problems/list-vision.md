@@ -1,5 +1,5 @@
 ---
-title: Vision info
+title: Problems with human vision
 ---
 ## Binocular vision
 It seems that in many cases bad tech triggers binocular vision problems.  
