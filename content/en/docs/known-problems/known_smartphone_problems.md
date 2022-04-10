@@ -1,5 +1,5 @@
 ---
-title: Problems/tests/solutions for smartphones
+title: Problems with smartphones
 ---
 ## Poor image quality on a screen
 No complaints of eye pain from poor image quality on mobile phones have been reported yet. It is worth mentioning, though. First of all, poor image quality may happen on inexpensive phones or smaller Chinese brands.  
@@ -20,9 +20,10 @@ Notice that there are two important numbers to measure: PWM frequency and PWM fl
 - [Notebookcheck PWM frequency data table for all devices starting from 2016-2017](https://www.notebookcheck.net/Benchmarks-and-Test-Results.142793.0.html?type=&sort=&max_results=1000&archive=1&or=0&showBars=1&bench_350_944=1&model=1&screen_panel_type=1)   
  
 Phones can have dc-dimming option to reduce PWM. Try turning it on.  
-For Android phones there are few apps that can successfully eliminate PWM by setting up 100% brightness and applying a black filter above screen image, imitating dc-dimming:
+For Android phones there are a few apps that can successfully eliminate PWM by setting up 100% brightness and applying a black filter above screen image, imitating dc-dimming:
 - Oled Saver, probably uses complicated filter
 - [PWMfree, uses black filter](https://forum.xda-developers.com/t/app-amoled-pwmfree.3898070/?__cf_chl_jschl_tk__=AFSoq18Bz4MKbpn8Y6AJvLHyTLxp0y1prraqCthK0aY-1640438292-0-gaNycGzNCxE)
+
 If your phone has dc-dimming, you still can use Oled Saver or another app together with dc-dimming. Dc-dimming on phones is not a remedy. Oled Saver can improve situation further.
 
 ## FRC/Temporal dithering/Inversion: small potentially slightly visible flicker
