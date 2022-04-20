@@ -113,7 +113,7 @@ description: .
 ## LG G5
 
 * 🛑 [Maxx](https://ledstrain.org/d/21-usable-smartphones/189): "unusable"
-* 🛑 [logixoul](https://ledstrain.org/d/21-usable-smartphones/2066): barely usable
+* 🛑 [logixoul](https://ledstrain.org/d/21-usable-smartphones/2066): barely usable; has PWM (at low brightness settings)
 
 ## iPhone 4s
 
