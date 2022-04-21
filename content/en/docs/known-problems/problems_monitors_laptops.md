@@ -69,6 +69,7 @@ Conversion cables
 - [One user says (Russian)](https://forum.ixbt.com/topic.cgi?id=28:30236:5869#5869) **full-range output** made it **much more comfortable** to work on his Benq GW2270 monitor
 - [One user says (Russian)](https://forum.ixbt.com/topic.cgi?id=28:29319:1907#1907) **YCbCr444 output mode** made his eyes "focus and **not hurt**"
 - [Post where 16-235 helped to eliminate eyestrain completely **(on NVidia, with one specific monitor)**](https://forums.blurbusters.com/viewtopic.php?f=2&t=6351&hilit=eyestrain&start=30#p65421)
+- [Post where 0-255 range **removed all dithering**](https://ledstrain.org/d/895-gpu-dithering)
 - [Article about 16-235 and 0-255 (Russian)](http://www.vodkomotornik.ru/forum/viewtopic.php?t=3073)
 - [Nvidia drivers automatically interpret monitor as TV when it is plugged in through HDMI and gives it 16-235 range (dated 2015) (Russian)](https://render.ru/xen/threads/hdmi-nvidia-ogranichenie-dinamicheskogo-diapazona-do-16-235.159632/)
 
