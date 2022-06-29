@@ -15,5 +15,9 @@ weight: 5
 
 ## Other
 
+* [Eyepatching](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain)
+* [Blinkers](https://ledstrain.org/d/1692-a-solution-at-last-hope-it-lasts)
+* [Visual therapy (eye exercises)](https://ledstrain.org/d/369-my-possible-solution-treatment-and-progress-so-far)
+* Prisms ([loose prisms](https://ledstrain.org/d/188-your-health/456) and [prism glasses](https://ledstrain.org/d/369-my-possible-solution-treatment-and-progress-so-far))
 * [Regular eye washing](https://ledstrain.org/d/334-treatments-desensitization-pills-exercises-solutions/219)
 * [Neck muscle physiotherapy](https://ledstrain.org/d/938-check-your-neck-muscles)
