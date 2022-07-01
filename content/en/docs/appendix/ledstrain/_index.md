@@ -172,15 +172,6 @@ length of `-1` will show the entire post, regardless of length.
 A domain can be specified, which can allow embedding content from other flarum
 based forums. This is primarily useful with using Post ID.
 
-{{< hint warning >}}  
-Positional arguments can be used, but cannot be combined with labeled arguments  
-For example, this will work:
-`{{</* forum-post 11714 */>}}`  
-This will not:
-`{{</* forum-post 11714 length=300 */>}}`  
-Instead, use this:
-`{{</* forum-post id=11714 length=300 */>}}`
-{{< /hint >}}  
 
 ```
 {{</* forum-post 11714  */>}}  
