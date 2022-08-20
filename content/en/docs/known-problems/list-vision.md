@@ -52,3 +52,8 @@ Several of our users have tried astigmatism lenses. Here are summaries of their 
     * ["They give me a **50% relief**."](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
 * DanielK:
     * ["It's now been 10 days since getting the glasses and **I've been 6 days without the pain** I've become used to."](https://ledstrain.org/d/970-it-was-led-sensitivity-and-astigmatism-for-me)
+
+### Vision therapy reviews
+
+* [martin](https://heteroforie.webnode.cz/l/technology-i-could-use-with-heterophoria-before-and-after-visual-therapy/) had much success: "I must say that even after the visual therapy which took 2 years (and I still do training once a week now) and using multiple glasses adjusted over time to fit my needs in the therapy, I can still tell the difference between new and older tech. However, some better days I would say I almost cannot, or that **it takes some hours of work on new technology to tell the difference, which is great progress compared to 10 minutes in the past.**"
+* [MagnuM](https://ledstrain.org/d/369-my-possible-solution-treatment-and-progress-so-far/3): "I did some pretty dedicated in-office vision therapy for about a year, and weekly "maintenance exercises" which I do on the weekend to try to hold what I have. **I'm still symptomatic, but not nearly as much** as I was during the initial symptom onset."
