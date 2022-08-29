@@ -36,6 +36,8 @@ Several of our users have tried prism lenses. Here are summaries of their feedba
 * Dominic:
     * [Then I got prismatic eyeglasses. I didn't feel comfortable in any of them (I got three pairs). One of them made me sick to the point I was up all night due to horrific headache. The weakest prisms I got were bearable, but didn't give me any significant relief. Trying to get used to I was wearing them for two weeks, then I gave up.](https://ledstrain.org/d/1374-exophoriaaccommodation-spasmastigmatism-what-should-i-do)
     * [Today I tried "vertical" prisms and my body reaction was pretty much the same as it was when I was trying my first and second prism lenses - I got a severe **headache, pain around my eyes, dizziness**](https://ledstrain.org/d/1308-one-eye-success-for-10-users-on-ledstrain/103)
+* AGI:
+   * [What a dreadful experience. [...] In the next couple of days I wore the glasses pretty much every time I worked on my laptop and even when I used PCs connected to a monitor and at night in bed reading from my phone, a book and my Kindle. Long story short, on day 4 I had developed so much pain in my arms, wrists and legs down to my ankles (can you believe it!) and spams in my face and my arms that I put the glasses in the case and sealed it.](https://ledstrain.org/d/1701-glasses-with-prismatic-lenses/21)
 
 ## Prescription glasses
 Just to double-check: check your prescription glasses.
