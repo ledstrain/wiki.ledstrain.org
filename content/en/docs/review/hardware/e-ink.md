@@ -15,4 +15,6 @@ Those users who have problems with android 9 even on eInk, ensure they don't hav
 
 A proposed way to fix, or lower, the eyestrain is to enter into Developer options and disabling Force GPU options and Hardware overlay option. Disabling anti-aliasing options may also help. (Android dithering thread: https://ledstrain.org/d/32-android-dithering)
 
-Dasung Paperlike Pro 13" eInk monitor, 2019 version, also causes with some setups eyestraining problems, but for most of the people it is not the case.
+Dasung Paperlike Pro 13" eInk monitor, 2019 version, also causes with some setups eyestraining problems, but for most of the people it is not the case. 
+
+If your attached device outputs temporal dithering, the Dasung will display the dithering, and because of the lower refresh rate it will be even more visible than on a regular color display. So the PaperLike monitor is not a foolproof solution. But if your sensitivity is to PWM and blue light it will definitely help.
