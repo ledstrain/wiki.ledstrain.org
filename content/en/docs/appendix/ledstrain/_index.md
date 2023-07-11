@@ -20,30 +20,6 @@ We can also help with adjusting tags or renaming discussions.
 
 ---
 
-### Private Messaging
-
-There is a internal PMing system available. Once logged in, click on Private Discussions -> Discuss privately in order to PM another member.  
-If you just registered and cannot PM other users, this is expected. Spend some time posting
- and interacting in the forum and it will be granted automatically over time.
-
-{{< mermaid >}}
-flowchart LR
-  user[Sending message to 'user']
-  user --> pd[Private Discussions] --> createThread[Discuss Privately] --> users[1 Recipient] --> Search[Search 'user'] --> Ok
-  user --> highlight[Highlight over 'user'] --> Dropdown[Click on Dropdown] --> offerToSend[Send 'user' a message]
-{{< /mermaid >}}
-
-### Reducing motion
-
-LEDStrain supports the media `prefers-reduced-motion`.
-
-To enable - [other guides](https://prefers-reduced-motion.com/)
-{{< mermaid >}}
-graph LR
-  Firefox --> about:config --> ui.prefersReducedMotion --> 1
-  Chrome  --> chromedevtools[Chrome developer tools] --> cmd[Run Command] --> ShowRendering[Show Rendering] --> Emulate[Emulate CSS media feature prefers-reduced-motion]
-{{< /mermaid >}}
-
 ### Community Guidelines
 
 #### Conduct
@@ -75,6 +51,32 @@ However, these conditions are required:
 Due to the nature of the forum advice may be given related to improving or managing your health\
 Discretion is upon the user to critically evaluate all information posted on the forum\
 For your safety, consult with your doctor before taking any supplements or medication.  
+
+---
+
+### Private Messaging
+
+There is a internal PMing system available. Once logged in, click on Private Discussions -> Discuss privately in order to PM another member.  
+If you just registered and cannot PM other users, this is expected. Spend some time posting
+ and interacting in the forum and it will be granted automatically over time.
+
+{{< mermaid >}}
+flowchart LR
+  user[Sending message to 'user']
+  user --> pd[Private Discussions] --> createThread[Discuss Privately] --> users[1 Recipient] --> Search[Search 'user'] --> Ok
+  user --> highlight[Highlight over 'user'] --> Dropdown[Click on Dropdown] --> offerToSend[Send 'user' a message]
+{{< /mermaid >}}
+
+### Reducing motion
+
+LEDStrain supports the media `prefers-reduced-motion`.
+
+To enable - [other guides](https://prefers-reduced-motion.com/)
+{{< mermaid >}}
+graph LR
+  Firefox --> about:config --> ui.prefersReducedMotion --> 1
+  Chrome  --> chromedevtools[Chrome developer tools] --> cmd[Run Command] --> ShowRendering[Show Rendering] --> Emulate[Emulate CSS media feature prefers-reduced-motion]
+{{< /mermaid >}}
 
 ### Account Deletion
 Users may [request](#logging-in--troubleshooting--requests) to have their account deleted.  
