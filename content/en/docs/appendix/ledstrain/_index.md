@@ -45,6 +45,9 @@ However, these conditions are required:
 * One discussion for each commerical presence to advertise from.
 * Engagement with community. Only posting promotional links is not permitted.
 
+#### 3rd-Party Communities
+LEDStrain welcomes the formation of third-party communities focused on addressing eye strain.  
+However, to maintain clarity and prevent confusion, third-party communities should choose distinct names and logos to avoid misrepresentation.
 
 #### Medical
 
