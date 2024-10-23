@@ -5,7 +5,7 @@ description: Hacks and useful tips for Linux
 ## Section conten
 
 1. How to check if dithering is present or not (Intel Arc and Intel iGPU 11th generation and above): the method using hardware register reading.
-2. How to check if dithering is present or not (intel iGPU): method using reading /sys/kernel/debug/dri/X/i915_display_info.
+2. How to check if dithering is present or not (Intel GPU/iGPU): method using reading /sys/kernel/debug/dri/X/i915_display_info.
 
 ## How to check if dithering is present or not (Intel Arc and Intel iGPU 11th generation and above): a method using hardware register reading
 
@@ -28,7 +28,7 @@ The 5th bit from the right is 0, meaning dithering is not present. If it is equa
 
 Link to the Intel manual where you can find information on registers (including PIPE_MISC, which we worked with above: https://cdrdv2-public.intel.com/703047/intel-gfx-prm-osrc-tgl-vol-02-c-command-reference-registers-part-2.pdf, page 688).
 
-## How to check if dithering is present or not: method using reading /sys/kernel/debug/dri/X/i915_display_info
+## How to check if dithering is present or not (Intel GPU/iGPU): method using reading /sys/kernel/debug/dri/X/i915_display_info
 
 Try running the command
 
