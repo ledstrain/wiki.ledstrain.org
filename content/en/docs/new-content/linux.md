@@ -2,7 +2,7 @@
 title: Linux
 description: Hacks and useful tips for Linux
 ---
-## Section conten
+## Section content
 
 1. How to check if dithering is present or not (Intel Arc and Intel iGPU 11th generation and above): the method using hardware register reading.
 2. How to check if dithering is present or not (Intel GPU/iGPU): method using reading /sys/kernel/debug/dri/X/i915_display_info.
