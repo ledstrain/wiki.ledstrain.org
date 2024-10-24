@@ -1,0 +1,99 @@
+backend:
+  name: github
+  repo: ledstrain/wiki.ledstrain.org
+  open_authoring: true
+
+publish_mode: editorial_workflow
+
+media_folder: "static/assets/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/assets/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/en/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", required: false, widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "type", name: "type", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "FAQ"
+        name: "faq"
+        file: "content/en/docs/faq.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", required: false, widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Guides"
+        name: "guides"
+        file: "content/en/docs/guides.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", required: false, widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Health Page"
+        name: "Health"
+        file: "content/en/docs/health/_index.md" # The path to the folder where the documents are stored
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", required: false, widget: "string"}
+          - {label: "Weight", name: "weight", widget: "hidden"}
+          - {label: "bookToc", name: "booktoc", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "new-content" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "New Content" # Used in the UI, ie.: "New Post"
+    folder: "content/en/docs/new-content" # The path to the folder where the documents are stored
+    identifier_field: "title"
+    extension: "md"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", required: false, widget: "string"}
+      - {label: "Weight", name: "weight", widget: "hidden"}
+      - {label: "bookToc", name: "booktoc", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "known-problems" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "New List" # Used in the UI, ie.: "New Post"
+    folder: "content/en/docs/known-problems" # The path to the folder where the documents are stored
+    identifier_field: "title"
+    extension: "md"
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", required: false, widget: "string"}
+      - {label: "Weight", name: "weight", widget: "hidden"}
+      - {label: "bookToc", name: "booktoc", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "review" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Review" # Used in the UI, ie.: "New Post"
+    folder: "content/en/docs/review" # The path to the folder where the documents are stored
+    path: "dir1/dir2/dir3/dir4"
+    extension: "md"
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", required: false, widget: "string"}
+      - {label: "Weight", name: "weight", widget: "hidden"}
+      - {label: "bookToc", name: "booktoc", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "appendix" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Appendix" # Used in the UI, ie.: "New Post"
+    folder: "content/en/docs/appendix" # The path to the folder where the documents are stored
+    path: "dir1/dir2/dir3"
+    extension: "md"
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", required: false, widget: "string"}
+      - {label: "Weight", name: "weight", widget: "hidden"}
+      - {label: "bookToc", name: "booktoc", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}
