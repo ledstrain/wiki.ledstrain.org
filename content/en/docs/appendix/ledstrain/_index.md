@@ -51,9 +51,14 @@ However, to maintain clarity and prevent confusion, third-party communities shou
 
 #### Medical
 
-Due to the nature of the forum advice may be given related to improving or managing your health\
-Discretion is upon the user to critically evaluate all information posted on the forum\
-For your safety, consult with your doctor before taking any supplements or medication.  
+All generalized health advice, including grounding or nutrition, is **off topic** to the forum.  
+While it is permitted to post with the off topic tag, it is generally not encouraged.  
+All posts including medical content are **subject to removal** pending moderator discretion.  
+
+Discretion is upon the user to critically evaluate all information posted on the forum.  
+For your safety, consult with your doctor before taking any medical advice.  
+
+We apologize for any inconvenience regarding this.
 
 ---
 
