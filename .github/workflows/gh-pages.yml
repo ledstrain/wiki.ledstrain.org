@@ -19,7 +19,7 @@ jobs:
 
     - name: Cache Hugo Assets
       id:   cache-hugo-assets
-      uses: actions/cache@v1
+      uses: actions/cache@v4
       with:
         path: /tmp/hugo_cache
         key:  hugo-${{ steps.month-day.outputs.d }}
